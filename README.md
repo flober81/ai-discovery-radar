@@ -13,7 +13,7 @@ Jeder Ausschlag ist eine Messung, keine Meinung.
 ## Radar
 
 <!-- RADAR:START -->
-_40 Routen im Katalog · noch keine veröffentlichte Messung_
+_34 Routen im Katalog · noch keine veröffentlichte Messung_
 
 | Route | Zweck | Herausgeber | Verbreitung |
 |:--|:--|:--|--:|
@@ -25,7 +25,6 @@ _40 Routen im Katalog · noch keine veröffentlichte Messung_
 | `/.well-known/tdmrep.json` | Ob Texte und Daten automatisch ausgewertet werden dürfen | W3C TDM Reservation Protocol CG | — |
 | `/.well-known/gpc.json` | Ob die Seite dem Widerspruch gegen Datenweitergabe folgt | W3C Global Privacy Control | — |
 | `/.well-known/dnt-policy.txt` | Zusage, Besucher nicht über Seiten hinweg zu verfolgen | EFF | — |
-| `/.well-known/nodeinfo` | Welche Software ein Server betreibt und wie groß er ist | NodeInfo Community | — |
 | `/.well-known/host-meta` | Verweise auf die weiteren Auskunftsstellen einer Domain | IETF | — |
 | `/.well-known/webfinger` | Wer hinter einer Adresse an dieser Domain steckt | IETF | — |
 | `/.well-known/oauth-protected-resource` | Wo ein Client seine Zugangsberechtigung holt | IETF | — |
@@ -33,8 +32,6 @@ _40 Routen im Katalog · noch keine veröffentlichte Messung_
 | `/.well-known/openid-configuration` | Wo und wie man sich bei dieser Domain anmeldet | OpenID Foundation | — |
 | `/.well-known/openid-federation` | Zu welchem Verbund eine Stelle nachweislich gehört | OpenID Foundation | — |
 | `/.well-known/traffic-advice` | Ob ein Zwischenspeicher Seiten vorab laden darf | Google (Private Prefetch Proxy) | — |
-| `/.well-known/assetlinks.json` | Welche Android-App zu dieser Website gehört | Google (Digital Asset Links) · Vergleichsgröße | — |
-| `/.well-known/change-password` | Wo ein Nutzer sein Passwort ändern kann | W3C Web Application Security WG · Vergleichsgröße | — |
 | `/.well-known/ai-catalog.json` | Was eine Domain KI-Agenten an Inhalten und Diensten bietet | AI Catalog WG (Linux Foundation), Google, Microsoft | — |
 | `/.well-known/agent-card.json` | Was ein Software-Agent kann und wie man ihn anspricht | A2A Project (Linux Foundation) | — |
 | `/.well-known/agent.json` | Fähigkeiten eines Agenten, unter dem alten Dateinamen | A2A Project (Linux Foundation) | — |
@@ -51,19 +48,11 @@ _40 Routen im Katalog · noch keine veröffentlichte Messung_
 | `/swagger.json` | Schnittstellen-Beschreibung unter dem alten Dateinamen | SmartBear (Swagger) | — |
 | `/rsl.xml` | Zu welchen Lizenzbedingungen Inhalte genutzt werden dürfen | RSL Collective | — |
 | `/humans.txt` | Wer eine Website gemacht hat, für Menschen lesbar | humanstxt.org | — |
-| `/ads.txt` | Wer Anzeigen auf dieser Website verkaufen darf | IAB Tech Lab · Vergleichsgröße | — |
-| `/app-ads.txt` | Wer Anzeigen in den Apps dieses Anbieters verkaufen darf | IAB Tech Lab · Vergleichsgröße | — |
-| `/.well-known/apple-app-site-association` | Welche Apple-App zu dieser Website gehört | Apple · Vergleichsgröße | — |
 | `/.well-known/ai-plugin.json` | Anleitung, damit ein Chatbot einen Dienst bedienen kann | OpenAI | — |
 | `/ai-plugin.json` | Dieselbe Anleitung für Chatbots, an der Wurzel | OpenAI | — |
 | `/.well-known/llms.txt` | Inhaltsverzeichnis für Sprachmodelle im Sammelordner | Platzierungsvariante von /llms.txt | — |
 
 Verbreitungszahlen erscheinen mit dem ersten veröffentlichten Lauf.
-
-Als **Vergleichsgröße** gekennzeichnete Routen sind keine KI-Discovery-Routen.
-Sie werden mitgemessen, weil sie zeigen, wie Verbreitung aussieht, wenn ein
-maschinenlesbares Format seit Jahren durchgesetzt ist. Ohne diesen Maßstab lässt
-sich eine kleine Zahl bei einem jungen Format nicht einordnen.
 
 <!-- RADAR:END -->
 Diese Tabelle ist vollständig: Sie listet jede Route, die abgefragt wird, und
