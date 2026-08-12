@@ -15,48 +15,48 @@ Jeder Ausschlag ist eine Messung, keine Meinung.
 <!-- RADAR:START -->
 _40 Routen im Katalog · noch keine veröffentlichte Messung_
 
-| Route | Herausgeber | Verbreitung |
-|:--|:--|--:|
-| `/robots.txt` | IETF | — |
-| `/sitemap.xml` | sitemaps.org | — |
-| `/.well-known/security.txt` | IETF | — |
-| `/security.txt` | IETF | — |
-| `/.well-known/api-catalog` | IETF | — |
-| `/.well-known/tdmrep.json` | W3C TDM Reservation Protocol CG | — |
-| `/.well-known/gpc.json` | W3C Global Privacy Control | — |
-| `/.well-known/dnt-policy.txt` | EFF | — |
-| `/.well-known/nodeinfo` | NodeInfo Community | — |
-| `/.well-known/host-meta` | IETF | — |
-| `/.well-known/webfinger` | IETF | — |
-| `/.well-known/oauth-protected-resource` | IETF | — |
-| `/.well-known/oauth-authorization-server` | IETF | — |
-| `/.well-known/openid-configuration` | OpenID Foundation | — |
-| `/.well-known/openid-federation` | OpenID Foundation | — |
-| `/.well-known/traffic-advice` | Google (Private Prefetch Proxy) | — |
-| `/.well-known/assetlinks.json` | Google (Digital Asset Links) · Vergleichsgröße | — |
-| `/.well-known/change-password` | W3C Web Application Security WG · Vergleichsgröße | — |
-| `/.well-known/ai-catalog.json` | AI Catalog WG (Linux Foundation), Google, Microsoft | — |
-| `/.well-known/agent-card.json` | A2A Project (Linux Foundation) | — |
-| `/.well-known/agent.json` | A2A Project (Linux Foundation) | — |
-| `/.well-known/mcp.json` | Model Context Protocol | — |
-| `/.well-known/mcp-server` | IETF-Entwurf (MCP-Discovery) | — |
-| `/openapi.json` | OpenAPI Initiative | — |
-| `/.well-known/openapi.json` | OpenAPI Initiative | — |
-| `/.well-known/x402.json` | Coinbase, Cloudflare | — |
-| `/.well-known/did.json` | W3C | — |
-| `/llms.txt` | Answer.AI | — |
-| `/llms-full.txt` | Answer.AI | — |
-| `/ai.txt` | Spawning | — |
-| `/.well-known/ai.txt` | Platzierungsvariante von /ai.txt | — |
-| `/swagger.json` | SmartBear (Swagger) | — |
-| `/rsl.xml` | RSL Collective | — |
-| `/humans.txt` | humanstxt.org | — |
-| `/ads.txt` | IAB Tech Lab · Vergleichsgröße | — |
-| `/app-ads.txt` | IAB Tech Lab · Vergleichsgröße | — |
-| `/.well-known/apple-app-site-association` | Apple · Vergleichsgröße | — |
-| `/.well-known/ai-plugin.json` | OpenAI | — |
-| `/ai-plugin.json` | OpenAI | — |
-| `/.well-known/llms.txt` | Platzierungsvariante von /llms.txt | — |
+| Route | Zweck | Herausgeber | Verbreitung |
+|:--|:--|:--|--:|
+| `/robots.txt` | Welche Bereiche automatische Abrufer betreten duerfen | IETF | — |
+| `/sitemap.xml` | Verzeichnis aller Adressen, die eine Website anbietet | sitemaps.org | — |
+| `/.well-known/security.txt` | Wohin man eine Sicherheitsluecke meldet | IETF | — |
+| `/security.txt` | Wohin man eine Sicherheitsluecke meldet, an der Wurzel | IETF | — |
+| `/.well-known/api-catalog` | Verzeichnis der Schnittstellen, die eine Domain anbietet | IETF | — |
+| `/.well-known/tdmrep.json` | Ob Texte und Daten automatisch ausgewertet werden duerfen | W3C TDM Reservation Protocol CG | — |
+| `/.well-known/gpc.json` | Ob die Seite dem Widerspruch gegen Datenweitergabe folgt | W3C Global Privacy Control | — |
+| `/.well-known/dnt-policy.txt` | Zusage, Besucher nicht ueber Seiten hinweg zu verfolgen | EFF | — |
+| `/.well-known/nodeinfo` | Welche Software ein Server betreibt und wie gross er ist | NodeInfo Community | — |
+| `/.well-known/host-meta` | Verweise auf die weiteren Auskunftsstellen einer Domain | IETF | — |
+| `/.well-known/webfinger` | Wer hinter einer Adresse an dieser Domain steckt | IETF | — |
+| `/.well-known/oauth-protected-resource` | Wo ein Client seine Zugangsberechtigung holt | IETF | — |
+| `/.well-known/oauth-authorization-server` | Wie die Stelle arbeitet, die Zugangsrechte vergibt | IETF | — |
+| `/.well-known/openid-configuration` | Wo und wie man sich bei dieser Domain anmeldet | OpenID Foundation | — |
+| `/.well-known/openid-federation` | Zu welchem Verbund eine Stelle nachweislich gehoert | OpenID Foundation | — |
+| `/.well-known/traffic-advice` | Ob ein Zwischenspeicher Seiten vorab laden darf | Google (Private Prefetch Proxy) | — |
+| `/.well-known/assetlinks.json` | Welche Android-App zu dieser Website gehoert | Google (Digital Asset Links) · Vergleichsgröße | — |
+| `/.well-known/change-password` | Wo ein Nutzer sein Passwort aendern kann | W3C Web Application Security WG · Vergleichsgröße | — |
+| `/.well-known/ai-catalog.json` | Was eine Domain KI-Agenten an Inhalten und Diensten bietet | AI Catalog WG (Linux Foundation), Google, Microsoft | — |
+| `/.well-known/agent-card.json` | Was ein Software-Agent kann und wie man ihn anspricht | A2A Project (Linux Foundation) | — |
+| `/.well-known/agent.json` | Faehigkeiten eines Agenten, unter dem alten Dateinamen | A2A Project (Linux Foundation) | — |
+| `/.well-known/mcp.json` | Welche Werkzeug-Server eine Domain fuer KI bereitstellt | Model Context Protocol | — |
+| `/.well-known/mcp-server` | Wo der Werkzeug-Server einer Domain zu erreichen ist | IETF-Entwurf (MCP-Discovery) | — |
+| `/openapi.json` | Beschreibung einer Schnittstelle fuer fremde Programme | OpenAPI Initiative | — |
+| `/.well-known/openapi.json` | Schnittstellen-Beschreibung im Sammelordner der Domain | OpenAPI Initiative | — |
+| `/.well-known/x402.json` | Preis und Bezahlweg fuer maschinelle Abrufe | Coinbase, Cloudflare | — |
+| `/.well-known/did.json` | Nachweisbare Identitaet einer Domain ohne zentrale Stelle | W3C | — |
+| `/llms.txt` | Inhaltsverzeichnis fuer Sprachmodelle | Answer.AI | — |
+| `/llms-full.txt` | Der gesamte Inhalt einer Website in einer einzigen Datei | Answer.AI | — |
+| `/ai.txt` | Welche Inhalte fuer das Training von KI gesperrt sind | Spawning | — |
+| `/.well-known/ai.txt` | Dieselben KI-Nutzungsregeln im Sammelordner der Domain | Platzierungsvariante von /ai.txt | — |
+| `/swagger.json` | Schnittstellen-Beschreibung unter dem alten Dateinamen | SmartBear (Swagger) | — |
+| `/rsl.xml` | Zu welchen Lizenzbedingungen Inhalte genutzt werden duerfen | RSL Collective | — |
+| `/humans.txt` | Wer eine Website gemacht hat, fuer Menschen lesbar | humanstxt.org | — |
+| `/ads.txt` | Wer Anzeigen auf dieser Website verkaufen darf | IAB Tech Lab · Vergleichsgröße | — |
+| `/app-ads.txt` | Wer Anzeigen in den Apps dieses Anbieters verkaufen darf | IAB Tech Lab · Vergleichsgröße | — |
+| `/.well-known/apple-app-site-association` | Welche Apple-App zu dieser Website gehoert | Apple · Vergleichsgröße | — |
+| `/.well-known/ai-plugin.json` | Anleitung, damit ein Chatbot einen Dienst bedienen kann | OpenAI | — |
+| `/ai-plugin.json` | Dieselbe Anleitung fuer Chatbots, an der Wurzel | OpenAI | — |
+| `/.well-known/llms.txt` | Inhaltsverzeichnis fuer Sprachmodelle im Sammelordner | Platzierungsvariante von /llms.txt | — |
 
 Verbreitungszahlen erscheinen mit dem ersten veröffentlichten Lauf.
 
@@ -70,7 +70,8 @@ Diese Tabelle ist vollständig: Sie listet jede Route, die abgefragt wird, und
 was dort nicht steht, fragen wir nicht ab. Eine Route steht darin, wenn sie
 einen benennbaren Herausgeber hat oder ein dokumentierter Konsument sie liest —
 nicht, weil sie irgendwo als Format herumgereicht wird. Der Herausgeber steht
-in der Tabelle, damit jede Zeile selbst nachprüfbar ist.
+in der Tabelle, damit jede Zeile selbst nachprüfbar ist. Der Zweck sagt, was
+die Datei an einem Server tut — er beschreibt sie, er bewertet sie nicht.
 
 ## Wie gemessen wird
 
