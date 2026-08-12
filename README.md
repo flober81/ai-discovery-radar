@@ -1,85 +1,91 @@
 # ai-discovery-radar
 
-> This project is documented in German. It measures the adoption of public
-> AI-discovery files (`robots.txt`, `llms.txt`, …).
-> **Opt out:** open an issue with your domain or email florian.f.berger@gmail.com
-> — no reason required.
+**English** · [Deutsch](README.de.md) · [Italiano](README.it.md)
 
-Ein Radar der KI-Discovery-Dateien im öffentlichen Web: welche Routen es gibt
-(`robots.txt`, `llms.txt`, `ai-catalog.json`, …), wie weit sie verbreitet sind
-und ob sie sich überhaupt abrufen lassen. Jeder Ausschlag ist eine Messung,
-keine Meinung. Wie oft gemessen wird, steht hier, sobald es Läufe gibt, die
-das belegen.
+> **Found this in your server logs?** You can opt out in one line — see
+> [Opt out](#opt-out) below. No account, no contact, no reason required.
 
-## Radar
+A radar of the AI discovery files on the public web: which routes exist
+(`robots.txt`, `llms.txt`, `ai-catalog.json`, …), how widely they are used, and
+whether they can be fetched at all. Every blip is a measurement, not an opinion.
+How often we measure will be stated here once there are runs to back it up.
+
+## The radar
 
 <!-- RADAR:START -->
-_34 Routen im Katalog · noch keine veröffentlichte Messung_
+_34 routes in the catalog · no published measurement yet_
 
-| Route | Zweck | Herausgeber | Verbreitung |
+| Route | Purpose | Publisher | Adoption |
 |:--|:--|:--|--:|
-| `/robots.txt` | Welche Bereiche automatische Abrufer betreten dürfen | IETF | — |
-| `/sitemap.xml` | Verzeichnis aller Adressen, die eine Website anbietet | sitemaps.org | — |
-| `/.well-known/security.txt` | Wohin man eine Sicherheitslücke meldet | IETF | — |
-| `/security.txt` | Wohin man eine Sicherheitslücke meldet, an der Wurzel | IETF | — |
-| `/.well-known/api-catalog` | Verzeichnis der Schnittstellen, die eine Domain anbietet | IETF | — |
-| `/.well-known/tdmrep.json` | Ob Texte und Daten automatisch ausgewertet werden dürfen | W3C TDM Reservation Protocol CG | — |
-| `/.well-known/gpc.json` | Ob die Seite dem Widerspruch gegen Datenweitergabe folgt | W3C Global Privacy Control | — |
-| `/.well-known/dnt-policy.txt` | Zusage, Besucher nicht über Seiten hinweg zu verfolgen | EFF | — |
-| `/.well-known/host-meta` | Verweise auf die weiteren Auskunftsstellen einer Domain | IETF | — |
-| `/.well-known/webfinger` | Wer hinter einer Adresse an dieser Domain steckt | IETF | — |
-| `/.well-known/oauth-protected-resource` | Wo ein Client seine Zugangsberechtigung holt | IETF | — |
-| `/.well-known/oauth-authorization-server` | Wie die Stelle arbeitet, die Zugangsrechte vergibt | IETF | — |
-| `/.well-known/openid-configuration` | Wo und wie man sich bei dieser Domain anmeldet | OpenID Foundation | — |
-| `/.well-known/openid-federation` | Zu welchem Verbund eine Stelle nachweislich gehört | OpenID Foundation | — |
-| `/.well-known/traffic-advice` | Ob ein Zwischenspeicher Seiten vorab laden darf | Google (Private Prefetch Proxy) | — |
-| `/.well-known/ai-catalog.json` | Was eine Domain KI-Agenten an Inhalten und Diensten bietet | AI Catalog WG (Linux Foundation), Google, Microsoft | — |
-| `/.well-known/agent-card.json` | Was ein Software-Agent kann und wie man ihn anspricht | A2A Project (Linux Foundation) | — |
-| `/.well-known/agent.json` | Fähigkeiten eines Agenten, unter dem alten Dateinamen | A2A Project (Linux Foundation) | — |
-| `/.well-known/mcp.json` | Welche Werkzeug-Server eine Domain für KI bereitstellt | Model Context Protocol | — |
-| `/.well-known/mcp-server` | Wo der Werkzeug-Server einer Domain zu erreichen ist | IETF (Individual-Entwurf) | — |
-| `/openapi.json` | Beschreibung einer Schnittstelle für fremde Programme | OpenAPI Initiative | — |
-| `/.well-known/openapi.json` | Schnittstellen-Beschreibung im Sammelordner der Domain | OpenAPI Initiative | — |
-| `/.well-known/x402.json` | Preis und Bezahlweg für maschinelle Abrufe | Coinbase, Cloudflare | — |
-| `/.well-known/did.json` | Nachweisbare Identität einer Domain ohne zentrale Stelle | W3C | — |
-| `/llms.txt` | Inhaltsverzeichnis für Sprachmodelle | Answer.AI | — |
-| `/llms-full.txt` | Der gesamte Inhalt einer Website in einer einzigen Datei | Answer.AI | — |
-| `/ai.txt` | Welche Inhalte für das Training von KI gesperrt sind | Spawning | — |
-| `/.well-known/ai.txt` | Dieselben KI-Nutzungsregeln im Sammelordner der Domain | Spawning | — |
-| `/swagger.json` | Schnittstellen-Beschreibung unter dem alten Dateinamen | SmartBear (Swagger) | — |
-| `/rsl.xml` | Zu welchen Lizenzbedingungen Inhalte genutzt werden dürfen | RSL Collective | — |
-| `/humans.txt` | Wer eine Website gemacht hat, für Menschen lesbar | humanstxt.org | — |
-| `/.well-known/ai-plugin.json` | Anleitung, damit ein Chatbot einen Dienst bedienen kann | OpenAI | — |
-| `/ai-plugin.json` | Dieselbe Anleitung für Chatbots, an der Wurzel | OpenAI | — |
-| `/.well-known/llms.txt` | Inhaltsverzeichnis für Sprachmodelle im Sammelordner | Answer.AI | — |
+| `/robots.txt` | Which parts of a site automated clients may enter | IETF | — |
+| `/sitemap.xml` | An index of every address a website offers | sitemaps.org | — |
+| `/.well-known/security.txt` | Where to report a security vulnerability | IETF | — |
+| `/security.txt` | Where to report a vulnerability, at the site root | IETF | — |
+| `/.well-known/api-catalog` | An index of the interfaces a domain offers | IETF | — |
+| `/.well-known/tdmrep.json` | Whether text and data may be mined automatically | W3C TDM Reservation Protocol CG | — |
+| `/.well-known/gpc.json` | Whether the site honors the data-sharing opt-out | W3C Global Privacy Control | — |
+| `/.well-known/dnt-policy.txt` | A pledge not to track visitors across sites | EFF | — |
+| `/.well-known/host-meta` | Pointers to a domain's other points of information | IETF | — |
+| `/.well-known/webfinger` | Who is behind an address at this domain | IETF | — |
+| `/.well-known/oauth-protected-resource` | Where a client obtains authorization for access | IETF | — |
+| `/.well-known/oauth-authorization-server` | How the service that grants access rights works | IETF | — |
+| `/.well-known/openid-configuration` | Where and how to sign in at this domain | OpenID Foundation | — |
+| `/.well-known/openid-federation` | Which federation a party provably belongs to | OpenID Foundation | — |
+| `/.well-known/traffic-advice` | Whether a caching proxy may prefetch pages | Google (Private Prefetch Proxy) | — |
+| `/.well-known/ai-catalog.json` | What content and services a domain offers AI agents | AI Catalog WG (Linux Foundation), Google, Microsoft | — |
+| `/.well-known/agent-card.json` | What a software agent can do and how to address it | A2A Project (Linux Foundation) | — |
+| `/.well-known/agent.json` | An agent's capabilities, under the older file name | A2A Project (Linux Foundation) | — |
+| `/.well-known/mcp.json` | Which tool servers a domain provides for AI | Model Context Protocol | — |
+| `/.well-known/mcp-server` | Where to reach a domain's tool server | IETF (individual draft) | — |
+| `/openapi.json` | A description of an interface for other programs | OpenAPI Initiative | — |
+| `/.well-known/openapi.json` | An interface description in the well-known folder | OpenAPI Initiative | — |
+| `/.well-known/x402.json` | The price and payment route for machine requests | Coinbase, Cloudflare | — |
+| `/.well-known/did.json` | A domain's provable identity without a central party | W3C | — |
+| `/llms.txt` | A table of contents for language models | Answer.AI | — |
+| `/llms-full.txt` | A whole website's content in a single file | Answer.AI | — |
+| `/ai.txt` | Which content is withheld from AI training | Spawning | — |
+| `/.well-known/ai.txt` | The same AI usage rules in the well-known folder | Spawning | — |
+| `/swagger.json` | An interface description under the older file name | SmartBear (Swagger) | — |
+| `/rsl.xml` | The license terms under which content may be used | RSL Collective | — |
+| `/humans.txt` | Who built a website, written for people to read | humanstxt.org | — |
+| `/.well-known/ai-plugin.json` | Instructions for a chatbot to operate a service | OpenAI | — |
+| `/ai-plugin.json` | The same chatbot instructions, at the site root | OpenAI | — |
+| `/.well-known/llms.txt` | A table of contents for language models, in well-known | Answer.AI | — |
 
-Verbreitungszahlen erscheinen mit dem ersten veröffentlichten Lauf.
+Adoption figures will appear with the first published run.
 
 <!-- RADAR:END -->
-Diese Tabelle ist vollständig: Sie listet jede Route, die abgefragt wird, und
-was dort nicht steht, fragen wir nicht ab. Eine Route steht darin, wenn sie
-einen benennbaren Herausgeber hat oder ein dokumentierter Konsument sie liest —
-nicht, weil sie irgendwo als Format herumgereicht wird. Der Herausgeber steht
-in der Tabelle, damit jede Zeile selbst nachprüfbar ist. Der Zweck sagt, was
-die Datei an einem Server tut — er beschreibt sie, er bewertet sie nicht.
+This table is complete: it lists every route we request, and whatever is not in
+it, we do not request. A route is listed when it has a nameable publisher or a
+documented consumer that reads it — not because some format is being passed
+around somewhere. The publisher is in the table so that every row can be checked
+on its own. The purpose says what the file does on a server; it describes the
+file, it does not judge it.
 
-## Wie gemessen wird
+## How we measure
 
-Die Messung respektiert die `robots.txt`, meldet sich ehrlich mit diesem
-Repository als Absender und arbeitet langsam und sparsam. Gemessen werden
-ausschließlich öffentliche, für Maschinen bestimmte Konfigurationsdateien —
-keine Inhalte.
+The measurement obeys your `robots.txt`, identifies itself honestly with this
+repository as the sender, and works slowly and sparingly. Only public
+configuration files meant for machines are fetched — no page content.
 
-## Austragung
+## Opt out
 
-Siehe [SECURITY.md](SECURITY.md). Ausgetragene Domains werden übersprungen,
-bevor überhaupt eine Anfrage gestellt wird.
+No questions asked, no reason needed. Any one of these is enough:
 
-## Stichproben-Attribution
+1. Email **florian.f.berger@gmail.com** with the domain — you do not need a
+   GitHub account for this, **or**
+2. open an issue in this repository with the domain, **or**
+3. put a `Disallow` rule for our token in your `robots.txt` — this works without
+   contacting us at all.
 
-Die Domain-Stichprobe stammt aus der Majestic Million
+Excluded domains are skipped **before** any request is made. Contact,
+corrections and the full policy: [SECURITY.md](SECURITY.md).
+
+## Sample attribution
+
+The domain sample comes from the Majestic Million
 (© Majestic, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)).
 
-## Lizenz
+## License
 
-MIT — siehe [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
