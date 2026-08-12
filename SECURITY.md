@@ -12,7 +12,8 @@ personenbezogenen Daten.
 
 - Zuerst Ihre `robots.txt`, ausgewertet für unser eigenes Token. Was dort für uns gesperrt ist,
   rufen wir **nicht** ab.
-- Wir geben uns ehrlich zu erkennen und **niemals** als ein anderer Bot aus.
+- Wir geben uns ehrlich zu erkennen und **niemals** als ein anderer Bot aus. Die Abrufe kommen
+  von einer festen Adresse, die sich selbst erklärt: http://145.223.96.128
 - Eine Anfrage zur Zeit pro Host, Pause dazwischen, Backoff bei 429/503, Abbruch nach sechs
   Abweisungen. Ihre Seite sieht wenige Dutzend Anfragen pro Messlauf — je eine je Route aus der
   Tabelle in der [README](README.md). Diese Tabelle ist die vollständige Liste — was dort
