@@ -13,7 +13,7 @@ Jeder Ausschlag ist eine Messung, keine Meinung.
 ## Radar
 
 <!-- RADAR:START -->
-_39 Routen im Katalog · noch keine veröffentlichte Messung_
+_40 Routen im Katalog · noch keine veröffentlichte Messung_
 
 | Route | Herausgeber | Verbreitung |
 |:--|:--|--:|
@@ -42,6 +42,7 @@ _39 Routen im Katalog · noch keine veröffentlichte Messung_
 | `/.well-known/mcp-server` | IETF-Entwurf (MCP-Discovery) | — |
 | `/openapi.json` | OpenAPI Initiative | — |
 | `/.well-known/openapi.json` | OpenAPI Initiative | — |
+| `/.well-known/x402.json` | Coinbase, Cloudflare | — |
 | `/.well-known/did.json` | W3C | — |
 | `/llms.txt` | Answer.AI | — |
 | `/llms-full.txt` | Answer.AI | — |
