@@ -22,7 +22,8 @@ data.
   **not** fetch.
 - We identify ourselves honestly and **never** pose as another bot. The requests come from
   one fixed address that explains itself: http://145.223.96.128
-- One request at a time per host, a pause in between, backoff on 429/503, and we stop
+- One request at a time per host, a pause in between — **at least as long as a
+  `Crawl-delay` in your `robots.txt` asks for** — backoff on 429/503, and we stop
   after six rejections. Your site sees a few dozen requests per measurement run — one per
   route from the table in the [README](README.md). That table is the complete list —
   whatever is not in it, we do not request.
@@ -63,7 +64,8 @@ personenbezogenen Daten.
   rufen wir **nicht** ab.
 - Wir geben uns ehrlich zu erkennen und **niemals** als ein anderer Bot aus. Die Abrufe kommen
   von einer festen Adresse, die sich selbst erklärt: http://145.223.96.128
-- Eine Anfrage zur Zeit pro Host, Pause dazwischen, Backoff bei 429/503, Abbruch nach sechs
+- Eine Anfrage zur Zeit pro Host, Pause dazwischen — **mindestens so lang, wie ein
+  `Crawl-delay` in Ihrer `robots.txt` es wünscht** — Backoff bei 429/503, Abbruch nach sechs
   Abweisungen. Ihre Seite sieht wenige Dutzend Anfragen pro Messlauf — je eine je Route aus der
   Tabelle in der [README](README.de.md). Diese Tabelle ist die vollständige Liste — was dort
   nicht steht, rufen wir nicht ab.
@@ -104,7 +106,8 @@ delle pagine, nessuna API, nessun dato personale.
   ci viene vietato lì **non** lo richiediamo.
 - Ci identifichiamo in modo onesto e **mai** ci spacciamo per un altro bot. Le richieste
   arrivano da un unico indirizzo fisso che si spiega da sé: http://145.223.96.128
-- Una richiesta alla volta per host, con pausa tra una e l'altra, backoff su 429/503 e
+- Una richiesta alla volta per host, con pausa tra una e l'altra — **lunga almeno quanto
+  chiede un `Crawl-delay` nel vostro `robots.txt`** — backoff su 429/503 e
   interruzione dopo sei rifiuti. Il vostro sito riceve poche decine di richieste per
   misurazione — una per ogni route della tabella nella [README](README.it.md). Quella
   tabella è l'elenco completo: ciò che non compare lì, non lo richiediamo.
