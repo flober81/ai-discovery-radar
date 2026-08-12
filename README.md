@@ -5,10 +5,11 @@
 > **Opt out:** open an issue with your domain or email florian.f.berger@gmail.com
 > — no reason required.
 
-Ein regelmäßig gemessenes Radar der KI-Discovery-Dateien im öffentlichen
-Web — welche Routen es gibt (`robots.txt`, `llms.txt`, `ai-catalog.json`, …),
-wie weit sie verbreitet sind und ob sie sich überhaupt abrufen lassen.
-Jeder Ausschlag ist eine Messung, keine Meinung.
+Ein Radar der KI-Discovery-Dateien im öffentlichen Web: welche Routen es gibt
+(`robots.txt`, `llms.txt`, `ai-catalog.json`, …), wie weit sie verbreitet sind
+und ob sie sich überhaupt abrufen lassen. Jeder Ausschlag ist eine Messung,
+keine Meinung. Wie oft gemessen wird, steht hier, sobald es Läufe gibt, die
+das belegen.
 
 ## Radar
 
@@ -36,7 +37,7 @@ _34 Routen im Katalog · noch keine veröffentlichte Messung_
 | `/.well-known/agent-card.json` | Was ein Software-Agent kann und wie man ihn anspricht | A2A Project (Linux Foundation) | — |
 | `/.well-known/agent.json` | Fähigkeiten eines Agenten, unter dem alten Dateinamen | A2A Project (Linux Foundation) | — |
 | `/.well-known/mcp.json` | Welche Werkzeug-Server eine Domain für KI bereitstellt | Model Context Protocol | — |
-| `/.well-known/mcp-server` | Wo der Werkzeug-Server einer Domain zu erreichen ist | IETF-Entwurf (MCP-Discovery) | — |
+| `/.well-known/mcp-server` | Wo der Werkzeug-Server einer Domain zu erreichen ist | IETF (Individual-Entwurf) | — |
 | `/openapi.json` | Beschreibung einer Schnittstelle für fremde Programme | OpenAPI Initiative | — |
 | `/.well-known/openapi.json` | Schnittstellen-Beschreibung im Sammelordner der Domain | OpenAPI Initiative | — |
 | `/.well-known/x402.json` | Preis und Bezahlweg für maschinelle Abrufe | Coinbase, Cloudflare | — |
@@ -44,13 +45,13 @@ _34 Routen im Katalog · noch keine veröffentlichte Messung_
 | `/llms.txt` | Inhaltsverzeichnis für Sprachmodelle | Answer.AI | — |
 | `/llms-full.txt` | Der gesamte Inhalt einer Website in einer einzigen Datei | Answer.AI | — |
 | `/ai.txt` | Welche Inhalte für das Training von KI gesperrt sind | Spawning | — |
-| `/.well-known/ai.txt` | Dieselben KI-Nutzungsregeln im Sammelordner der Domain | Platzierungsvariante von /ai.txt | — |
+| `/.well-known/ai.txt` | Dieselben KI-Nutzungsregeln im Sammelordner der Domain | Spawning | — |
 | `/swagger.json` | Schnittstellen-Beschreibung unter dem alten Dateinamen | SmartBear (Swagger) | — |
 | `/rsl.xml` | Zu welchen Lizenzbedingungen Inhalte genutzt werden dürfen | RSL Collective | — |
 | `/humans.txt` | Wer eine Website gemacht hat, für Menschen lesbar | humanstxt.org | — |
 | `/.well-known/ai-plugin.json` | Anleitung, damit ein Chatbot einen Dienst bedienen kann | OpenAI | — |
 | `/ai-plugin.json` | Dieselbe Anleitung für Chatbots, an der Wurzel | OpenAI | — |
-| `/.well-known/llms.txt` | Inhaltsverzeichnis für Sprachmodelle im Sammelordner | Platzierungsvariante von /llms.txt | — |
+| `/.well-known/llms.txt` | Inhaltsverzeichnis für Sprachmodelle im Sammelordner | Answer.AI | — |
 
 Verbreitungszahlen erscheinen mit dem ersten veröffentlichten Lauf.
 
