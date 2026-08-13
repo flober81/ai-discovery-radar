@@ -55,8 +55,13 @@ _34 routes in the catalog · no published measurement yet_
 Adoption figures will appear with the first published run.
 
 <!-- RADAR:END -->
-This table is complete: it lists every route we request, and whatever is not in
-it, we do not request. A route is listed when it has a nameable publisher or a
+This table is the complete list of routes we routinely request. One addition:
+when files on your own domain point to another file there (for example a link
+in your `robots.txt`), we may fetch that referenced file once — at most one
+such follow-up per domain and run, under the same `robots.txt` rules. We also
+look up three DNS records per domain (`_agent`, `_mcp`, `_index._agents`) —
+plain name-service lookups that never touch your web server.
+A route is listed when it has a nameable publisher or a
 documented consumer that reads it — not because some format is being passed
 around somewhere. The publisher is in the table so that every row can be checked
 on its own. The purpose says what the file does on a server; it describes the
@@ -83,7 +88,11 @@ corrections and the full policy: [SECURITY.md](SECURITY.md).
 
 ## Sample attribution
 
-The domain sample comes from the Majestic Million
+The domain sample is drawn from the [Tranco list](https://tranco-list.eu/)
+(research ranking; our frozen frame references a permanent Tranco list ID) and
+the [Chrome UX Report top lists](https://github.com/zakird/crux-top-lists)
+(© Google, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+Tranco itself aggregates several providers, including the Majestic Million
 (© Majestic, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)).
 
 ## License

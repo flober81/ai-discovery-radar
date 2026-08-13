@@ -57,8 +57,14 @@ _34 route nel catalogo · nessuna misurazione pubblicata_
 I dati di diffusione compariranno con la prima misurazione pubblicata.
 
 <!-- RADAR:END -->
-Questa tabella è completa: elenca ogni route che richiediamo, e ciò che non
-compare qui non lo richiediamo. Una route entra in elenco quando ha un editore
+Questa tabella è l'elenco completo delle route che richiediamo regolarmente.
+Un'aggiunta: se i file del vostro stesso dominio rimandano a un altro file
+lì (per esempio un link nel vostro `robots.txt`), possiamo recuperare quel
+file una volta — al massimo un simile richiamo per dominio e per ciclo, con
+le stesse regole del `robots.txt`. Inoltre consultiamo tre record DNS per
+dominio (`_agent`, `_mcp`, `_index._agents`) — semplici interrogazioni del
+servizio dei nomi che non toccano mai il vostro server web.
+Una route entra in elenco quando ha un editore
 identificabile oppure un consumatore documentato che la legge — non perché un
 formato circoli da qualche parte. L'editore è indicato in tabella affinché ogni
 riga sia verificabile da sé. Lo scopo dice che cosa fa il file su un server: lo
@@ -86,7 +92,12 @@ Contatti, correzioni e l'impegno completo: [SECURITY.md](SECURITY.md).
 
 ## Attribuzione del campione
 
-Il campione di domini proviene dalla Majestic Million
+Il campione di domini è estratto dalla [lista Tranco](https://tranco-list.eu/)
+(classifica per la ricerca; il nostro quadro congelato fa riferimento a un ID
+permanente di lista Tranco) e dalle
+[top list del Chrome UX Report](https://github.com/zakird/crux-top-lists)
+(© Google, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+Tranco stessa aggrega diverse fonti, tra cui la Majestic Million
 (© Majestic, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)).
 
 ## Licenza

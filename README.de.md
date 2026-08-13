@@ -57,8 +57,14 @@ _34 Routen im Katalog · noch keine veröffentlichte Messung_
 Verbreitungszahlen erscheinen mit dem ersten veröffentlichten Lauf.
 
 <!-- RADAR:END -->
-Diese Tabelle ist vollständig: Sie listet jede Route, die abgefragt wird, und
-was dort nicht steht, fragen wir nicht ab. Eine Route steht darin, wenn sie
+Diese Tabelle ist die vollständige Liste der Routen, die wir regulär abfragen.
+Eine Ergänzung: Verweisen Dateien Ihrer eigenen Domain auf eine weitere Datei
+dort (etwa ein Link in Ihrer `robots.txt`), rufen wir diese verwiesene Datei
+gegebenenfalls einmal ab — höchstens ein solcher Folge-Abruf je Domain und
+Lauf, unter denselben `robots.txt`-Regeln. Zusätzlich fragen wir je Domain
+drei DNS-Namenseinträge ab (`_agent`, `_mcp`, `_index._agents`) — reine
+Namensauflösung, die Ihren Webserver nie berührt.
+Eine Route steht in der Tabelle, wenn sie
 einen benennbaren Herausgeber hat oder ein dokumentierter Konsument sie liest —
 nicht, weil sie irgendwo als Format herumgereicht wird. Der Herausgeber steht
 in der Tabelle, damit jede Zeile selbst nachprüfbar ist. Der Zweck sagt, was
@@ -87,7 +93,12 @@ gestellt wird. Kontakt, Korrekturen und die vollständige Zusage:
 
 ## Stichproben-Attribution
 
-Die Domain-Stichprobe stammt aus der Majestic Million
+Die Domain-Stichprobe wird aus der [Tranco-Liste](https://tranco-list.eu/)
+gezogen (Forschungs-Ranking; unser eingefrorener Rahmen verweist auf eine
+permanente Tranco-Listen-ID) sowie aus den
+[Chrome-UX-Report-Toplisten](https://github.com/zakird/crux-top-lists)
+(© Google, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+Tranco selbst bündelt mehrere Quellen, darunter die Majestic Million
 (© Majestic, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)).
 
 ## Lizenz

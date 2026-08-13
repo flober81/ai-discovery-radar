@@ -25,8 +25,14 @@ data.
 - One request at a time per host, a pause in between — **at least as long as a
   `Crawl-delay` in your `robots.txt` asks for** — backoff on 429/503, and we stop
   after six rejections. Your site sees a few dozen requests per measurement run — one per
-  route from the table in the [README](README.md). That table is the complete list —
-  whatever is not in it, we do not request.
+  route from the table in the [README](README.md). That table is the complete list of
+  routes we routinely request. One addition: when files on your own domain point to
+  another file there (for example a link in your `robots.txt`), we may fetch that
+  referenced file once — at most one such follow-up per domain and run, under the same
+  `robots.txt` rules.
+- We also look up three DNS records per domain (`_agent`, `_mcp`, `_index._agents`) —
+  plain name-service lookups answered by your name server; they never touch your web
+  server.
 - We publish observations, not assessments — we do not hand out grades.
 
 ### Opt out
@@ -67,8 +73,14 @@ personenbezogenen Daten.
 - Eine Anfrage zur Zeit pro Host, Pause dazwischen — **mindestens so lang, wie ein
   `Crawl-delay` in Ihrer `robots.txt` es wünscht** — Backoff bei 429/503, Abbruch nach sechs
   Abweisungen. Ihre Seite sieht wenige Dutzend Anfragen pro Messlauf — je eine je Route aus der
-  Tabelle in der [README](README.de.md). Diese Tabelle ist die vollständige Liste — was dort
-  nicht steht, rufen wir nicht ab.
+  Tabelle in der [README](README.de.md). Diese Tabelle ist die vollständige Liste der regulär
+  abgefragten Routen. Eine Ergänzung: Verweisen Dateien Ihrer eigenen Domain auf eine weitere
+  Datei dort (etwa ein Link in Ihrer `robots.txt`), rufen wir diese verwiesene Datei
+  gegebenenfalls einmal ab — höchstens ein solcher Folge-Abruf je Domain und Lauf, unter
+  denselben `robots.txt`-Regeln.
+- Zusätzlich fragen wir je Domain drei DNS-Namenseinträge ab (`_agent`, `_mcp`,
+  `_index._agents`) — reine Namensauflösung, beantwortet von Ihrem Nameserver; Ihr
+  Webserver wird davon nie berührt.
 - Wir veröffentlichen Beobachtungen, keine Bewertungen — eine Note vergeben wir nicht.
 
 ### Austragung
@@ -110,7 +122,13 @@ delle pagine, nessuna API, nessun dato personale.
   chiede un `Crawl-delay` nel vostro `robots.txt`** — backoff su 429/503 e
   interruzione dopo sei rifiuti. Il vostro sito riceve poche decine di richieste per
   misurazione — una per ogni route della tabella nella [README](README.it.md). Quella
-  tabella è l'elenco completo: ciò che non compare lì, non lo richiediamo.
+  tabella è l'elenco completo delle route che richiediamo regolarmente. Un'aggiunta: se i
+  file del vostro stesso dominio rimandano a un altro file lì (per esempio un link nel
+  vostro `robots.txt`), possiamo recuperare quel file una volta — al massimo un simile
+  richiamo per dominio e per ciclo, con le stesse regole del `robots.txt`.
+- Inoltre consultiamo tre record DNS per dominio (`_agent`, `_mcp`, `_index._agents`) —
+  semplici interrogazioni del servizio dei nomi, servite dal vostro name server; il vostro
+  server web non viene mai toccato.
 - Pubblichiamo osservazioni, non valutazioni — non assegniamo voti.
 
 ### Come escludersi
