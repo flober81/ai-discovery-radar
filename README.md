@@ -6,7 +6,8 @@
 > [Opt out](#opt-out) below. No account, no contact, no reason required.
 > **How often we visit:** we measure about **10,700 domains per month** — a
 > rotating share of the ~30,000-domain frame (each of those at most once per
-> quarter) plus a fixed comparison panel of 1,000 domains that returns monthly.
+> quarter) plus a small fixed share we deliberately re-visit every month —
+> the same domains each time, so month-over-month change becomes measurable.
 
 A radar of the AI discovery files on the public web: which routes exist
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), how widely they are used, and

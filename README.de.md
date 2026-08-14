@@ -7,8 +7,9 @@
 > Kontakt, keine Begründung nötig.
 > **Wie oft wir vorbeikommen:** Gemessen werden rund **10.700 Domains pro
 > Monat** — ein rotierender Teil des ~30.000er-Rahmens (jede dieser Domains
-> höchstens einmal pro Quartal) plus ein festes Vergleichspanel von 1.000
-> Domains, das monatlich wiederkehrt.
+> höchstens einmal pro Quartal) plus ein kleiner fester Teil, den wir bewusst
+> jeden Monat erneut besuchen — immer dieselben Domains, damit Veränderung
+> von Monat zu Monat messbar wird.
 
 Ein Radar der KI-Discovery-Dateien im öffentlichen Web: welche Routen es gibt
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), wie weit sie verbreitet sind
