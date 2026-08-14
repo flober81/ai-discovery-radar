@@ -5,18 +5,18 @@
 > **Trovato questo identificativo nei log del vostro server?** Potete escludervi
 > con una sola riga — vedi [Come escludersi](#come-escludersi). Nessun account,
 > nessun contatto, nessuna motivazione richiesta.
-> **Quanto spesso passiamo:** misuriamo circa **10.700 domini al mese** — una
-> parte a rotazione del quadro di ~30.000 domini (ognuno di questi al massimo
-> una volta a trimestre) più una piccola parte fissa che rivisitiamo di
-> proposito ogni mese — sempre gli stessi domini, così il cambiamento da un
-> mese all'altro diventa misurabile.
+> **Quanto spesso passiamo:** misuriamo circa **10.700 fonti (domini) al
+> mese** — una parte a rotazione del quadro di ~30.000 fonti (ognuna di
+> queste al massimo una volta a trimestre) più una piccola parte fissa che
+> rivisitiamo di proposito ogni mese — sempre le stesse fonti, così il
+> cambiamento da un mese all'altro diventa misurabile.
 
 Un radar dei file di AI discovery sul web pubblico: quali route esistono
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), quanto sono diffuse e se sono
 davvero scaricabili. Ogni segnale è una misurazione, non un'opinione. La
 tabella sotto mostra la **base di agosto 2026**: un panel stratificato di
-1.000 domini, misurato una volta. Da **settembre 2026** il panel viene
-misurato ogni mese, e ogni dominio del campione più ampio una volta a
+1.000 fonti, misurato una volta. Da **settembre 2026** il panel viene
+misurato ogni mese, e ogni fonte del campione più ampio una volta a
 trimestre. Insieme al primo rapporto mensile di settembre verrà pubblicata
 anche una **retrospettiva di 14 mesi** sulla diffusione delle direttive AI
 (giugno 2025 – luglio 2026).

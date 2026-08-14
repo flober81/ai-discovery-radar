@@ -5,18 +5,18 @@
 > **Diese Kennung in Ihren Protokollen gefunden?** Sie können sich mit einer
 > einzigen Zeile austragen — siehe [Austragung](#austragung). Kein Konto, kein
 > Kontakt, keine Begründung nötig.
-> **Wie oft wir vorbeikommen:** Gemessen werden rund **10.700 Domains pro
-> Monat** — ein rotierender Teil des ~30.000er-Rahmens (jede dieser Domains
-> höchstens einmal pro Quartal) plus ein kleiner fester Teil, den wir bewusst
-> jeden Monat erneut besuchen — immer dieselben Domains, damit Veränderung
-> von Monat zu Monat messbar wird.
+> **Wie oft wir vorbeikommen:** Gemessen werden rund **10.700 Quellen (Domains)
+> pro Monat** — ein rotierender Teil des ~30.000er-Rahmens (jede dieser
+> Quellen höchstens einmal pro Quartal) plus ein kleiner fester Teil, den wir
+> bewusst jeden Monat erneut besuchen — immer dieselben Quellen, damit
+> Veränderung von Monat zu Monat messbar wird.
 
 Ein Radar der KI-Discovery-Dateien im öffentlichen Web: welche Routen es gibt
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), wie weit sie verbreitet sind
 und ob sie sich überhaupt abrufen lassen. Jeder Ausschlag ist eine Messung,
 keine Meinung. Die Tabelle unten zeigt die **August-2026-Basislinie**: ein
-geschichtetes Panel von 1.000 Domains, einmal gemessen. Ab **September 2026**
-wird das Panel monatlich gemessen, jede Domain der größeren Stichprobe einmal
+geschichtetes Panel von 1.000 Quellen, einmal gemessen. Ab **September 2026**
+wird das Panel monatlich gemessen, jede Quelle der größeren Stichprobe einmal
 pro Quartal. Mit dem ersten Monatsbericht im September erscheint zusätzlich
 ein **14-Monats-Rückblick** zur Verbreitung von KI-Direktiven
 (Juni 2025 – Juli 2026).
