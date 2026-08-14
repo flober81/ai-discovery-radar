@@ -19,7 +19,8 @@ tabella sotto mostra la **base di agosto 2026**: un panel stratificato di
 misurato ogni mese, e ogni fonte del campione più ampio una volta a
 trimestre. Insieme al primo rapporto mensile di settembre verrà pubblicata
 anche una **retrospettiva di 14 mesi** sulla diffusione delle direttive AI
-(giugno 2025 – luglio 2026).
+(giugno 2025 – luglio 2026), basata su oltre **270.000 file robots.txt
+analizzati**.
 
 ## Il radar
 

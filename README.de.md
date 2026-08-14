@@ -19,7 +19,8 @@ geschichtetes Panel von 1.000 Quellen, einmal gemessen. Ab **September 2026**
 wird das Panel monatlich gemessen, jede Quelle der größeren Stichprobe einmal
 pro Quartal. Mit dem ersten Monatsbericht im September erscheint zusätzlich
 ein **14-Monats-Rückblick** zur Verbreitung von KI-Direktiven
-(Juni 2025 – Juli 2026).
+(Juni 2025 – Juli 2026), auf Basis von über **270.000 ausgewerteten
+robots.txt-Dateien**.
 
 ## Das Radar
 

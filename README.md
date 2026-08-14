@@ -17,7 +17,8 @@ The table below shows the **August 2026 baseline**: a stratified panel of
 1,000 sources, measured once. From **September 2026** the panel is measured
 monthly, and every source in the wider sample once per quarter. Alongside
 the first monthly report in September, a **14-month review** of AI directive
-adoption (June 2025 – July 2026) will be published.
+adoption (June 2025 – July 2026) will be published, based on more than
+**270,000 evaluated robots.txt files**.
 
 ## The radar
 
