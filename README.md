@@ -4,13 +4,18 @@
 
 > **Found this in your server logs?** You can opt out in one line — see
 > [Opt out](#opt-out) below. No account, no contact, no reason required.
+> **How often we visit:** we measure about **10,700 domains per month** — a
+> rotating share of the ~30,000-domain frame (each of those at most once per
+> quarter) plus a fixed comparison panel of 1,000 domains that returns monthly.
 
 A radar of the AI discovery files on the public web: which routes exist
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), how widely they are used, and
 whether they can be fetched at all. Every blip is a measurement, not an opinion.
 The table below shows the **August 2026 baseline**: a stratified panel of
 1,000 domains, measured once. From **September 2026** the panel is measured
-monthly, and every domain in the wider sample once per quarter.
+monthly, and every domain in the wider sample once per quarter. Alongside
+the first monthly report in September, a **14-month review** of AI directive
+adoption (June 2025 – July 2026) will be published.
 
 ## The radar
 

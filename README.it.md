@@ -5,6 +5,10 @@
 > **Trovato questo identificativo nei log del vostro server?** Potete escludervi
 > con una sola riga — vedi [Come escludersi](#come-escludersi). Nessun account,
 > nessun contatto, nessuna motivazione richiesta.
+> **Quanto spesso passiamo:** misuriamo circa **10.700 domini al mese** — una
+> parte a rotazione del quadro di ~30.000 domini (ognuno di questi al massimo
+> una volta a trimestre) più un panel fisso di confronto di 1.000 domini che
+> ritorna ogni mese.
 
 Un radar dei file di AI discovery sul web pubblico: quali route esistono
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), quanto sono diffuse e se sono
@@ -12,7 +16,9 @@ davvero scaricabili. Ogni segnale è una misurazione, non un'opinione. La
 tabella sotto mostra la **base di agosto 2026**: un panel stratificato di
 1.000 domini, misurato una volta. Da **settembre 2026** il panel viene
 misurato ogni mese, e ogni dominio del campione più ampio una volta a
-trimestre.
+trimestre. Insieme al primo rapporto mensile di settembre verrà pubblicata
+anche una **retrospettiva di 14 mesi** sulla diffusione delle direttive AI
+(giugno 2025 – luglio 2026).
 
 ## Il radar
 
