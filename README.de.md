@@ -95,6 +95,14 @@ Repository als Absender und arbeitet langsam und sparsam. Gemessen werden
 ausschließlich öffentliche, für Maschinen bestimmte Konfigurationsdateien —
 keine Inhalte.
 
+## Wer dahintersteht
+
+Betrieben wird das Radar von **Berger+Team**, einem Freelancer-Kollektiv aus
+Südtirol, neben der Arbeit an [btlabs Core](https://btlabs.dev/de). Die Messung
+gibt es, weil diese Arbeit Zahlen braucht statt Annahmen: welche Discovery-Wege
+tatsächlich genutzt werden und über welche nur geredet wird. Veröffentlicht wird,
+was gemessen wurde — auch die Wege, die bei null herauskamen.
+
 ## Austragung
 
 Keine Rückfragen, keine Begründung nötig. Ein Weg genügt:

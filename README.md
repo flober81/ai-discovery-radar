@@ -90,6 +90,15 @@ The measurement obeys your `robots.txt`, identifies itself honestly with this
 repository as the sender, and works slowly and sparingly. Only public
 configuration files meant for machines are fetched — no page content.
 
+## Who runs this
+
+The radar is operated by **Berger+Team**, a freelancer collective in South
+Tyrol, Italy, alongside its work on [btlabs Core](https://btlabs.dev/en). The
+measurement exists because that work needs numbers instead of assumptions:
+which discovery routes are actually in use, and which are merely being
+discussed. What is published here is what was measured — including the routes
+that came back at zero.
+
 ## Opt out
 
 No questions asked, no reason needed. Any one of these is enough:

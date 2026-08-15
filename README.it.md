@@ -94,6 +94,14 @@ indicando questo repository come mittente e procede lentamente e con parsimonia.
 Vengono richiesti soltanto file di configurazione pubblici destinati alle
 macchine — nessun contenuto delle pagine.
 
+## Chi c'è dietro
+
+Il radar è gestito da **Berger+Team**, un collettivo di freelance altoatesino,
+accanto al lavoro su [btlabs Core](https://btlabs.dev/it). La misurazione nasce
+perché quel lavoro ha bisogno di numeri anziché di supposizioni: quali percorsi
+di discovery vengono davvero usati e di quali si parla soltanto. Viene
+pubblicato ciò che è stato misurato — comprese le rotte risultate a zero.
+
 ## Come escludersi
 
 Nessuna domanda, nessuna motivazione necessaria. Basta una di queste vie:
