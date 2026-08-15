@@ -5,22 +5,16 @@
 > **Diese Kennung in Ihren Protokollen gefunden?** Sie können sich mit einer
 > einzigen Zeile austragen — siehe [Austragung](#austragung). Kein Konto, kein
 > Kontakt, keine Begründung nötig.
-> **Wie oft wir vorbeikommen:** Gemessen werden rund **10.700 Quellen (Domains)
-> pro Monat** — ein rotierender Teil des ~30.000er-Rahmens (jede dieser
-> Quellen höchstens einmal pro Quartal) plus ein kleiner fester Teil, den wir
-> bewusst jeden Monat erneut besuchen — immer dieselben Quellen, damit
-> Veränderung von Monat zu Monat messbar wird.
+>
+> **Wie oft wir vorbeikommen:** rund **10.700 Quellen (Domains) pro Monat** —
+> ein rotierender Teil des ~30.000er-Rahmens, jede dieser Quellen höchstens
+> einmal pro Quartal, dazu ein kleiner fester Teil, den wir jeden Monat erneut
+> besuchen, damit Veränderung von Monat zu Monat messbar wird.
 
 Ein Radar der KI-Discovery-Dateien im öffentlichen Web: welche Routen es gibt
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), wie weit sie verbreitet sind
 und ob sie sich überhaupt abrufen lassen. Jeder Ausschlag ist eine Messung,
-keine Meinung. Die Tabelle unten zeigt die **August-2026-Basislinie**: ein
-geschichtetes Panel von 1.000 Quellen, einmal gemessen. Ab **September 2026**
-wird das Panel monatlich gemessen, jede Quelle der größeren Stichprobe einmal
-pro Quartal. Mit dem ersten Monatsbericht im September erscheint zusätzlich
-ein **14-Monats-Rückblick** zur Verbreitung von KI-Direktiven
-(Juni 2025 – Juli 2026), auf Basis von über **270.000 ausgewerteten
-robots.txt-Dateien**.
+keine Meinung.
 
 ## Das Radar
 
@@ -75,18 +69,19 @@ vergleichbar.**
 Noch kein Vorlauf zum Vergleich vorhanden.
 
 <!-- RADAR:END -->
-Diese Tabelle ist die vollständige Liste der Routen, die wir regulär abfragen.
-Eine Ergänzung: Verweisen Dateien Ihrer eigenen Domain auf eine weitere Datei
-dort (etwa ein Link in Ihrer `robots.txt`), rufen wir diese verwiesene Datei
-gegebenenfalls einmal ab — höchstens ein solcher Folge-Abruf je Domain und
-Lauf, unter denselben `robots.txt`-Regeln. Zusätzlich fragen wir je Domain
-drei DNS-Namenseinträge ab (`_agent`, `_mcp`, `_index._agents`) — reine
-Namensauflösung, die Ihren Webserver nie berührt.
-Eine Route steht in der Tabelle, wenn sie
-einen benennbaren Herausgeber hat oder ein dokumentierter Konsument sie liest —
-nicht, weil sie irgendwo als Format herumgereicht wird. Der Herausgeber steht
-in der Tabelle, damit jede Zeile selbst nachprüfbar ist. Der Zweck sagt, was
-die Datei an einem Server tut — er beschreibt sie, er bewertet sie nicht.
+**Was wir abfragen.** Die Tabelle oben ist die vollständige Liste der Routen,
+die wir regulär abfragen. Zwei Ergänzungen: Verweisen Dateien Ihrer eigenen
+Domain auf eine weitere Datei dort — etwa ein Link in Ihrer `robots.txt` —,
+rufen wir diese verwiesene Datei gegebenenfalls einmal ab, höchstens einen
+solchen Folge-Abruf je Domain und Lauf, unter denselben `robots.txt`-Regeln.
+Und wir fragen je Domain drei DNS-Namenseinträge ab (`_agent`, `_mcp`,
+`_index._agents`): reine Namensauflösung, die Ihren Webserver nie berührt.
+
+**Wie eine Route in die Tabelle kommt.** Sie braucht einen benennbaren
+Herausgeber oder einen dokumentierten Konsumenten, der sie liest — nicht bloß
+ein Format, das irgendwo herumgereicht wird. Der Herausgeber steht in der
+Tabelle, damit jede Zeile für sich nachprüfbar ist. Der Zweck sagt, was die
+Datei an einem Server tut — er beschreibt sie, er bewertet sie nicht.
 
 ## Wie gemessen wird
 
@@ -94,6 +89,13 @@ Die Messung respektiert die `robots.txt`, meldet sich ehrlich mit diesem
 Repository als Absender und arbeitet langsam und sparsam. Gemessen werden
 ausschließlich öffentliche, für Maschinen bestimmte Konfigurationsdateien —
 keine Inhalte.
+
+Die Zahlen oben sind die **August-2026-Basislinie**: ein geschichtetes Panel
+von 1.000 Quellen, einmal gemessen. Ab **September 2026** wird das Panel
+monatlich gemessen, jede Quelle der größeren Stichprobe einmal pro Quartal.
+Mit dem ersten Monatsbericht erscheint zusätzlich ein **14-Monats-Rückblick**
+zur Verbreitung von KI-Direktiven (Juni 2025 – Juli 2026), auf Basis von über
+**270.000 ausgewerteten robots.txt-Dateien**.
 
 ## Wer dahintersteht
 

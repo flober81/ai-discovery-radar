@@ -5,22 +5,15 @@
 > **Trovato questo identificativo nei log del vostro server?** Potete escludervi
 > con una sola riga — vedi [Come escludersi](#come-escludersi). Nessun account,
 > nessun contatto, nessuna motivazione richiesta.
-> **Quanto spesso passiamo:** misuriamo circa **10.700 fonti (domini) al
-> mese** — una parte a rotazione del quadro di ~30.000 fonti (ognuna di
-> queste al massimo una volta a trimestre) più una piccola parte fissa che
-> rivisitiamo di proposito ogni mese — sempre le stesse fonti, così il
-> cambiamento da un mese all'altro diventa misurabile.
+>
+> **Quanto spesso passiamo:** circa **10.700 fonti (domini) al mese** — una
+> parte a rotazione del quadro di ~30.000 fonti, ognuna di queste al massimo
+> una volta a trimestre, più una piccola parte fissa che rivisitiamo ogni mese,
+> così il cambiamento da un mese all'altro diventa misurabile.
 
 Un radar dei file di AI discovery sul web pubblico: quali route esistono
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), quanto sono diffuse e se sono
-davvero scaricabili. Ogni segnale è una misurazione, non un'opinione. La
-tabella sotto mostra la **base di agosto 2026**: un panel stratificato di
-1.000 fonti, misurato una volta. Da **settembre 2026** il panel viene
-misurato ogni mese, e ogni fonte del campione più ampio una volta a
-trimestre. Insieme al primo rapporto mensile di settembre verrà pubblicata
-anche una **retrospettiva di 14 mesi** sulla diffusione delle direttive AI
-(giugno 2025 – luglio 2026), basata su oltre **270.000 file robots.txt
-analizzati**.
+davvero scaricabili. Ogni segnale è una misurazione, non un'opinione.
 
 ## Il radar
 
@@ -74,17 +67,18 @@ e le righe non sono direttamente confrontabili tra loro.**
 Non c'è ancora una misurazione precedente con cui confrontare.
 
 <!-- RADAR:END -->
-Questa tabella è l'elenco completo delle route che richiediamo regolarmente.
-Un'aggiunta: se i file del vostro stesso dominio rimandano a un altro file
-lì (per esempio un link nel vostro `robots.txt`), possiamo recuperare quel
-file una volta — al massimo un simile richiamo per dominio e per ciclo, con
-le stesse regole del `robots.txt`. Inoltre consultiamo tre record DNS per
-dominio (`_agent`, `_mcp`, `_index._agents`) — semplici interrogazioni del
-servizio dei nomi che non toccano mai il vostro server web.
-Una route entra in elenco quando ha un editore
-identificabile oppure un consumatore documentato che la legge — non perché un
-formato circoli da qualche parte. L'editore è indicato in tabella affinché ogni
-riga sia verificabile da sé. Lo scopo dice che cosa fa il file su un server: lo
+**Che cosa richiediamo.** La tabella qui sopra è l'elenco completo delle route
+che richiediamo regolarmente. Due aggiunte: se i file del vostro stesso dominio
+rimandano a un altro file lì — per esempio un link nel vostro `robots.txt` —
+possiamo recuperare quel file una volta, al massimo un richiamo del genere per
+dominio e per ciclo, con le stesse regole del `robots.txt`. E consultiamo tre
+record DNS per dominio (`_agent`, `_mcp`, `_index._agents`): semplici
+interrogazioni del servizio dei nomi, che non toccano mai il vostro server web.
+
+**Come una route entra in tabella.** Le serve un editore identificabile oppure
+un consumatore documentato che la legge — non basta che un formato circoli da
+qualche parte. L'editore è indicato in tabella affinché ogni riga sia
+verificabile da sé. Lo scopo dice che cosa fa il file su un server: lo
 descrive, non lo giudica.
 
 ## Come misuriamo
@@ -93,6 +87,13 @@ La misurazione rispetta il vostro `robots.txt`, si identifica in modo onesto
 indicando questo repository come mittente e procede lentamente e con parsimonia.
 Vengono richiesti soltanto file di configurazione pubblici destinati alle
 macchine — nessun contenuto delle pagine.
+
+I valori qui sopra sono la **base di agosto 2026**: un panel stratificato di
+1.000 fonti, misurato una volta. Da **settembre 2026** il panel viene misurato
+ogni mese, e ogni fonte del campione più ampio una volta a trimestre. Insieme
+al primo rapporto mensile verrà pubblicata anche una **retrospettiva di 14
+mesi** sulla diffusione delle direttive AI (giugno 2025 – luglio 2026), basata
+su oltre **270.000 file robots.txt analizzati**.
 
 ## Chi c'è dietro
 

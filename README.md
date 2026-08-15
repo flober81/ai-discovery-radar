@@ -4,21 +4,15 @@
 
 > **Found this in your server logs?** You can opt out in one line — see
 > [Opt out](#opt-out) below. No account, no contact, no reason required.
-> **How often we visit:** we measure about **10,700 sources (domains) per
-> month** — a rotating share of the ~30,000-source frame (each of those at
-> most once per quarter) plus a small fixed share we deliberately re-visit
-> every month — the same sources each time, so month-over-month change
-> becomes measurable.
+>
+> **How often we visit:** about **10,700 sources (domains) per month** — a
+> rotating share of the ~30,000-source frame, each of those at most once per
+> quarter, plus a small fixed share we re-visit every month, so change from one
+> month to the next becomes measurable.
 
 A radar of the AI discovery files on the public web: which routes exist
 (`robots.txt`, `llms.txt`, `ai-catalog.json`, …), how widely they are used, and
 whether they can be fetched at all. Every blip is a measurement, not an opinion.
-The table below shows the **August 2026 baseline**: a stratified panel of
-1,000 sources, measured once. From **September 2026** the panel is measured
-monthly, and every source in the wider sample once per quarter. Alongside
-the first monthly report in September, a **14-month review** of AI directive
-adoption (June 2025 – July 2026) will be published, based on more than
-**270,000 evaluated robots.txt files**.
 
 ## The radar
 
@@ -72,16 +66,18 @@ are not directly comparable with one another.**
 No previous run to compare against yet.
 
 <!-- RADAR:END -->
-This table is the complete list of routes we routinely request. One addition:
-when files on your own domain point to another file there (for example a link
-in your `robots.txt`), we may fetch that referenced file once — at most one
-such follow-up per domain and run, under the same `robots.txt` rules. We also
-look up three DNS records per domain (`_agent`, `_mcp`, `_index._agents`) —
-plain name-service lookups that never touch your web server.
-A route is listed when it has a nameable publisher or a
-documented consumer that reads it — not because some format is being passed
-around somewhere. The publisher is in the table so that every row can be checked
-on its own. The purpose says what the file does on a server; it describes the
+**What we request.** The table above is the complete list of routes we
+routinely request. Two additions: when files on your own domain point to
+another file there — a link in your `robots.txt`, say — we may fetch that
+referenced file once, at most one such follow-up per domain and run, under the
+same `robots.txt` rules. And we look up three DNS records per domain
+(`_agent`, `_mcp`, `_index._agents`): plain name-service lookups that never
+touch your web server.
+
+**How a route gets into the table.** It needs a nameable publisher or a
+documented consumer that reads it — not merely a format being passed around
+somewhere. The publisher is in the table so that every row can be checked on
+its own. The purpose says what the file does on a server; it describes the
 file, it does not judge it.
 
 ## How we measure
@@ -89,6 +85,13 @@ file, it does not judge it.
 The measurement obeys your `robots.txt`, identifies itself honestly with this
 repository as the sender, and works slowly and sparingly. Only public
 configuration files meant for machines are fetched — no page content.
+
+The figures above are the **August 2026 baseline**: a stratified panel of
+1,000 sources, measured once. From **September 2026** the panel is measured
+monthly, and every source in the wider sample once per quarter. Alongside the
+first monthly report, a **14-month review** of AI directive adoption
+(June 2025 – July 2026) will be published, based on more than **270,000
+evaluated robots.txt files**.
 
 ## Who runs this
 
