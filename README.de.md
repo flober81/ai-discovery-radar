@@ -19,49 +19,51 @@ keine Meinung.
 ## Das Radar
 
 <!-- RADAR:START -->
-_Lauf **panel-2026-08** · 853 erreichbare Hosts (853 registrierbare Domains) · Regelsatz 0.2.0_
+_Lauf **panel-2026-08** · 853 erreichbare Hosts (853 registrierbare Domains) · Regelsatz 0.3.0_
 
 | Route | Zweck | Herausgeber | n | Verbreitung | 95 % KI | Trend |
 |:--|:--|:--|--:|--:|:--|:-:|
-| `/robots.txt` | Welche Bereiche automatische Abrufer betreten dürfen | IETF | 853 | 77,02 % | 74,1–79,7 | — |
-| `/sitemap.xml` | Verzeichnis aller Adressen, die eine Website anbietet | sitemaps.org | 842 | 44,06 % | 40,7–47,4 | — |
-| `/llms.txt` | Inhaltsverzeichnis für Sprachmodelle | Answer.AI | 842 | 10,21 % | 8,3–12,4 | — |
-| `/.well-known/security.txt` | Wohin man eine Sicherheitslücke meldet | IETF | 842 | 5,46 % | 4,1–7,2 | — |
-| `/.well-known/oauth-authorization-server` | Wie die Stelle arbeitet, die Zugangsrechte vergibt | IETF | 842 | 4,16 % | 3,0–5,7 | — |
-| `/.well-known/oauth-protected-resource` | Wo ein Client seine Zugangsberechtigung holt | IETF | 842 | 3,68 % | 2,6–5,2 | — |
-| `/llms-full.txt` | Der gesamte Inhalt einer Website in einer einzigen Datei | Answer.AI | 842 | 3,68 % | 2,6–5,2 | — |
-| `/.well-known/gpc.json` | Ob die Seite dem Widerspruch gegen Datenweitergabe folgt | W3C Global Privacy Control | 842 | 2,26 % | 1,4–3,5 | — |
-| `/humans.txt` | Wer eine Website gemacht hat, für Menschen lesbar | humanstxt.org | 842 | 1,31 % | 0,7–2,3 | — |
-| `/.well-known/traffic-advice` | Ob ein Zwischenspeicher Seiten vorab laden darf | Google (Private Prefetch Proxy) | 842 | 1,07 % | 0,6–2,0 | — |
-| `/security.txt` | Wohin man eine Sicherheitslücke meldet, an der Wurzel | IETF | 842 | 0,95 % | 0,5–1,9 | — |
-| `/rsl.xml` | Zu welchen Lizenzbedingungen Inhalte genutzt werden dürfen | RSL Collective | 842 | 0,59 % | 0,3–1,4 | — |
-| `/ai.txt` | Welche Inhalte für das Training von KI gesperrt sind | Spawning | 842 | 0,36 % | 0,1–1,0 | — |
-| `/.well-known/tdmrep.json` | Ob Texte und Daten automatisch ausgewertet werden dürfen | W3C TDM Reservation Protocol CG | 842 | 0,24 % | 0,1–0,9 | — |
-| `/.well-known/api-catalog` | Verzeichnis der Schnittstellen, die eine Domain anbietet | IETF | 842 | 0,12 % | 0,0–0,7 | — |
-| `/.well-known/mcp.json` | Welche Werkzeug-Server eine Domain für KI bereitstellt | Model Context Protocol | 842 | 0,12 % | 0,0–0,7 | — |
-| `/.well-known/openid-configuration` | Wo und wie man sich bei dieser Domain anmeldet | OpenID Foundation | 842 | 0,12 % | 0,0–0,7 | — |
-| `/openapi.json` | Beschreibung einer Schnittstelle für fremde Programme | OpenAPI Initiative | 842 | 0,12 % | 0,0–0,7 | — |
-| `/.well-known/agent-card.json` | Was ein Software-Agent kann und wie man ihn anspricht | A2A Project (Linux Foundation) | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/agent.json` | Fähigkeiten eines Agenten, unter dem alten Dateinamen | A2A Project (Linux Foundation) | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/ai-catalog.json` | Was eine Domain KI-Agenten an Inhalten und Diensten bietet | AI Catalog WG (Linux Foundation), Google, Microsoft | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/ai-plugin.json` | Anleitung, damit ein Chatbot einen Dienst bedienen kann | OpenAI | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/ai.txt` | Dieselben KI-Nutzungsregeln im Sammelordner der Domain | Spawning | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/did.json` | Nachweisbare Identität einer Domain ohne zentrale Stelle | W3C | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/dnt-policy.txt` | Zusage, Besucher nicht über Seiten hinweg zu verfolgen | EFF | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/host-meta` | Verweise auf die weiteren Auskunftsstellen einer Domain | IETF | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/llms.txt` | Inhaltsverzeichnis für Sprachmodelle im Sammelordner | Answer.AI | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/mcp-server` | Wo der Werkzeug-Server einer Domain zu erreichen ist | IETF (individual draft) | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/openapi.json` | Schnittstellen-Beschreibung im Sammelordner der Domain | OpenAPI Initiative | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/openid-federation` | Zu welchem Verbund eine Stelle nachweislich gehört | OpenID Foundation | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/webfinger` | Wer hinter einer Adresse an dieser Domain steckt | IETF | 842 | 0,00 % | 0,0–0,5 | — |
-| `/.well-known/x402.json` | Preis und Bezahlweg für maschinelle Abrufe | Coinbase, Cloudflare | 842 | 0,00 % | 0,0–0,5 | — |
-| `/ai-plugin.json` | Dieselbe Anleitung für Chatbots, an der Wurzel | OpenAI | 842 | 0,00 % | 0,0–0,5 | — |
-| `/swagger.json` | Schnittstellen-Beschreibung unter dem alten Dateinamen | SmartBear (Swagger) | 842 | 0,00 % | 0,0–0,5 | — |
+| `/robots.txt` | Welche Bereiche automatische Abrufer betreten dürfen | IETF | 760 | 86,45 % | 83,8–88,7 | — |
+| `/sitemap.xml` | Verzeichnis aller Adressen, die eine Website anbietet | sitemaps.org | 680 | 54,56 % | 50,8–58,3 | — |
+| `/llms.txt` | Inhaltsverzeichnis für Sprachmodelle | Answer.AI | 662 | 12,99 % | 10,6–15,8 | — |
+| `/.well-known/security.txt` | Wohin man eine Sicherheitslücke meldet | IETF | 681 | 6,75 % | 5,1–8,9 | — |
+| `/.well-known/oauth-authorization-server` | Wie die Stelle arbeitet, die Zugangsrechte vergibt | IETF | 675 | 5,19 % | 3,8–7,1 | — |
+| `/llms-full.txt` | Der gesamte Inhalt einer Website in einer einzigen Datei | Answer.AI | 665 | 4,66 % | 3,3–6,5 | — |
+| `/.well-known/oauth-protected-resource` | Wo ein Client seine Zugangsberechtigung holt | IETF | 676 | 4,59 % | 3,2–6,4 | — |
+| `/.well-known/gpc.json` | Ob die Seite dem Widerspruch gegen Datenweitergabe folgt | W3C Global Privacy Control | 677 | 2,81 % | 1,8–4,3 | — |
+| `/humans.txt` | Wer eine Website gemacht hat, für Menschen lesbar | humanstxt.org | 662 | 1,66 % | 0,9–3,0 | — |
+| `/.well-known/traffic-advice` | Ob ein Zwischenspeicher Seiten vorab laden darf | Google (Private Prefetch Proxy) | 673 | 1,34 % | 0,7–2,5 | — |
+| `/security.txt` | Wohin man eine Sicherheitslücke meldet, an der Wurzel | IETF | 696 | 1,15 % | 0,6–2,3 | — |
+| `/rsl.xml` | Zu welchen Lizenzbedingungen Inhalte genutzt werden dürfen | RSL Collective | 640 | 0,78 % | 0,3–1,8 | — |
+| `/ai.txt` | Welche Inhalte für das Training von KI gesperrt sind | Spawning | 667 | 0,45 % | 0,2–1,3 | — |
+| `/.well-known/tdmrep.json` | Ob Texte und Daten automatisch ausgewertet werden dürfen | W3C TDM Reservation Protocol CG | 678 | 0,29 % | 0,1–1,1 | — |
+| `/.well-known/api-catalog` | Verzeichnis der Schnittstellen, die eine Domain anbietet | IETF | 678 | 0,15 % | 0,0–0,8 | — |
+| `/.well-known/mcp.json` | Welche Werkzeug-Server eine Domain für KI bereitstellt | Model Context Protocol | 674 | 0,15 % | 0,0–0,8 | — |
+| `/.well-known/openid-configuration` | Wo und wie man sich bei dieser Domain anmeldet | OpenID Foundation | 674 | 0,15 % | 0,0–0,8 | — |
+| `/openapi.json` | Beschreibung einer Schnittstelle für fremde Programme | OpenAPI Initiative | 650 | 0,15 % | 0,0–0,9 | — |
+| `/.well-known/agent-card.json` | Was ein Software-Agent kann und wie man ihn anspricht | A2A Project (Linux Foundation) | 672 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/agent.json` | Fähigkeiten eines Agenten, unter dem alten Dateinamen | A2A Project (Linux Foundation) | 672 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/ai-catalog.json` | Was eine Domain KI-Agenten an Inhalten und Diensten bietet | AI Catalog WG (Linux Foundation), Google, Microsoft | 671 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/ai-plugin.json` | Anleitung, damit ein Chatbot einen Dienst bedienen kann | OpenAI | 656 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/ai.txt` | Dieselben KI-Nutzungsregeln im Sammelordner der Domain | Spawning | 661 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/did.json` | Nachweisbare Identität einer Domain ohne zentrale Stelle | W3C | 672 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/dnt-policy.txt` | Zusage, Besucher nicht über Seiten hinweg zu verfolgen | EFF | 678 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/host-meta` | Verweise auf die weiteren Auskunftsstellen einer Domain | IETF | 670 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/llms.txt` | Inhaltsverzeichnis für Sprachmodelle im Sammelordner | Answer.AI | 658 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/mcp-server` | Wo der Werkzeug-Server einer Domain zu erreichen ist | IETF (individual draft) | 673 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/openapi.json` | Schnittstellen-Beschreibung im Sammelordner der Domain | OpenAPI Initiative | 673 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/openid-federation` | Zu welchem Verbund eine Stelle nachweislich gehört | OpenID Foundation | 677 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/webfinger` | Wer hinter einer Adresse an dieser Domain steckt | IETF | 671 | 0,00 % | 0,0–0,6 | — |
+| `/.well-known/x402.json` | Preis und Bezahlweg für maschinelle Abrufe | Coinbase, Cloudflare | 670 | 0,00 % | 0,0–0,6 | — |
+| `/ai-plugin.json` | Dieselbe Anleitung für Chatbots, an der Wurzel | OpenAI | 641 | 0,00 % | 0,0–0,6 | — |
+| `/swagger.json` | Schnittstellen-Beschreibung unter dem alten Dateinamen | SmartBear (Swagger) | 642 | 0,00 % | 0,0–0,6 | — |
 
-Verbreitung ist der Anteil erreichbarer Hosts, die die Route ausgeliefert haben,
-mit einem 95-%-Wilson-Intervall. Jede Zahl ist eine Untergrenze aus Sicht eines
-nicht privilegierten Agenten: Eine Datei, die existiert, aber nicht abgerufen
-werden darf, zählt nicht mit.
+Verbreitung ist der Anteil der Quellen, bei denen wir wirklich nachsehen
+durften und die die Route ausgeliefert haben, mit 95-%-Wilson-Intervall.
+Quellen, die uns abgewiesen haben (Bot-Wall), den Abruf per robots.txt
+untersagen oder nicht erreichbar waren, werden gezählt und gesondert
+ausgewiesen — aber eine Nicht-Antwort ist kein „Nein" und steht deshalb
+nicht im Nenner.
 **`n` ist die Anzahl der Hosts, auf denen diese Route tatsächlich geprobt
 wurde — sie unterscheidet sich zwischen den Routen, daher hat jede Zeile
 ihren eigenen Nenner und die Zeilen sind nicht direkt miteinander
