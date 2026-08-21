@@ -70,6 +70,35 @@ ihren eigenen Nenner und die Zeilen sind nicht direkt miteinander
 vergleichbar.**
 Noch kein Vorlauf zum Vergleich vorhanden.
 
+
+
+## Unter Beobachtung (18)
+
+**Bestätigt** — registriert (IANA) oder RFC, im Feld noch kaum zu sehen:
+
+- `/.well-known/nostr.json` — Nostr Developer Community (NIP-05). Nachweis, dass ein öffentlicher Schlüssel zu einem Namen dieser Domain gehört
+- `/.well-known/vacation-rental.json` — Vacation Rental Protocol (Einzelregistrant). Entdeckungsdokument für kryptographisch signierte Buchungsangebote
+- `/.well-known/xregistry` — xRegistry Authors (CNCF Sandbox). Einstiegspunkt eines erweiterbaren Registrys für Schemata und Events
+- `/.well-known/host-meta.json` — IETF. JSON-Zwilling der host-meta-Verweise
+
+**Im Entstehen** — Feldsignale oder Entwürfe, noch ohne Registrierung:
+
+- `/.well-known/atproto-did` — AT Protocol (Bluesky). Löst ein Domain-Handle auf eine dezentrale Identität auf
+- `/mcp.json` — Anthropic u. a. (MCP); die WURZEL-Variante ist nicht spezifiziert. Maschinenlesbare Liste der MCP-Endpunkte einer Site, an der Wurzel
+- `/server-card.json` — kursierende Agenten-Spec ohne benennbaren Herausgeber. Vorgeschlagene Selbstbeschreibungs-Karte für Agenten-Server
+- `/product.xml` — kein Herausgeber — Commerce-Konvention im Entstehen. Produktlisten, die Shops für maschinelle Leser verlinken
+- `/.well-known/jwt-vc-issuer` — IETF (OAuth-Arbeitsgruppe, Entwurfsstadium). Wo ein Prüfer die Schlüssel eines Ausstellers verifizierbarer Nachweise findet
+- `/.well-known/ai` — IETF-Entwurf (AI Discovery Endpoint). Vorgeschlagene maschinenlesbare Fähigkeits-Beschreibung für KI-Agenten
+- `_agent (DNS-TXT, keine HTTP-Route)` — IETF-Entwurf (Agent Identity and Discovery, AID). DNS-Eintrag, der Agenten-Identitäts-Entdeckung vorschlägt
+- `Content-Usage (robots-Direktive + HTTP-Header, kein Pfad)` — IETF-AIPREF-Arbeitsgruppe (draft-ietf-aipref-attach, WG-adopted, Standards-Track). Direktive, die sagt, was KI mit den Inhalten tun darf
+- `Schemamap (robots-Direktive; Ziel-URL frei, konventionell auch /schema.txt)` — SCHEMA.TXT (Spezifikation auf GitHub) — ausgerollt u. a. durch Yoast (Schema-Aggregator-Endpunkt). Direktive, die Maschinen auf die Schema-Karte einer Site verweist
+- `/.well-known/did-configuration.json` — Decentralized Identity Foundation (DIF). Nachweis, der eine Domain mit dezentralen Identitäten verknüpft
+- `_apertoid (DNS-TXT, keine HTTP-Route)` — ApertoID (Einzelanbieter). DNS-Eintrag eines entstehenden Offene-Identität-Vorschlags
+- `_x402 (DNS-TXT) + /.well-known/x402` — Individual-Draft (W. Hawkins) zum Coinbase/Cloudflare-x402. DNS- und Web-Entdeckung von x402-Zahlungs-Endpunkten
+- `_agents / AIDISCA+AIINDEX (neue DNS-RR-Typen)` — Verisign (Individual-Draft, institutionell gewichtig). Vorgeschlagene DNS-Eintragstypen für Agenten-Entdeckung
+- `Link rel=client-ranges (HTTP-Link-Header)` — Individual-Draft (Google-/Ericsson-Autoren). Kopfzeile, die Clients auf deklarierte IP-Bereiche verweist
+
+_Beobachtet heißt beobachtet — nichts davon wird oben gemessen oder gezählt. Jeder Eintrag trägt im Lab sein Beförderungs-Kriterium._
 <!-- RADAR:END -->
 **Was wir abfragen.** Die Tabelle oben ist die vollständige Liste der Routen,
 die wir regulär abfragen. Zwei Ergänzungen: Verweisen Dateien Ihrer eigenen
