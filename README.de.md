@@ -19,7 +19,7 @@ keine Meinung.
 ## Das Radar
 
 <!-- RADAR:START -->
-_Lauf **panel-2026-08** · 853 erreichbare Hosts (853 registrierbare Domains) · Regelsatz 0.3.0_
+_Lauf **panel-2026-08** · 853 erreichbare Hosts (853 registrierbare Domains) · Regelsatz 0.3.1_
 
 | Route | Zweck | Herausgeber | n | Verbreitung | 95 % KI | Trend |
 |:--|:--|:--|--:|--:|:--|:-:|

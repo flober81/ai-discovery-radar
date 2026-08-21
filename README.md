@@ -17,7 +17,7 @@ whether they can be fetched at all. Every blip is a measurement, not an opinion.
 ## The radar
 
 <!-- RADAR:START -->
-_Run **panel-2026-08** · 853 reachable hosts (853 registrable domains) · ruleset 0.3.0_
+_Run **panel-2026-08** · 853 reachable hosts (853 registrable domains) · ruleset 0.3.1_
 
 | Route | Purpose | Publisher | n | Adoption | 95% CI | Trend |
 |:--|:--|:--|--:|--:|:--|:-:|

@@ -18,7 +18,7 @@ davvero scaricabili. Ogni segnale è una misurazione, non un'opinione.
 ## Il radar
 
 <!-- RADAR:START -->
-_Misurazione **panel-2026-08** · 853 host raggiungibili (853 domini registrabili) · regole 0.3.0_
+_Misurazione **panel-2026-08** · 853 host raggiungibili (853 domini registrabili) · regole 0.3.1_
 
 | Route | Scopo | Editore | n | Diffusione | IC 95 % | Tendenza |
 |:--|:--|:--|--:|--:|:--|:-:|
