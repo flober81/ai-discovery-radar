@@ -69,7 +69,7 @@ Non c'è ancora una misurazione precedente con cui confrontare.
 
 
 
-## Sotto osservazione (18)
+## Sotto osservazione (19)
 
 **Confermate** — registrate (IANA) o RFC, quasi assenti sul campo:
 
@@ -84,6 +84,7 @@ Non c'è ancora una misurazione precedente con cui confrontare.
 - `/mcp.json` — Anthropic u. a. (MCP); die WURZEL-Variante ist nicht spezifiziert. L'elenco leggibile dalle macchine degli endpoint MCP, alla radice
 - `/server-card.json` — kursierende Agenten-Spec ohne benennbaren Herausgeber. Una proposta di scheda descrittiva per server rivolti agli agenti
 - `/product.xml` — kein Herausgeber — Commerce-Konvention im Entstehen. Elenchi di prodotti che i negozi collegano per i lettori automatici
+- `Signposting (Link-Header: describedby/cite-as/linkset)` — FAIR Signposting Profile (Wissenschafts-Repositorien-Community). Rimandi leggibili dalle macchine dalle pagine scientifiche ai loro metadati e testi integrali
 - `/.well-known/jwt-vc-issuer` — IETF (OAuth-Arbeitsgruppe, Entwurfsstadium). Dove un verificatore trova le chiavi di un emittente di credenziali verificabili
 - `/.well-known/ai` — IETF-Entwurf (AI Discovery Endpoint). Una proposta di descrizione leggibile dalle macchine per agenti IA
 - `_agent (DNS-TXT, keine HTTP-Route)` — IETF-Entwurf (Agent Identity and Discovery, AID). Un record DNS che propone la scoperta dell'identità degli agenti
