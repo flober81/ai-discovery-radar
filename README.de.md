@@ -72,7 +72,7 @@ Noch kein Vorlauf zum Vergleich vorhanden.
 
 
 
-## Unter Beobachtung (19)
+## Unter Beobachtung (18)
 
 **Bestätigt** — registriert (IANA) oder RFC, im Feld noch kaum zu sehen:
 
@@ -84,7 +84,6 @@ Noch kein Vorlauf zum Vergleich vorhanden.
 **Im Entstehen** — Feldsignale oder Entwürfe, noch ohne Registrierung:
 
 - `/.well-known/atproto-did` — AT Protocol (Bluesky). Löst ein Domain-Handle auf eine dezentrale Identität auf
-- `/mcp.json` — Anthropic u. a. (MCP); die WURZEL-Variante ist nicht spezifiziert. Maschinenlesbare Liste der MCP-Endpunkte einer Site, an der Wurzel
 - `/server-card.json` — kursierende Agenten-Spec ohne benennbaren Herausgeber. Vorgeschlagene Selbstbeschreibungs-Karte für Agenten-Server
 - `/product.xml` — kein Herausgeber — Commerce-Konvention im Entstehen. Produktlisten, die Shops für maschinelle Leser verlinken
 - `Signposting (Link-Header: describedby/cite-as/linkset)` — FAIR Signposting Profile (Wissenschafts-Repositorien-Community). Maschinenlesbare Verweise wissenschaftlicher Seiten auf ihre Metadaten und Volltexte

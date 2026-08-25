@@ -68,7 +68,7 @@ No previous run to compare against yet.
 
 
 
-## Under observation (19)
+## Under observation (18)
 
 **Confirmed** — registered (IANA) or RFC, barely seen in the field yet:
 
@@ -80,7 +80,6 @@ No previous run to compare against yet.
 **Emerging** — field signals or drafts, no registration yet:
 
 - `/.well-known/atproto-did` — AT Protocol (Bluesky). Resolves a domain handle to a decentralized identity
-- `/mcp.json` — Anthropic u. a. (MCP); die WURZEL-Variante ist nicht spezifiziert. A machine-readable list of a site's MCP endpoints, at the root
 - `/server-card.json` — kursierende Agenten-Spec ohne benennbaren Herausgeber. A proposed self-description card for agent-facing servers
 - `/product.xml` — kein Herausgeber — Commerce-Konvention im Entstehen. Product listings that shops link for machine readers
 - `Signposting (Link-Header: describedby/cite-as/linkset)` — FAIR Signposting Profile (Wissenschafts-Repositorien-Community). Machine-readable pointers from scholarly pages to their metadata and full texts

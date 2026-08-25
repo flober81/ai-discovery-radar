@@ -69,7 +69,7 @@ Non c'è ancora una misurazione precedente con cui confrontare.
 
 
 
-## Sotto osservazione (19)
+## Sotto osservazione (18)
 
 **Confermate** — registrate (IANA) o RFC, quasi assenti sul campo:
 
@@ -81,7 +81,6 @@ Non c'è ancora una misurazione precedente con cui confrontare.
 **In formazione** — segnali dal campo o bozze, senza registrazione:
 
 - `/.well-known/atproto-did` — AT Protocol (Bluesky). Risolve un handle di dominio in un'identità decentralizzata
-- `/mcp.json` — Anthropic u. a. (MCP); die WURZEL-Variante ist nicht spezifiziert. L'elenco leggibile dalle macchine degli endpoint MCP, alla radice
 - `/server-card.json` — kursierende Agenten-Spec ohne benennbaren Herausgeber. Una proposta di scheda descrittiva per server rivolti agli agenti
 - `/product.xml` — kein Herausgeber — Commerce-Konvention im Entstehen. Elenchi di prodotti che i negozi collegano per i lettori automatici
 - `Signposting (Link-Header: describedby/cite-as/linkset)` — FAIR Signposting Profile (Wissenschafts-Repositorien-Community). Rimandi leggibili dalle macchine dalle pagine scientifiche ai loro metadati e testi integrali
