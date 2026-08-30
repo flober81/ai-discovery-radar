@@ -2,7 +2,8 @@
   "title": "AI Discovery Radar — adoption measurements for machine-readable discovery and consent routes",
   "upload_type": "dataset",
   "creators": [
-    { "name": "Berger+Team di Florian Berger", "affiliation": "Bolzano/Bozen, Italy" }
+    { "name": "Berger+Team di Florian Berger", "affiliation": "Bolzano/Bozen, Italy" },
+    { "name": "Berger, Florian", "affiliation": "Berger+Team, Bolzano/Bozen, Italy" }
   ],
   "license": "cc-by-4.0",
   "description": "Monthly measurements of how many websites in a frozen, stratified sample (Tranco + Chrome UX Report country lists) publish machine-readable discovery and consent files (robots.txt, llms.txt, TDMRep, agent-card.json and others). Shares over observed hosts only, Wilson 95% intervals; full ruleset with version history in RULESET.md. Data files carry run identifier and ruleset version; numbers across ruleset versions are not comparable.",
