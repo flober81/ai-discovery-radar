@@ -1,0 +1,393 @@
+{
+ "run": "panel-2026-08",
+ "ruleset": "0.3.1",
+ "measurement_window": {
+  "started": "2026-08-14T19:30:22.052Z",
+  "cadence": "hourly drip until the queue is empty"
+ },
+ "reachable_hosts": 853,
+ "registrable_orgs": 853,
+ "sample_frame": {
+  "tranco_list_id": "645KX",
+  "tranco_date": "2026-08-11",
+  "crux_month": "202607"
+ },
+ "license": "CC-BY-4.0 (see LICENSE-DATA)",
+ "method": "see RULESET.md for the full measurement ruleset, including this ruleset version",
+ "routes": [
+  {
+   "route": "/robots.txt",
+   "tier": 1,
+   "purpose": "Which parts of a site automated clients may enter",
+   "publisher": "IETF",
+   "n": 760,
+   "count": 657,
+   "adoption_share": 0.8645,
+   "ci_low": 0.838,
+   "ci_high": 0.887
+  },
+  {
+   "route": "/sitemap.xml",
+   "tier": 1,
+   "purpose": "An index of every address a website offers",
+   "publisher": "sitemaps.org",
+   "n": 680,
+   "count": 371,
+   "adoption_share": 0.5456,
+   "ci_low": 0.508,
+   "ci_high": 0.583
+  },
+  {
+   "route": "/llms.txt",
+   "tier": 3,
+   "purpose": "A table of contents for language models",
+   "publisher": "Answer.AI",
+   "n": 662,
+   "count": 86,
+   "adoption_share": 0.1299,
+   "ci_low": 0.106,
+   "ci_high": 0.158
+  },
+  {
+   "route": "/.well-known/security.txt",
+   "tier": 1,
+   "purpose": "Where to report a security vulnerability",
+   "publisher": "IETF",
+   "n": 681,
+   "count": 46,
+   "adoption_share": 0.0675,
+   "ci_low": 0.051,
+   "ci_high": 0.089
+  },
+  {
+   "route": "/.well-known/oauth-authorization-server",
+   "tier": 1,
+   "purpose": "How the service that grants access rights works",
+   "publisher": "IETF",
+   "n": 675,
+   "count": 35,
+   "adoption_share": 0.0519,
+   "ci_low": 0.038,
+   "ci_high": 0.071
+  },
+  {
+   "route": "/llms-full.txt",
+   "tier": 3,
+   "purpose": "A whole website's content in a single file",
+   "publisher": "Answer.AI",
+   "n": 665,
+   "count": 31,
+   "adoption_share": 0.0466,
+   "ci_low": 0.033,
+   "ci_high": 0.065
+  },
+  {
+   "route": "/.well-known/oauth-protected-resource",
+   "tier": 1,
+   "purpose": "Where a client obtains authorization for access",
+   "publisher": "IETF",
+   "n": 676,
+   "count": 31,
+   "adoption_share": 0.0459,
+   "ci_low": 0.032,
+   "ci_high": 0.064
+  },
+  {
+   "route": "/.well-known/gpc.json",
+   "tier": 1,
+   "purpose": "Whether the site honors the data-sharing opt-out",
+   "publisher": "W3C Global Privacy Control",
+   "n": 677,
+   "count": 19,
+   "adoption_share": 0.0281,
+   "ci_low": 0.018,
+   "ci_high": 0.043
+  },
+  {
+   "route": "/humans.txt",
+   "tier": 3,
+   "purpose": "",
+   "publisher": "",
+   "n": 662,
+   "count": 11,
+   "adoption_share": 0.0166,
+   "ci_low": 0.009,
+   "ci_high": 0.03
+  },
+  {
+   "route": "/.well-known/traffic-advice",
+   "tier": 1,
+   "purpose": "Whether a caching proxy may prefetch pages",
+   "publisher": "Google (Private Prefetch Proxy)",
+   "n": 673,
+   "count": 9,
+   "adoption_share": 0.0134,
+   "ci_low": 0.007,
+   "ci_high": 0.025
+  },
+  {
+   "route": "/security.txt",
+   "tier": 1,
+   "purpose": "Where to report a vulnerability, at the site root",
+   "publisher": "IETF",
+   "n": 696,
+   "count": 8,
+   "adoption_share": 0.0115,
+   "ci_low": 0.006,
+   "ci_high": 0.023
+  },
+  {
+   "route": "/rsl.xml",
+   "tier": 3,
+   "purpose": "The license terms under which content may be used",
+   "publisher": "RSL Collective",
+   "n": 640,
+   "count": 5,
+   "adoption_share": 0.0078,
+   "ci_low": 0.003,
+   "ci_high": 0.018
+  },
+  {
+   "route": "/ai.txt",
+   "tier": 3,
+   "purpose": "Which content is withheld from AI training",
+   "publisher": "Spawning",
+   "n": 667,
+   "count": 3,
+   "adoption_share": 0.0045,
+   "ci_low": 0.002,
+   "ci_high": 0.013
+  },
+  {
+   "route": "/.well-known/tdmrep.json",
+   "tier": 1,
+   "purpose": "Whether text and data may be mined automatically",
+   "publisher": "W3C TDM Reservation Protocol CG",
+   "n": 678,
+   "count": 2,
+   "adoption_share": 0.0029,
+   "ci_low": 0.001,
+   "ci_high": 0.011
+  },
+  {
+   "route": "/.well-known/api-catalog",
+   "tier": 1,
+   "purpose": "An index of the interfaces a domain offers",
+   "publisher": "IETF",
+   "n": 678,
+   "count": 1,
+   "adoption_share": 0.0015,
+   "ci_low": 0,
+   "ci_high": 0.008
+  },
+  {
+   "route": "/.well-known/mcp.json",
+   "tier": 2,
+   "purpose": "Which tool servers a domain provides for AI",
+   "publisher": "Model Context Protocol",
+   "n": 674,
+   "count": 1,
+   "adoption_share": 0.0015,
+   "ci_low": 0,
+   "ci_high": 0.008
+  },
+  {
+   "route": "/.well-known/openid-configuration",
+   "tier": 1,
+   "purpose": "Where and how to sign in at this domain",
+   "publisher": "OpenID Foundation",
+   "n": 674,
+   "count": 1,
+   "adoption_share": 0.0015,
+   "ci_low": 0,
+   "ci_high": 0.008
+  },
+  {
+   "route": "/openapi.json",
+   "tier": 2,
+   "purpose": "A description of an interface for other programs",
+   "publisher": "OpenAPI Initiative",
+   "n": 650,
+   "count": 1,
+   "adoption_share": 0.0015,
+   "ci_low": 0,
+   "ci_high": 0.009
+  },
+  {
+   "route": "/.well-known/agent-card.json",
+   "tier": 2,
+   "purpose": "What a software agent can do and how to address it",
+   "publisher": "A2A Project (Linux Foundation)",
+   "n": 672,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/agent.json",
+   "tier": 2,
+   "purpose": "An agent's capabilities, under the older file name",
+   "publisher": "A2A Project (Linux Foundation)",
+   "n": 672,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/ai-catalog.json",
+   "tier": 2,
+   "purpose": "What content and services a domain offers AI agents",
+   "publisher": "AI Catalog WG (Linux Foundation), Google, Microsoft",
+   "n": 671,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/ai-plugin.json",
+   "tier": 4,
+   "purpose": "Instructions for a chatbot to operate a service",
+   "publisher": "OpenAI",
+   "n": 656,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/ai.txt",
+   "tier": 3,
+   "purpose": "The same AI usage rules in the well-known folder",
+   "publisher": "Spawning",
+   "n": 661,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/did.json",
+   "tier": 2,
+   "purpose": "A domain's provable identity without a central party",
+   "publisher": "W3C",
+   "n": 672,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/dnt-policy.txt",
+   "tier": 1,
+   "purpose": "A pledge not to track visitors across sites",
+   "publisher": "EFF",
+   "n": 678,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/host-meta",
+   "tier": 1,
+   "purpose": "Pointers to a domain's other points of information",
+   "publisher": "IETF",
+   "n": 670,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/llms.txt",
+   "tier": 4,
+   "purpose": "A table of contents for language models, in well-known",
+   "publisher": "Answer.AI",
+   "n": 658,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/mcp-server",
+   "tier": 2,
+   "purpose": "Where to reach a domain's tool server",
+   "publisher": "IETF (individual draft)",
+   "n": 673,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/openapi.json",
+   "tier": 2,
+   "purpose": "An interface description in the well-known folder",
+   "publisher": "OpenAPI Initiative",
+   "n": 673,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/openid-federation",
+   "tier": 1,
+   "purpose": "Which federation a party provably belongs to",
+   "publisher": "OpenID Foundation",
+   "n": 677,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/webfinger",
+   "tier": 1,
+   "purpose": "Who is behind an address at this domain",
+   "publisher": "IETF",
+   "n": 671,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/.well-known/x402.json",
+   "tier": 2,
+   "purpose": "The price and payment route for machine requests",
+   "publisher": "Coinbase, Cloudflare",
+   "n": 670,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/ai-plugin.json",
+   "tier": 4,
+   "purpose": "The same chatbot instructions, at the site root",
+   "publisher": "OpenAI",
+   "n": 641,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  },
+  {
+   "route": "/swagger.json",
+   "tier": 3,
+   "purpose": "An interface description under the older file name",
+   "publisher": "SmartBear (Swagger)",
+   "n": 642,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006
+  }
+ ]
+}

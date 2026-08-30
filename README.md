@@ -136,7 +136,7 @@ that came back at zero.
 
 No questions asked, no reason needed. Any one of these is enough:
 
-1. Email **florian.f.berger@gmail.com** with the domain — you do not need a
+1. Email **florian@berger.team** with the domain — you do not need a
    GitHub account for this, **or**
 2. open an issue in this repository with the domain, **or**
 3. put a `Disallow` rule for our token in your `robots.txt` — this works without

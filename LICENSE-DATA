@@ -1,0 +1,28 @@
+License for the measurement data
+================================
+
+The measurement data in this repository — the `data/` directory and the
+rendered result tables in the README files — is licensed under the
+
+    Creative Commons Attribution 4.0 International (CC BY 4.0)
+    https://creativecommons.org/licenses/by/4.0/
+
+Attribution: "AI Discovery Radar, Berger+Team (Bolzano/Bozen, Italy)" with a
+link to this repository. When citing, please include the run identifier and
+ruleset version carried by each data file (e.g. "panel-2026-08, ruleset
+0.3.1") — numbers from different ruleset versions are not comparable.
+
+Scope and provenance
+--------------------
+
+- This license covers OUR aggregate measurement results only. It does not
+  relicense the underlying sample sources: the Tranco list
+  (https://tranco-list.eu/, please cite the Tranco NDSS'19 paper), the Chrome
+  UX Report top lists (© Google, CC BY 4.0) and the Majestic Million
+  (© Majestic, CC BY 3.0), which Tranco aggregates. The README section
+  "Sample attribution" carries the required notices.
+- The seed lists (which domains were sampled) are not published and not part
+  of this grant; see RULESET.md, "Why the raw data is private".
+
+Everything that is code or prose documentation remains under the MIT license
+in the LICENSE file.

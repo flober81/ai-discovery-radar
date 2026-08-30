@@ -140,7 +140,7 @@ was gemessen wurde — auch die Wege, die bei null herauskamen.
 
 Keine Rückfragen, keine Begründung nötig. Ein Weg genügt:
 
-1. E-Mail an **florian.f.berger@gmail.com** mit der Domain — dafür brauchen Sie
+1. E-Mail an **florian@berger.team** mit der Domain — dafür brauchen Sie
    kein GitHub-Konto, **oder**
 2. ein Issue in diesem Repository mit der Domain, **oder**
 3. eine `Disallow`-Regel für unsere Kennung in Ihrer `robots.txt` — das wirkt

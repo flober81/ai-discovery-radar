@@ -137,7 +137,7 @@ pubblicato ciò che è stato misurato — comprese le rotte risultate a zero.
 
 Nessuna domanda, nessuna motivazione necessaria. Basta una di queste vie:
 
-1. una e-mail a **florian.f.berger@gmail.com** con il dominio — per questa via
+1. una e-mail a **florian@berger.team** con il dominio — per questa via
    non serve un account GitHub, **oppure**
 2. una issue in questo repository con il dominio, **oppure**
 3. una regola `Disallow` per il nostro identificativo nel vostro `robots.txt` —

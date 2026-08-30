@@ -1,0 +1,33 @@
+# Citation metadata — GitHub renders this as "Cite this repository".
+cff-version: 1.2.0
+message: >-
+  If you use these measurements, please cite them as below and include the
+  run identifier and ruleset version of the data file you used (numbers from
+  different ruleset versions are not comparable). The sample frame builds on
+  the Tranco list; please also cite the Tranco paper (see references).
+type: dataset
+title: "AI Discovery Radar — adoption measurements for machine-readable discovery and consent routes"
+authors:
+  - name: "Berger+Team di Florian Berger"
+    city: "Bolzano/Bozen"
+    country: IT
+license: CC-BY-4.0
+repository-code: "https://github.com/flober81/ai-discovery-radar"
+abstract: >-
+  Monthly measurements of how many websites in a frozen, stratified sample
+  (Tranco + Chrome UX Report country lists) actually publish machine-readable
+  discovery and consent files such as robots.txt, llms.txt, TDMRep or
+  agent-card.json. Shares are reported over observed hosts only, with Wilson
+  95% intervals; the full ruleset, including its version history, is in
+  RULESET.md.
+references:
+  - type: conference-paper
+    title: "Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation"
+    authors:
+      - family-names: "Le Pochat"
+        given-names: "Victor"
+      - name: "et al."
+    year: 2019
+    conference:
+      name: "NDSS 2019"
+    url: "https://tranco-list.eu/"
