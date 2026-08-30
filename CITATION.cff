@@ -8,7 +8,7 @@ message: >-
 type: dataset
 title: "AI Discovery Radar — adoption measurements for machine-readable discovery and consent routes"
 authors:
-  - name: "Berger+Team di Florian Berger"
+  - name: "Berger+Team d. Florian Berger"
     city: "Bolzano/Bozen"
     country: IT
 doi: 10.5281/zenodo.22178282  # concept DOI — always resolves to the latest version

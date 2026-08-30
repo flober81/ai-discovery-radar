@@ -51,6 +51,13 @@ Every (domain, route) pair receives exactly one state:
   "forbidden", …) are `soft404`; whitespace-only bodies are `absent`.
 - A body served identically on ≥3 catalogued paths of the same host is a
   **catch-all** response and every such path is `soft404`.
+- **Redirects are followed** (standard fetch semantics, up to 20 hops),
+  including cross-host redirects; the final URL is recorded as provenance
+  alongside each result. All checks above apply to the **final** response —
+  a route that redirects to an HTML landing page therefore ends up as
+  `soft404`, and a route redirecting to the same document as another
+  catalogued path is caught by the alias/catch-all rules and not counted
+  twice.
 - **TDMRep** may be declared via the `tdm-reservation`/`tdm-policy` response
   header on any resource of the host; a valid header yields `present`
   (`via: header`) when no file-based judgement succeeded.
