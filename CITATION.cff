@@ -11,6 +11,7 @@ authors:
   - name: "Berger+Team di Florian Berger"
     city: "Bolzano/Bozen"
     country: IT
+doi: 10.5281/zenodo.22178282  # concept DOI — always resolves to the latest version
 license: CC-BY-4.0
 repository-code: "https://github.com/flober81/ai-discovery-radar"
 abstract: >-

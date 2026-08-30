@@ -2,6 +2,8 @@
 
 [English](README.md) · [Deutsch](README.de.md) · **Italiano**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22178282.svg)](https://doi.org/10.5281/zenodo.22178282)
+
 > **Trovato questo identificativo nei log del vostro server?** Potete escludervi
 > con una sola riga — vedi [Come escludersi](#come-escludersi). Nessun account,
 > nessun contatto, nessuna motivazione richiesta.

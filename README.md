@@ -2,6 +2,8 @@
 
 **English** · [Deutsch](README.de.md) · [Italiano](README.it.md)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22178282.svg)](https://doi.org/10.5281/zenodo.22178282)
+
 > **Found this in your server logs?** You can opt out in one line — see
 > [Opt out](#opt-out) below. No account, no contact, no reason required.
 >

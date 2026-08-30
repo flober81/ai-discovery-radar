@@ -2,6 +2,8 @@
 
 [English](README.md) · **Deutsch** · [Italiano](README.it.md)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22178282.svg)](https://doi.org/10.5281/zenodo.22178282)
+
 > **Diese Kennung in Ihren Protokollen gefunden?** Sie können sich mit einer
 > einzigen Zeile austragen — siehe [Austragung](#austragung). Kein Konto, kein
 > Kontakt, keine Begründung nötig.
