@@ -11,6 +11,13 @@ authors:
   - name: "Berger+Team d. Florian Berger"
     city: "Bolzano/Bozen"
     country: IT
+  # Die verantwortliche Person mit ORCID neben der Entitaet — so steht es im
+  # Zenodo-Record v2026.08 (Entscheidung Florian, 02.09.2026). Diese Datei ist
+  # die Vorlage jedes naechsten Releases: Was hier fehlt, verliert Zenodo dort.
+  - family-names: "Berger"
+    given-names: "Florian"
+    affiliation: "Berger+Team"
+    orcid: "https://orcid.org/0009-0008-5780-1147"
 doi: 10.5281/zenodo.22178282  # concept DOI — always resolves to the latest version
 license: CC-BY-4.0
 repository-code: "https://github.com/flober81/ai-discovery-radar"
