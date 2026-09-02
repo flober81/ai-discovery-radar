@@ -76,26 +76,26 @@ Non c'è ancora una misurazione precedente con cui confrontare.
 **Confermate** — registrate (IANA) o RFC, quasi assenti sul campo:
 
 - `/.well-known/nostr.json` — Nostr Developer Community (NIP-05). Prova che una chiave pubblica appartiene a un nome di questo dominio
-- `/.well-known/vacation-rental.json` — Vacation Rental Protocol (Einzelregistrant). Documento di scoperta per offerte di soggiorno firmate crittograficamente
+- `/.well-known/vacation-rental.json` — Vacation Rental Protocol (single registrant). Documento di scoperta per offerte di soggiorno firmate crittograficamente
 - `/.well-known/xregistry` — xRegistry Authors (CNCF Sandbox). Punto d'ingresso di un registro estensibile per schemi ed eventi
 - `/.well-known/host-meta.json` — IETF. Il gemello JSON dei rimandi host-meta
 
 **In formazione** — segnali dal campo o bozze, senza registrazione:
 
 - `/.well-known/atproto-did` — AT Protocol (Bluesky). Risolve un handle di dominio in un'identità decentralizzata
-- `/server-card.json` — kursierende Agenten-Spec ohne benennbaren Herausgeber. Una proposta di scheda descrittiva per server rivolti agli agenti
-- `/product.xml` — kein Herausgeber — Commerce-Konvention im Entstehen. Elenchi di prodotti che i negozi collegano per i lettori automatici
-- `Signposting (Link-Header: describedby/cite-as/linkset)` — FAIR Signposting Profile (Wissenschafts-Repositorien-Community). Rimandi leggibili dalle macchine dalle pagine scientifiche ai loro metadati e testi integrali
-- `/.well-known/jwt-vc-issuer` — IETF (OAuth-Arbeitsgruppe, Entwurfsstadium). Dove un verificatore trova le chiavi di un emittente di credenziali verificabili
-- `/.well-known/ai` — IETF-Entwurf (AI Discovery Endpoint). Una proposta di descrizione leggibile dalle macchine per agenti IA
-- `_agent (DNS-TXT, keine HTTP-Route)` — IETF-Entwurf (Agent Identity and Discovery, AID). Un record DNS che propone la scoperta dell'identità degli agenti
-- `Content-Usage (robots-Direktive + HTTP-Header, kein Pfad)` — IETF-AIPREF-Arbeitsgruppe (draft-ietf-aipref-attach, WG-adopted, Standards-Track). Una direttiva che dichiara cosa l'IA può fare con i contenuti
-- `Schemamap (robots-Direktive; Ziel-URL frei, konventionell auch /schema.txt)` — SCHEMA.TXT (Spezifikation auf GitHub) — ausgerollt u. a. durch Yoast (Schema-Aggregator-Endpunkt). Una direttiva che indica alle macchine la mappa degli schemi di un sito
+- `/server-card.json` — no nameable publisher (circulating agent spec). Una proposta di scheda descrittiva per server rivolti agli agenti
+- `/product.xml` — no publisher — emerging commerce convention. Elenchi di prodotti che i negozi collegano per i lettori automatici
+- `Signposting (Link header: describedby/cite-as/linkset)` — FAIR Signposting Profile (scholarly repository community). Rimandi leggibili dalle macchine dalle pagine scientifiche ai loro metadati e testi integrali
+- `/.well-known/jwt-vc-issuer` — IETF (OAuth WG, draft stage). Dove un verificatore trova le chiavi di un emittente di credenziali verificabili
+- `/.well-known/ai` — IETF draft (AI Discovery Endpoint). Una proposta di descrizione leggibile dalle macchine per agenti IA
+- `_agent (DNS TXT record, no HTTP route)` — IETF draft (Agent Identity and Discovery, AID). Un record DNS che propone la scoperta dell'identità degli agenti
+- `Content-Usage (robots.txt directive + HTTP header, no path)` — IETF AIPREF WG (draft-ietf-aipref-attach, WG-adopted, Standards Track). Una direttiva che dichiara cosa l'IA può fare con i contenuti
+- `Schemamap (robots.txt directive; target URL free, conventionally /schema.txt)` — SCHEMA.TXT (specification on GitHub). Una direttiva che indica alle macchine la mappa degli schemi di un sito
 - `/.well-known/did-configuration.json` — Decentralized Identity Foundation (DIF). Prova che collega un dominio a identificatori decentralizzati
-- `_apertoid (DNS-TXT, keine HTTP-Route)` — ApertoID (Einzelanbieter). Un record DNS di una proposta emergente di identità aperta
-- `_x402 (DNS-TXT) + /.well-known/x402` — Individual-Draft (W. Hawkins) zum Coinbase/Cloudflare-x402. Scoperta via DNS e web degli endpoint di pagamento x402
-- `_agents / AIDISCA+AIINDEX (neue DNS-RR-Typen)` — Verisign (Individual-Draft, institutionell gewichtig). Tipi di record DNS proposti per la scoperta degli agenti
-- `Link rel=client-ranges (HTTP-Link-Header)` — Individual-Draft (Google-/Ericsson-Autoren). Un'intestazione che indica ai client gli intervalli IP dichiarati
+- `_apertoid (DNS TXT record, no HTTP route)` — ApertoID (single vendor). Un record DNS di una proposta emergente di identità aperta
+- `_x402 (DNS-TXT) + /.well-known/x402` — Individual draft (W. Hawkins) for the Coinbase/Cloudflare x402. Scoperta via DNS e web degli endpoint di pagamento x402
+- `_agents / AIDISCA+AIINDEX (new DNS RR types)` — Verisign (individual draft). Tipi di record DNS proposti per la scoperta degli agenti
+- `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). Un'intestazione che indica ai client gli intervalli IP dichiarati
 
 _Osservato significa osservato: nulla di ciò è misurato o conteggiato sopra. Ogni voce ha il suo criterio di promozione nel lab._
 <!-- RADAR:END -->
