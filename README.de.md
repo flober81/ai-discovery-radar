@@ -74,7 +74,7 @@ Noch kein Vorlauf zum Vergleich vorhanden.
 
 
 
-## Unter Beobachtung (18)
+## Unter Beobachtung (21)
 
 **Bestätigt** — registriert (IANA) oder RFC, im Feld noch kaum zu sehen:
 
@@ -82,6 +82,7 @@ Noch kein Vorlauf zum Vergleich vorhanden.
 - `/.well-known/vacation-rental.json` — Vacation Rental Protocol (single registrant). Entdeckungsdokument für kryptographisch signierte Buchungsangebote
 - `/.well-known/xregistry` — xRegistry Authors (CNCF Sandbox). Einstiegspunkt eines erweiterbaren Registrys für Schemata und Events
 - `/.well-known/host-meta.json` — IETF. JSON-Zwilling der host-meta-Verweise
+- `/.well-known/open-resource-discovery` — SAP SE (Open Resource Discovery). Ein Einstiegspunkt, der die Schnittstellen und Ereignisse eines Systems zur Entdeckung auflistet
 
 **Im Entstehen** — Feldsignale oder Entwürfe, noch ohne Registrierung:
 
@@ -99,6 +100,8 @@ Noch kein Vorlauf zum Vergleich vorhanden.
 - `_x402 (DNS-TXT) + /.well-known/x402` — Individual draft (W. Hawkins) for the Coinbase/Cloudflare x402. DNS- und Web-Entdeckung von x402-Zahlungs-Endpunkten
 - `_agents / AIDISCA+AIINDEX (new DNS RR types)` — Verisign (individual draft). Vorgeschlagene DNS-Eintragstypen für Agenten-Entdeckung
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). Kopfzeile, die Clients auf deklarierte IP-Bereiche verweist
+- `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. Eine robots.txt-Zeile, die Maschinen zum KI-Ressourcenkatalog einer Site fuehrt
+- `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). robots.txt-Zeilen, die steuern, ab wann archivierte Kopien einer Site veroeffentlicht werden duerfen
 
 _Beobachtet heißt beobachtet — nichts davon wird oben gemessen oder gezählt. Jeder Eintrag trägt im Lab sein Beförderungs-Kriterium._
 <!-- RADAR:END -->

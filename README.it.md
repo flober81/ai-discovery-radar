@@ -71,7 +71,7 @@ Non c'è ancora una misurazione precedente con cui confrontare.
 
 
 
-## Sotto osservazione (18)
+## Sotto osservazione (21)
 
 **Confermate** — registrate (IANA) o RFC, quasi assenti sul campo:
 
@@ -79,6 +79,7 @@ Non c'è ancora una misurazione precedente con cui confrontare.
 - `/.well-known/vacation-rental.json` — Vacation Rental Protocol (single registrant). Documento di scoperta per offerte di soggiorno firmate crittograficamente
 - `/.well-known/xregistry` — xRegistry Authors (CNCF Sandbox). Punto d'ingresso di un registro estensibile per schemi ed eventi
 - `/.well-known/host-meta.json` — IETF. Il gemello JSON dei rimandi host-meta
+- `/.well-known/open-resource-discovery` — SAP SE (Open Resource Discovery). Un punto d'ingresso che elenca le interfacce e gli eventi che un sistema espone per la scoperta
 
 **In formazione** — segnali dal campo o bozze, senza registrazione:
 
@@ -96,6 +97,8 @@ Non c'è ancora una misurazione precedente con cui confrontare.
 - `_x402 (DNS-TXT) + /.well-known/x402` — Individual draft (W. Hawkins) for the Coinbase/Cloudflare x402. Scoperta via DNS e web degli endpoint di pagamento x402
 - `_agents / AIDISCA+AIINDEX (new DNS RR types)` — Verisign (individual draft). Tipi di record DNS proposti per la scoperta degli agenti
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). Un'intestazione che indica ai client gli intervalli IP dichiarati
+- `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. Una riga di robots.txt che indica alle macchine il catalogo di risorse IA di un sito
+- `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). Righe di robots.txt che regolano da quando le copie archiviate di un sito possono essere pubblicate
 
 _Osservato significa osservato: nulla di ciò è misurato o conteggiato sopra. Ogni voce ha il suo criterio di promozione nel lab._
 <!-- RADAR:END -->

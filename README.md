@@ -70,7 +70,7 @@ No previous run to compare against yet.
 
 
 
-## Under observation (18)
+## Under observation (21)
 
 **Confirmed** — registered (IANA) or RFC, barely seen in the field yet:
 
@@ -78,6 +78,7 @@ No previous run to compare against yet.
 - `/.well-known/vacation-rental.json` — Vacation Rental Protocol (single registrant). Discovery document for cryptographically signed stay offers
 - `/.well-known/xregistry` — xRegistry Authors (CNCF Sandbox). Entry point of an extensible registry for schemas and events
 - `/.well-known/host-meta.json` — IETF. JSON twin of the host-meta pointers
+- `/.well-known/open-resource-discovery` — SAP SE (Open Resource Discovery). An entry point listing the APIs and events a system exposes for discovery
 
 **Emerging** — field signals or drafts, no registration yet:
 
@@ -95,6 +96,8 @@ No previous run to compare against yet.
 - `_x402 (DNS-TXT) + /.well-known/x402` — Individual draft (W. Hawkins) for the Coinbase/Cloudflare x402. DNS and web discovery of x402 payment endpoints
 - `_agents / AIDISCA+AIINDEX (new DNS RR types)` — Verisign (individual draft). Proposed DNS record types for agent discovery
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). A header pointing clients to declared IP ranges
+- `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. A robots.txt line pointing machines to a site's AI resource catalog
+- `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). robots.txt lines controlling when archived copies of a site may be published
 
 _Observed means observed — none of these are measured or counted above. Each entry names its promotion criterion in the lab._
 <!-- RADAR:END -->
