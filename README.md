@@ -130,8 +130,9 @@ computed under an earlier ruleset — see the note below the table). Every sourc
 of the wider 30,000-source frame is measured once per quarter. The **14-month
 review** of AI directive adoption announced for the first monthly report is
 published: [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — eight Common Crawl
-snapshots, June 2025 to July 2026, more than **270,000 evaluated robots.txt
-files** and their response headers.
+snapshots, June 2025 to July 2026: response headers of **3.6 million pages**
+(2.7 million organisations), plus a separate scan of more than **270,000
+robots.txt files**.
 
 ## Who runs this
 

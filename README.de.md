@@ -136,8 +136,8 @@ Jede Quelle der größeren Stichprobe von 30.000 wird einmal pro Quartal
 gemessen. Der mit dem ersten Monatsbericht angekündigte **14-Monats-Rückblick**
 zur Verbreitung von KI-Direktiven liegt vor:
 [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — acht Common-Crawl-Stände, Juni 2025
-bis Juli 2026, über **270.000 ausgewertete robots.txt-Dateien** und ihre
-Antwort-Kopfzeilen.
+bis Juli 2026: Antwort-Kopfzeilen von **3,6 Millionen Seiten** (2,7 Millionen
+Organisationen), dazu ein separater Scan von über **270.000 robots.txt-Dateien**.
 
 ## Wer dahintersteht
 

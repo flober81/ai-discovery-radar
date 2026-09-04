@@ -133,8 +133,9 @@ sotto la tabella). Ogni fonte del campione più ampio di 30.000 viene misurata
 una volta a trimestre. La **retrospettiva di 14 mesi** sulla diffusione delle
 direttive AI annunciata per il primo rapporto mensile è pubblicata:
 [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — otto istantanee Common Crawl,
-giugno 2025 – luglio 2026, oltre **270.000 file robots.txt analizzati** e le
-loro intestazioni di risposta.
+giugno 2025 – luglio 2026: intestazioni di risposta di **3,6 milioni di pagine**
+(2,7 milioni di organizzazioni), più una scansione separata di oltre **270.000
+file robots.txt**.
 
 ## Chi c'è dietro
 
