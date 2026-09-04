@@ -109,6 +109,16 @@ aggregates only; the private archives are checksummed (SHA-256 manifests) and
 every published figure is reproducible from them by the verification step
 described below.
 
+## Panel and monthly run
+
+Since September 2026 one run per month measures the **panel** (1,000 fixed
+sources, measured every month) together with one rotating **block** of the
+frame (about 9,700 sources, each measured once per quarter). The published
+panel figures are computed as a **subset of that run**: the same raw archives,
+filtered to the frozen panel list; the finding records the list's hash and
+how many records it kept (`subset`). Only panel-to-panel comparisons are
+trends — block figures describe coverage, not change.
+
 ## Verification
 
 Every published number is re-derived from the checksummed raw archives by an

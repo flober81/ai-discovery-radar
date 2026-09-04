@@ -19,44 +19,44 @@ whether they can be fetched at all. Every blip is a measurement, not an opinion.
 ## The radar
 
 <!-- RADAR:START -->
-_Run **panel-2026-08** · 853 reachable hosts (853 registrable domains) · ruleset 0.3.1_
+_Run **panel-2026-09** · 853 reachable hosts (853 registrable domains) · ruleset 0.3.2_
 
 | Route | Purpose | Publisher | n | Adoption | 95% CI | Trend |
 |:--|:--|:--|--:|--:|:--|:-:|
-| `/robots.txt` | Which parts of a site automated clients may enter | IETF | 760 | 86.45% | 83.8–88.7 | — |
-| `/sitemap.xml` | An index of every address a website offers | sitemaps.org | 680 | 54.56% | 50.8–58.3 | — |
-| `/llms.txt` | A table of contents for language models | Answer.AI | 662 | 12.99% | 10.6–15.8 | — |
-| `/.well-known/security.txt` | Where to report a security vulnerability | IETF | 681 | 6.75% | 5.1–8.9 | — |
-| `/.well-known/oauth-authorization-server` | How the service that grants access rights works | IETF | 675 | 5.19% | 3.8–7.1 | — |
-| `/llms-full.txt` | A whole website's content in a single file | Answer.AI | 665 | 4.66% | 3.3–6.5 | — |
-| `/.well-known/oauth-protected-resource` | Where a client obtains authorization for access | IETF | 676 | 4.59% | 3.2–6.4 | — |
-| `/.well-known/gpc.json` | Whether the site honors the data-sharing opt-out | W3C Global Privacy Control | 677 | 2.81% | 1.8–4.3 | — |
-| `/humans.txt` | Who built a website, written for people to read | humanstxt.org | 662 | 1.66% | 0.9–3.0 | — |
-| `/.well-known/traffic-advice` | Whether a caching proxy may prefetch pages | Google (Private Prefetch Proxy) | 673 | 1.34% | 0.7–2.5 | — |
-| `/security.txt` | Where to report a vulnerability, at the site root | IETF | 696 | 1.15% | 0.6–2.3 | — |
-| `/rsl.xml` | The license terms under which content may be used | RSL Collective | 640 | 0.78% | 0.3–1.8 | — |
-| `/ai.txt` | Which content is withheld from AI training | Spawning | 667 | 0.45% | 0.2–1.3 | — |
-| `/.well-known/tdmrep.json` | Whether text and data may be mined automatically | W3C TDM Reservation Protocol CG | 678 | 0.29% | 0.1–1.1 | — |
-| `/.well-known/api-catalog` | An index of the interfaces a domain offers | IETF | 678 | 0.15% | 0.0–0.8 | — |
-| `/.well-known/mcp.json` | Which tool servers a domain provides for AI | Model Context Protocol | 674 | 0.15% | 0.0–0.8 | — |
-| `/.well-known/openid-configuration` | Where and how to sign in at this domain | OpenID Foundation | 674 | 0.15% | 0.0–0.8 | — |
-| `/openapi.json` | A description of an interface for other programs | OpenAPI Initiative | 650 | 0.15% | 0.0–0.9 | — |
-| `/.well-known/agent-card.json` | What a software agent can do and how to address it | A2A Project (Linux Foundation) | 672 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/agent.json` | An agent's capabilities, under the older file name | A2A Project (Linux Foundation) | 672 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/ai-catalog.json` | What content and services a domain offers AI agents | AI Catalog WG (Linux Foundation), Google, Microsoft | 671 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/ai-plugin.json` | Instructions for a chatbot to operate a service | OpenAI | 656 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/ai.txt` | The same AI usage rules in the well-known folder | Spawning | 661 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/did.json` | A domain's provable identity without a central party | W3C | 672 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/dnt-policy.txt` | A pledge not to track visitors across sites | EFF | 678 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/host-meta` | Pointers to a domain's other points of information | IETF | 670 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/llms.txt` | A table of contents for language models, in well-known | Answer.AI | 658 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/mcp-server` | Where to reach a domain's tool server | IETF (individual draft) | 673 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/openapi.json` | An interface description in the well-known folder | OpenAPI Initiative | 673 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/openid-federation` | Which federation a party provably belongs to | OpenID Foundation | 677 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/webfinger` | Who is behind an address at this domain | IETF | 671 | 0.00% | 0.0–0.6 | — |
-| `/.well-known/x402.json` | The price and payment route for machine requests | Coinbase, Cloudflare | 670 | 0.00% | 0.0–0.6 | — |
-| `/ai-plugin.json` | The same chatbot instructions, at the site root | OpenAI | 641 | 0.00% | 0.0–0.6 | — |
-| `/swagger.json` | An interface description under the older file name | SmartBear (Swagger) | 642 | 0.00% | 0.0–0.6 | — |
+| `/robots.txt` | Which parts of a site automated clients may enter | IETF | 761 | 86.20% | 83.6–88.5 | → |
+| `/sitemap.xml` | An index of every address a website offers | sitemaps.org | 686 | 55.39% | 51.7–59.1 | → |
+| `/llms.txt` | A table of contents for language models | Answer.AI | 669 | 13.45% | 11.1–16.2 | → |
+| `/.well-known/security.txt` | Where to report a security vulnerability | IETF | 684 | 7.02% | 5.3–9.2 | → |
+| `/.well-known/oauth-authorization-server` | How the service that grants access rights works | IETF | 678 | 5.16% | 3.7–7.1 | → |
+| `/.well-known/oauth-protected-resource` | Where a client obtains authorization for access | IETF | 678 | 4.87% | 3.5–6.8 | → |
+| `/llms-full.txt` | A whole website's content in a single file | Answer.AI | 666 | 4.80% | 3.4–6.7 | → |
+| `/.well-known/gpc.json` | Whether the site honors the data-sharing opt-out | W3C Global Privacy Control | 682 | 2.79% | 1.8–4.3 | → |
+| `/.well-known/traffic-advice` | Whether a caching proxy may prefetch pages | Google (Private Prefetch Proxy) | 673 | 1.34% | 0.7–2.5 | → |
+| `/security.txt` | Where to report a vulnerability, at the site root | IETF | 698 | 1.15% | 0.6–2.2 | → |
+| `/rsl.xml` | The license terms under which content may be used | RSL Collective | 641 | 0.78% | 0.3–1.8 | → |
+| `/ai.txt` | Which content is withheld from AI training | Spawning | 668 | 0.45% | 0.2–1.3 | → |
+| `/openapi.json` | A description of an interface for other programs | OpenAPI Initiative | 651 | 0.31% | 0.1–1.1 | → |
+| `/.well-known/openid-configuration` | Where and how to sign in at this domain | OpenID Foundation | 678 | 0.29% | 0.1–1.1 | → |
+| `/.well-known/tdmrep.json` | Whether text and data may be mined automatically | W3C TDM Reservation Protocol CG | 685 | 0.29% | 0.1–1.1 | → |
+| `/.well-known/agent.json` | An agent's capabilities, under the older file name | A2A Project (Linux Foundation) | 676 | 0.15% | 0.0–0.8 | → |
+| `/.well-known/api-catalog` | An index of the interfaces a domain offers | IETF | 676 | 0.15% | 0.0–0.8 | → |
+| `/.well-known/mcp.json` | Which tool servers a domain provides for AI | Model Context Protocol | 676 | 0.15% | 0.0–0.8 | → |
+| `/.well-known/agent-card.json` | What a software agent can do and how to address it | A2A Project (Linux Foundation) | 675 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/ai-catalog.json` | What content and services a domain offers AI agents | AI Catalog WG (Linux Foundation), Google, Microsoft | 675 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/ai-plugin.json` | Instructions for a chatbot to operate a service | OpenAI | 661 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/ai.txt` | The same AI usage rules in the well-known folder | Spawning | 664 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/did.json` | A domain's provable identity without a central party | W3C | 674 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/dnt-policy.txt` | A pledge not to track visitors across sites | EFF | 681 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/host-meta` | Pointers to a domain's other points of information | IETF | 675 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/llms.txt` | A table of contents for language models, in well-known | Answer.AI | 663 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/mcp-server` | Where to reach a domain's tool server | IETF (individual draft) | 675 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/openapi.json` | An interface description in the well-known folder | OpenAPI Initiative | 676 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/openid-federation` | Which federation a party provably belongs to | OpenID Foundation | 678 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/webfinger` | Who is behind an address at this domain | IETF | 674 | 0.00% | 0.0–0.6 | → |
+| `/.well-known/x402.json` | The price and payment route for machine requests | Coinbase, Cloudflare | 675 | 0.00% | 0.0–0.6 | → |
+| `/ai-plugin.json` | The same chatbot instructions, at the site root | OpenAI | 643 | 0.00% | 0.0–0.6 | → |
+| `/mcp.json` | A machine-readable list of a site's MCP endpoints, at the root | Anthropic et al. (MCP) — root-path variant not specified | 642 | 0.00% | 0.0–0.6 | new |
+| `/swagger.json` | An interface description under the older file name | SmartBear (Swagger) | 643 | 0.00% | 0.0–0.6 | → |
 
 Adoption is the share of sources we were actually allowed to inspect that
 served the route, with a 95% Wilson interval. Sources that turned us away
@@ -66,7 +66,9 @@ are not part of the denominator.
 **`n` is the number of hosts on which this route was actually probed. It
 differs between routes, so each row has its own denominator and the rows
 are not directly comparable with one another.**
-No previous run to compare against yet.
+An arrow appears only where the intervals no longer overlap with **panel-2026-08**; `→` means the change stays within measurement uncertainty.
+The previous run was computed under ruleset 0.3.1, this one under 0.3.2 — see RULESET.md for what changed; the first regular month-over-month comparison is the next run.
+`new` means the route is measured since this run — it says nothing about when it first appeared on the web.
 
 
 
@@ -121,12 +123,15 @@ The measurement obeys your `robots.txt`, identifies itself honestly with this
 repository as the sender, and works slowly and sparingly. Only public
 configuration files meant for machines are fetched — no page content.
 
-The figures above are the **August 2026 baseline**: a stratified panel of
-1,000 sources, measured once. From **September 2026** the panel is measured
-monthly, and every source in the wider sample once per quarter. Alongside the
-first monthly report, a **14-month review** of AI directive adoption
-(June 2025 – July 2026) will be published, based on more than **270,000
-evaluated robots.txt files**.
+The figures above are the **September 2026 panel**: the same stratified panel of
+1,000 sources is measured every month; the **Trend** column compares each route
+with the previous month (August 2026 was the first measurement of this panel,
+computed under an earlier ruleset — see the note below the table). Every source
+of the wider 30,000-source frame is measured once per quarter. The **14-month
+review** of AI directive adoption announced for the first monthly report is
+published: [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — eight Common Crawl
+snapshots, June 2025 to July 2026, more than **270,000 evaluated robots.txt
+files** and their response headers.
 
 ## Who runs this
 
