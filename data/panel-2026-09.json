@@ -2,8 +2,12 @@
  "run": "panel-2026-09",
  "ruleset": "0.3.2",
  "measurement_window": {
-  "started": "2026-09-04T04:12:12.828Z",
-  "cadence": "hourly drip until the queue is empty"
+  "started": "2026-09-01T00:42:58.745Z",
+  "completed": "2026-09-03T18:28:22.471Z",
+  "ticks": 67,
+  "hosts_measured": 10667,
+  "cadence": "hourly ticks, ~2 requests/s in total",
+  "status": "final"
  },
  "subset_of": "monat-2026-09-block-a",
  "subset": {

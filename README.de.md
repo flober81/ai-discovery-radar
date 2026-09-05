@@ -139,6 +139,21 @@ zur Verbreitung von KI-Direktiven liegt vor:
 bis Juli 2026: Antwort-Kopfzeilen von **3,6 Millionen Seiten** (2,7 Millionen
 Organisationen), dazu ein separater Scan von über **270.000 robots.txt-Dateien**.
 
+## Zwei Datendateien pro Monat
+
+Die Tabelle oben ist das **Panel**: 1.000 feste Quellen, jeden Monat gemessen,
+die einzige Reihe, in der ein Pfeil eine Veränderung bedeutet. Daneben wird
+jeden Monat ein **Block** der größeren Stichprobe von 30.000 gemessen — sie ist
+in drei Blöcke (a, b, c) geteilt, die durch das Quartal rotieren, sodass jede
+Domain einmal pro Quartal an der Reihe ist. Block **a** lief im September 2026.
+Ein Block-Lauf umfasst rund zehnmal so viele Hosts wie das Panel; seine
+Intervalle sind entsprechend eng, sein Zweck ist Abdeckung, nicht Trend.
+
+Beide Läufe liegen in [`data/`](data/): `panel-JJJJ-MM.{json,csv}` und
+`monat-JJJJ-MM-block-x.{json,csv}`. Jede Datei sagt selbst, wann gemessen
+wurde und ob sie vollständig ist (`measurement_window.status`); wie die
+Stichprobe geteilt wird, steht in [RULESET.md](RULESET.md).
+
 ## Wer dahintersteht
 
 Betrieben wird das Radar von **Berger+Team**, einem Freelancer-Kollektiv aus

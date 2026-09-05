@@ -27,7 +27,9 @@ abstract: >-
   discovery and consent files such as robots.txt, llms.txt, TDMRep or
   agent-card.json. Shares are reported over observed hosts only, with Wilson
   95% intervals; the full ruleset, including its version history, is in
-  RULESET.md.
+  RULESET.md. Each release carries two data files per month: the fixed
+  1,000-source panel (trend) and the month's block of the wider frame
+  (coverage); every file states its measurement window and completeness.
 references:
   - type: conference-paper
     title: "Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation"

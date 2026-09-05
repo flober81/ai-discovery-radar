@@ -134,6 +134,21 @@ snapshots, June 2025 to July 2026: response headers of **3.6 million pages**
 (2.7 million organisations), plus a separate scan of more than **270,000
 robots.txt files**.
 
+## Two data files per month
+
+The table above is the **panel**: 1,000 fixed sources, measured every month,
+the only series in which an arrow means change. Alongside it, every month one
+**block** of the wider 30,000-source frame is measured — the frame is split
+into three blocks (a, b, c) that rotate through the quarter, so each domain is
+visited once per quarter. Block **a** ran in September 2026. The block run
+contains roughly ten times as many hosts as the panel; its intervals are
+correspondingly narrow, and its purpose is coverage, not trend.
+
+Both runs are published in [`data/`](data/): `panel-YYYY-MM.{json,csv}`
+and `monat-YYYY-MM-block-x.{json,csv}`. Each file states when it was
+measured and whether it is complete (`measurement_window.status`); how
+the frame is split is defined in [RULESET.md](RULESET.md).
+
 ## Who runs this
 
 The radar is operated by **Berger+Team**, a freelancer collective in South

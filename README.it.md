@@ -137,6 +137,22 @@ giugno 2025 – luglio 2026: intestazioni di risposta di **3,6 milioni di pagine
 (2,7 milioni di organizzazioni), più una scansione separata di oltre **270.000
 file robots.txt**.
 
+## Due file di dati al mese
+
+La tabella qui sopra è il **panel**: 1.000 fonti fisse, misurate ogni mese,
+l'unica serie in cui una freccia significa un cambiamento. Accanto, ogni mese
+viene misurato un **blocco** del campione più ampio di 30.000 — suddiviso in
+tre blocchi (a, b, c) che ruotano nel trimestre, così ogni dominio viene
+visitato una volta per trimestre. Il blocco **a** è stato misurato a settembre
+2026. Una misurazione di blocco comprende circa dieci volte gli host del panel;
+i suoi intervalli sono corrispondentemente stretti, il suo scopo è la
+copertura, non la tendenza.
+
+Entrambe le misurazioni sono in [`data/`](data/): `panel-AAAA-MM.{json,csv}`
+e `monat-AAAA-MM-block-x.{json,csv}`. Ogni file dichiara da sé quando è
+stato misurato e se è completo (`measurement_window.status`); come viene
+suddiviso il campione è definito in [RULESET.md](RULESET.md).
+
 ## Chi c'è dietro
 
 Il radar è gestito da **Berger+Team**, un collettivo di freelance altoatesino,

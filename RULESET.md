@@ -96,7 +96,17 @@ A frozen, stratified frame drawn from the Tranco list (permanent list ID in
 each `data/*.json`) and the Chrome UX Report country top lists (de/at/ch/it/
 global). The frame is deduplicated at the registrable-domain level; each
 domain is measured at most once per quarter (monthly panel: three times). The
-seed lists themselves are **not** published (see below). Attribution for
+seed lists themselves are **not** published (see below).
+
+**How the frame is split.** From the 30,000 registrable domains, a **panel** of
+1,000 is drawn proportionally per stratum (seeded sampling, so the draw is
+reproducible from the frame). The remaining 29,000 are shuffled per stratum with
+the same seeded generator and dealt round-robin into **three blocks a, b, c**
+(9,667 / 9,667 / 9,666 domains), so each block carries every stratum in the
+same proportion. One block is measured per month together with the panel:
+**a** in the first month of the quarter (September 2026), **b** in the second,
+**c** in the third. A block run is therefore ~10,700 hosts (block + panel); its
+figures describe *coverage* of the frame, the panel's figures describe *change*. Attribution for
 Tranco, CrUX and Majestic is in the README ("Sample attribution").
 
 ## Why the raw data is private
@@ -119,10 +129,25 @@ filtered to the frozen panel list; the finding records the list's hash and
 how many records it kept (`subset`). Only panel-to-panel comparisons are
 trends — block figures describe coverage, not change.
 
+## Data files and their status
+
+Each release carries **two data files per month**: `panel-YYYY-MM` (the
+1,000-source panel, the trend series) and `monat-YYYY-MM-block-x` (the
+month's block run, block plus panel, the coverage series). Every file states
+its own completeness in `measurement_window`: `started` and
+`completed` are the first and last measuring tick, `status` is
+`final` when the run's queue was empty at evaluation time (otherwise
+`partial` with `queue_open`). Only final files are released.
+**Numbers in a released file are never changed.** Metadata may be added later
+(as on 05.09.2026, when `completed` and `status` were introduced);
+the Zenodo snapshot of a version holds the files exactly as of that tag, so a
+DOI always cites a fixed state.
+
 ## Verification
 
-Every published number is re-derived from the checksummed raw archives by an
-independent re-evaluation before release (manifest hash check → re-classify →
+Every published number — panel **and** block run alike — is re-derived from
+the checksummed raw archives by an independent re-evaluation before release
+(manifest hash check → re-classify →
 byte-compare against the published aggregate). The README tables and the
 `data/*` files are **generated** from the same verified aggregate; automated
 drift guards fail the build when any published copy differs from a fresh
