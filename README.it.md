@@ -73,7 +73,7 @@ La misurazione precedente è stata calcolata con le regole 0.3.1, questa con 0.3
 
 
 
-## Sotto osservazione (21)
+## Sotto osservazione (23)
 
 **Confermate** — registrate (IANA) o RFC, quasi assenti sul campo:
 
@@ -101,16 +101,21 @@ La misurazione precedente è stata calcolata con le regole 0.3.1, questa con 0.3
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). Un'intestazione che indica ai client gli intervalli IP dichiarati
 - `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. Una riga di robots.txt che indica alle macchine il catalogo di risorse IA di un sito
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). Righe di robots.txt che regolano da quando le copie archiviate di un sito possono essere pubblicate
+- `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. Come un sito si descrive agli agenti IA
+- `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Quali funzioni di commercio un venditore offre agli agenti
 
-_Osservato significa osservato: nulla di ciò è misurato o conteggiato sopra. Ogni voce ha il suo criterio di promozione nel lab._
+_Osservato significa osservato: queste rotte vengono richieste insieme a quelle misurate, ma sopra non sono mai conteggiate né pubblicate. Ogni voce ha il suo criterio di promozione nel lab._
 <!-- RADAR:END -->
-**Che cosa richiediamo.** La tabella qui sopra è l'elenco completo delle route
-che richiediamo regolarmente. Due aggiunte: se i file del vostro stesso dominio
+**Che cosa richiediamo.** Le due tabelle qui sopra — route misurate e candidati
+osservati — sono l'elenco completo delle route che richiediamo regolarmente.
+Tre aggiunte: la vostra home page, una volta, per leggere i suoi annunci
+`<link rel>` (la pagina stessa viene scartata); se i file del vostro stesso dominio
 rimandano a un altro file lì — per esempio un link nel vostro `robots.txt` —
 possiamo recuperare quel file una volta, al massimo un richiamo del genere per
-dominio e per ciclo, con le stesse regole del `robots.txt`. E consultiamo tre
-record DNS per dominio (`_agent`, `_mcp`, `_index._agents`): semplici
-interrogazioni del servizio dei nomi, che non toccano mai il vostro server web.
+dominio e per ciclo, con le stesse regole del `robots.txt`; e tre record DNS per
+dominio (`_agent`, `_mcp`, `_index._agents`): semplici interrogazioni del
+servizio dei nomi, che non toccano mai il vostro server web. Nulla di ciò che
+recuperiamo viene pubblicato come contenuto — solo conteggi e quote per route.
 
 **Come una route entra in tabella.** Le serve un editore identificabile oppure
 un consumatore documentato che la legge — non basta che un formato circoli da
@@ -168,7 +173,7 @@ Nessuna domanda, nessuna motivazione necessaria. Basta una di queste vie:
 1. una e-mail a **florian@berger.team** con il dominio — per questa via
    non serve un account GitHub, **oppure**
 2. una issue in questo repository con il dominio, **oppure**
-3. una regola `Disallow` per il nostro identificativo nel vostro `robots.txt` —
+3. una regola `Disallow` per il nostro identificativo `ai-discovery-radar` nel vostro `robots.txt` —
    funziona senza alcun contatto.
 
 I domini esclusi vengono saltati **prima** che venga inviata qualsiasi richiesta.

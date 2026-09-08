@@ -72,7 +72,7 @@ The previous run was computed under ruleset 0.3.1, this one under 0.3.2 — see 
 
 
 
-## Under observation (21)
+## Under observation (23)
 
 **Confirmed** — registered (IANA) or RFC, barely seen in the field yet:
 
@@ -100,16 +100,20 @@ The previous run was computed under ruleset 0.3.1, this one under 0.3.2 — see 
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). A header pointing clients to declared IP ranges
 - `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. A robots.txt line pointing machines to a site's AI resource catalog
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). robots.txt lines controlling when archived copies of a site may be published
+- `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. How a site describes itself to AI agents
+- `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Which commerce capabilities a merchant offers agents
 
-_Observed means observed — none of these are measured or counted above. Each entry names its promotion criterion in the lab._
+_Observed means observed — these are fetched alongside the measured routes but never counted or published above. Each entry names its promotion criterion in the lab._
 <!-- RADAR:END -->
-**What we request.** The table above is the complete list of routes we
-routinely request. Two additions: when files on your own domain point to
-another file there — a link in your `robots.txt`, say — we may fetch that
-referenced file once, at most one such follow-up per domain and run, under the
-same `robots.txt` rules. And we look up three DNS records per domain
-(`_agent`, `_mcp`, `_index._agents`): plain name-service lookups that never
-touch your web server.
+**What we request.** The two tables above — measured routes and observed
+candidates — are the complete list of routes we routinely request. Three
+additions: your home page, once, to read its `<link rel>` announcements (the page
+itself is discarded); when files on your own domain point to another file
+there — a link in your `robots.txt`, say — we may fetch that referenced file once,
+at most one such follow-up per domain and run, under the same `robots.txt`
+rules; and three DNS records per domain (`_agent`, `_mcp`, `_index._agents`):
+plain name-service lookups that never touch your web server. Nothing we fetch
+is published as content — only counts and shares per route.
 
 **How a route gets into the table.** It needs a nameable publisher or a
 documented consumer that reads it — not merely a format being passed around
@@ -165,8 +169,8 @@ No questions asked, no reason needed. Any one of these is enough:
 1. Email **florian@berger.team** with the domain — you do not need a
    GitHub account for this, **or**
 2. open an issue in this repository with the domain, **or**
-3. put a `Disallow` rule for our token in your `robots.txt` — this works without
-   contacting us at all.
+3. put a `Disallow` rule for our token `ai-discovery-radar` in your `robots.txt` — this
+   works without contacting us at all.
 
 Excluded domains are skipped **before** any request is made. Contact,
 corrections and the full policy: [SECURITY.md](SECURITY.md).

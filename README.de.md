@@ -76,7 +76,7 @@ Der Vorlauf wurde unter Regelsatz 0.3.1 gerechnet, dieser Lauf unter 0.3.2 — w
 
 
 
-## Unter Beobachtung (21)
+## Unter Beobachtung (23)
 
 **Bestätigt** — registriert (IANA) oder RFC, im Feld noch kaum zu sehen:
 
@@ -104,16 +104,21 @@ Der Vorlauf wurde unter Regelsatz 0.3.1 gerechnet, dieser Lauf unter 0.3.2 — w
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). Kopfzeile, die Clients auf deklarierte IP-Bereiche verweist
 - `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. Eine robots.txt-Zeile, die Maschinen zum KI-Ressourcenkatalog einer Site fuehrt
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). robots.txt-Zeilen, die steuern, ab wann archivierte Kopien einer Site veroeffentlicht werden duerfen
+- `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. Wie eine Seite sich gegenüber KI-Agenten beschreibt
+- `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Welche Handelsfunktionen ein Händler Agenten anbietet
 
-_Beobachtet heißt beobachtet — nichts davon wird oben gemessen oder gezählt. Jeder Eintrag trägt im Lab sein Beförderungs-Kriterium._
+_Beobachtet heißt beobachtet — diese Routen werden neben den gemessenen abgerufen, aber oben nie gezählt oder veröffentlicht. Jeder Eintrag trägt im Lab sein Beförderungs-Kriterium._
 <!-- RADAR:END -->
-**Was wir abfragen.** Die Tabelle oben ist die vollständige Liste der Routen,
-die wir regulär abfragen. Zwei Ergänzungen: Verweisen Dateien Ihrer eigenen
-Domain auf eine weitere Datei dort — etwa ein Link in Ihrer `robots.txt` —,
-rufen wir diese verwiesene Datei gegebenenfalls einmal ab, höchstens einen
-solchen Folge-Abruf je Domain und Lauf, unter denselben `robots.txt`-Regeln.
-Und wir fragen je Domain drei DNS-Namenseinträge ab (`_agent`, `_mcp`,
-`_index._agents`): reine Namensauflösung, die Ihren Webserver nie berührt.
+**Was wir abfragen.** Die zwei Tabellen oben — gemessene Routen und beobachtete
+Kandidaten — sind die vollständige Liste der Routen, die wir regulär abfragen.
+Drei Ergänzungen: Ihre Startseite, einmal, um ihre `<link rel>`-Bekanntgaben zu
+lesen (die Seite selbst wird verworfen); verweisen Dateien Ihrer eigenen Domain
+auf eine weitere Datei dort — etwa ein Link in Ihrer `robots.txt` —, rufen wir
+diese verwiesene Datei gegebenenfalls einmal ab, höchstens einen solchen
+Folge-Abruf je Domain und Lauf, unter denselben `robots.txt`-Regeln; und je
+Domain drei DNS-Namenseinträge (`_agent`, `_mcp`, `_index._agents`): reine
+Namensauflösung, die Ihren Webserver nie berührt. Nichts davon wird als Inhalt
+veröffentlicht — nur Anzahlen und Anteile je Route.
 
 **Wie eine Route in die Tabelle kommt.** Sie braucht einen benennbaren
 Herausgeber oder einen dokumentierten Konsumenten, der sie liest — nicht bloß
@@ -169,7 +174,7 @@ Keine Rückfragen, keine Begründung nötig. Ein Weg genügt:
 1. E-Mail an **florian@berger.team** mit der Domain — dafür brauchen Sie
    kein GitHub-Konto, **oder**
 2. ein Issue in diesem Repository mit der Domain, **oder**
-3. eine `Disallow`-Regel für unsere Kennung in Ihrer `robots.txt` — das wirkt
+3. eine `Disallow`-Regel für unsere Kennung `ai-discovery-radar` in Ihrer `robots.txt` — das wirkt
    ganz ohne Kontakt.
 
 Ausgetragene Domains werden übersprungen, **bevor** überhaupt eine Anfrage

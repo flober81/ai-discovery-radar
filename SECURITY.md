@@ -12,9 +12,10 @@ language.
 
 The user agent `ai-discovery-radar/…` belongs to a research project that measures which
 machine-readable discovery files exist on the web and whether AI agents can fetch them at
-all. Only public configuration files are requested (`robots.txt`, `llms.txt`,
-`security.txt`, `ai-catalog.json` and the like) — no page content, no APIs, no personal
-data.
+all. We request public machine-readable files (`robots.txt`, `llms.txt`,
+`security.txt`, `ai-catalog.json` and the like), your home page once (we keep its links, not
+the page) and three DNS records. Responses go into a private archive; **we publish no page
+content and no personal data** — only counts and shares per route.
 
 **How we behave:**
 
@@ -40,7 +41,14 @@ data.
 
 No questions asked, no reason needed: (1) an email to **florian@berger.team** with
 the domain, (2) an issue in this repository with the domain, or (3) a `Disallow` rule for
-our token in your `robots.txt`. For (1) you do not need a GitHub account. Excluded domains
+our token in your `robots.txt`:
+
+```
+User-agent: ai-discovery-radar
+Disallow: /
+```
+
+(The older token `ai-discovery-audit` keeps working too.) For (1) you do not need a GitHub account. Excluded domains
 are skipped **before** any request is made.
 
 ### Something wrong with our figures?
@@ -61,9 +69,11 @@ public issue.
 
 Der User-Agent `ai-discovery-radar/…` gehört zu einem Forschungsprojekt, das misst, welche
 maschinenlesbaren Discovery-Dateien im Web existieren und ob sie für KI-Agenten abrufbar sind.
-Abgerufen werden ausschließlich öffentliche Konfigurationsdateien (`robots.txt`, `llms.txt`,
-`security.txt`, `ai-catalog.json` und ähnliche) — keine Seiteninhalte, keine APIs, keine
-personenbezogenen Daten.
+Abgerufen werden öffentliche maschinenlesbare Dateien (`robots.txt`, `llms.txt`,
+`security.txt`, `ai-catalog.json` und ähnliche), einmal Ihre Startseite (wir behalten die
+Verweise, nicht die Seite) und drei DNS-Einträge. Die Antworten liegen in einem privaten
+Archiv; **veröffentlicht werden keine Seiteninhalte und keine personenbezogenen Daten** —
+nur Anzahlen und Anteile je Route.
 
 **Wie wir uns verhalten:**
 
@@ -90,7 +100,14 @@ personenbezogenen Daten.
 
 Keine Rückfragen, keine Begründung nötig: (1) E-Mail an **florian@berger.team** mit der
 Domain, (2) ein Issue in diesem Repository mit der Domain oder (3) `Disallow` für unser Token in
-Ihrer `robots.txt`. Für Weg 1 brauchen Sie kein GitHub-Konto. Ausgetragene Domains werden **vor**
+Ihrer `robots.txt`:
+
+```
+User-agent: ai-discovery-radar
+Disallow: /
+```
+
+(Das ältere Token `ai-discovery-audit` gilt weiterhin.) Für Weg 1 brauchen Sie kein GitHub-Konto. Ausgetragene Domains werden **vor**
 dem Abruf übersprungen.
 
 ### Fehler in unseren Zahlen
@@ -111,9 +128,11 @@ Bitte über die GitHub Security Advisories dieses Repositories melden, nicht üb
 
 Lo user agent `ai-discovery-radar/…` appartiene a un progetto di ricerca che misura quali
 file di discovery leggibili dalle macchine esistono sul web e se gli agenti AI riescano
-davvero a scaricarli. Vengono richiesti soltanto file di configurazione pubblici
-(`robots.txt`, `llms.txt`, `security.txt`, `ai-catalog.json` e simili) — nessun contenuto
-delle pagine, nessuna API, nessun dato personale.
+davvero a scaricarli. Richiediamo file pubblici leggibili dalle macchine
+(`robots.txt`, `llms.txt`, `security.txt`, `ai-catalog.json` e simili), una volta la vostra
+home page (teniamo i rimandi, non la pagina) e tre record DNS. Le risposte restano in un
+archivio privato; **non pubblichiamo alcun contenuto delle pagine né alcun dato personale** —
+solo conteggi e quote per route.
 
 **Come ci comportiamo:**
 
@@ -142,7 +161,14 @@ delle pagine, nessuna API, nessun dato personale.
 Nessuna domanda, nessuna motivazione necessaria: (1) una e-mail a
 **florian@berger.team** con il dominio, (2) una issue in questo repository con il
 dominio oppure (3) una regola `Disallow` per il nostro identificativo nel vostro
-`robots.txt`. Per la prima via non serve un account GitHub. I domini esclusi vengono
+`robots.txt`:
+
+```
+User-agent: ai-discovery-radar
+Disallow: /
+```
+
+(Anche il vecchio identificativo `ai-discovery-audit` continua a valere.) Per la prima via non serve un account GitHub. I domini esclusi vengono
 saltati **prima** che venga inviata qualsiasi richiesta.
 
 ### Errori nei nostri dati
