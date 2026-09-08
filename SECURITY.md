@@ -25,8 +25,15 @@ data.
 - One request at a time per host, a pause in between — **at least as long as a
   `Crawl-delay` in your `robots.txt` asks for** — backoff on 429/503, and we stop
   after six rejections. Your site sees a few dozen requests per measurement run — one per
-  route from the table in the [README](README.md). That table is the complete list —
-  whatever is not in it, we do not request.
+  route from the two tables in the [README](README.md): the measured routes and the
+  observed candidates (observed routes are fetched but never counted or published).
+  Beyond those tables we request exactly two things, once each:
+  - **Your home page** — because a site may announce its agent catalogue there with a
+    `<link rel>` instead of a well-known file. We read the links and discard the page itself.
+  - **A linked file** — any file your `robots.txt` or one of these routes points to, to
+    check that the link leads somewhere.
+
+  Nothing else.
 - We publish observations, not assessments — we do not hand out grades.
 
 ### Opt out
@@ -66,9 +73,17 @@ personenbezogenen Daten.
   von einer festen Adresse, die sich selbst erklärt: http://145.223.96.128
 - Eine Anfrage zur Zeit pro Host, Pause dazwischen — **mindestens so lang, wie ein
   `Crawl-delay` in Ihrer `robots.txt` es wünscht** — Backoff bei 429/503, Abbruch nach sechs
-  Abweisungen. Ihre Seite sieht wenige Dutzend Anfragen pro Messlauf — je eine je Route aus der
-  Tabelle in der [README](README.de.md). Diese Tabelle ist die vollständige Liste — was dort
-  nicht steht, rufen wir nicht ab.
+  Abweisungen. Ihre Seite sieht wenige Dutzend Anfragen pro Messlauf — je eine je Route aus den
+  zwei Tabellen in der [README](README.de.md): die gemessenen Routen und die beobachteten
+  Kandidaten (beobachtete Routen werden abgerufen, aber nie gezählt oder veröffentlicht).
+  Über diese Tabellen hinaus rufen wir genau zwei Dinge ab, je einmal:
+  - **Ihre Startseite** — weil eine Seite ihren Agenten-Katalog dort per `<link rel>`
+    bekanntgeben kann statt über eine eigene Datei. Wir lesen die Verweise und verwerfen die
+    Seite selbst.
+  - **Eine verlinkte Datei** — jede Datei, auf die Ihre `robots.txt` oder eine dieser Routen
+    zeigt, um zu prüfen, ob der Verweis irgendwohin führt.
+
+  Sonst nichts.
 - Wir veröffentlichen Beobachtungen, keine Bewertungen — eine Note vergeben wir nicht.
 
 ### Austragung
@@ -109,8 +124,17 @@ delle pagine, nessuna API, nessun dato personale.
 - Una richiesta alla volta per host, con pausa tra una e l'altra — **lunga almeno quanto
   chiede un `Crawl-delay` nel vostro `robots.txt`** — backoff su 429/503 e
   interruzione dopo sei rifiuti. Il vostro sito riceve poche decine di richieste per
-  misurazione — una per ogni route della tabella nella [README](README.it.md). Quella
-  tabella è l'elenco completo: ciò che non compare lì, non lo richiediamo.
+  misurazione — una per ogni route delle due tabelle nella [README](README.it.md): le
+  route misurate e i candidati osservati (le route osservate vengono richieste, ma non
+  sono mai conteggiate né pubblicate). Oltre a quelle tabelle richiediamo esattamente
+  due cose, una volta ciascuna:
+  - **La vostra home page** — perché un sito può annunciare lì il proprio catalogo per agenti
+    con un `<link rel>` invece che con un file dedicato. Leggiamo i rimandi e scartiamo la
+    pagina stessa.
+  - **Un file collegato** — qualsiasi file a cui rimanda il vostro `robots.txt` o una di
+    queste route, per verificare che il rimando porti da qualche parte.
+
+  Nient'altro.
 - Pubblichiamo osservazioni, non valutazioni — non assegniamo voti.
 
 ### Come escludersi
