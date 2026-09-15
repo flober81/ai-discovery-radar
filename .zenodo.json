@@ -15,6 +15,12 @@
       "resource_type": "publication"
     },
     {
+      "identifier": "https://btlabs.dev/de/ai-discovery-radar",
+      "relation": "isDocumentedBy",
+      "scheme": "url",
+      "resource_type": "publication"
+    },
+    {
       "identifier": "10.5281/zenodo.22769679",
       "relation": "isDocumentedBy",
       "scheme": "doi",
