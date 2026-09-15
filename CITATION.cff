@@ -35,6 +35,15 @@ abstract: >-
   1,000-source panel (trend) and the month's block of the wider frame
   (coverage); every file states its measurement window and completeness.
 references:
+  - type: report
+    title: "AI Discovery Radar: measurement method and ruleset for tracking adoption of machine-readable discovery and consent routes (Technical Report v1.0)"
+    authors:
+      - family-names: "Berger"
+        given-names: "Florian"
+        orcid: "https://orcid.org/0009-0008-5780-1147"
+    year: 2026
+    doi: 10.5281/zenodo.22769680  # method report; concept DOI 10.5281/zenodo.22769679 resolves to the latest version
+    notes: "Documents the classification model, denominator rule, sampling design and verification procedure behind this dataset."
   - type: conference-paper
     title: "Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation"
     authors:

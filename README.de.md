@@ -4,6 +4,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22178282.svg)](https://doi.org/10.5281/zenodo.22178282)
 
+**Methode:** Wie diese Zahlen gemessen, klassifiziert und geprüft werden, steht im [Technical Report v1.0](https://doi.org/10.5281/zenodo.22769680) (CC BY 4.0, englisch). Vor dem Zitieren einer Quote lesen.
+
 > **Diese Kennung in Ihren Protokollen gefunden?** Sie können sich mit einer
 > einzigen Zeile austragen — siehe [Austragung](#austragung). Kein Konto, kein
 > Kontakt, keine Begründung nötig.

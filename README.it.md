@@ -4,6 +4,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22178282.svg)](https://doi.org/10.5281/zenodo.22178282)
 
+**Metodo:** come questi numeri vengono misurati, classificati e verificati è documentato nel [Technical Report v1.0](https://doi.org/10.5281/zenodo.22769680) (CC BY 4.0, in inglese). Da leggere prima di citare una quota.
+
 > **Trovato questo identificativo nei log del vostro server?** Potete escludervi
 > con una sola riga — vedi [Come escludersi](#come-escludersi). Nessun account,
 > nessun contatto, nessuna motivazione richiesta.

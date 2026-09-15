@@ -4,6 +4,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22178282.svg)](https://doi.org/10.5281/zenodo.22178282)
 
+**Method:** how these numbers are measured, classified and verified is documented in the [Technical Report v1.0](https://doi.org/10.5281/zenodo.22769680) (CC BY 4.0). Read it before citing a share.
+
 > **Found this in your server logs?** You can opt out in one line — see
 > [Opt out](#opt-out) below. No account, no contact, no reason required.
 >
