@@ -2,11 +2,24 @@
   "title": "AI Discovery Radar — adoption measurements for machine-readable discovery and consent routes",
   "upload_type": "dataset",
   "creators": [
-    { "name": "Berger+Team d. Florian Berger", "affiliation": "Bolzano/Bozen, Italy" },
     { "name": "Berger, Florian", "affiliation": "Berger+Team", "orcid": "0009-0008-5780-1147" }
   ],
   "license": "cc-by-4.0",
   "description": "Monthly measurements of how many websites in a frozen, stratified sample (Tranco + Chrome UX Report country lists) publish machine-readable discovery and consent files (robots.txt, llms.txt, TDMRep, agent-card.json and others). Shares over observed hosts only, Wilson 95% intervals; full ruleset with version history in RULESET.md. Data files carry run identifier and ruleset version; numbers across ruleset versions are not comparable. Each release carries two data files per month: the fixed 1,000-source panel (trend series) and the month's block of the wider 30,000-source frame (coverage series); every file states its measurement window and whether it is complete.",
   "keywords": ["web measurement", "llms.txt", "TDMRep", "robots.txt", "AI agents", "well-known URIs", "adoption"],
+  "related_identifiers": [
+    {
+      "identifier": "10.14722/ndss.2019.23386",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "https://btlabs.dev/de/ai-discovery-radar",
+      "relation": "isDocumentedBy",
+      "scheme": "url",
+      "resource_type": "publication"
+    }
+  ],
   "access_right": "open"
 }

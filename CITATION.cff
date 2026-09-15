@@ -8,12 +8,16 @@ message: >-
 type: dataset
 title: "AI Discovery Radar — adoption measurements for machine-readable discovery and consent routes"
 authors:
-  - name: "Berger+Team d. Florian Berger"
-    city: "Bolzano/Bozen"
-    country: IT
-  # Die verantwortliche Person mit ORCID neben der Entitaet — so steht es im
-  # Zenodo-Record v2026.08 (Entscheidung Florian, 02.09.2026). Diese Datei ist
-  # die Vorlage jedes naechsten Releases: Was hier fehlt, verliert Zenodo dort.
+  # EIN Urheber (Entscheidung Florian, 15.09.2026 — ersetzt die Zwei-Autoren-Form
+  # vom 02.09.). Die Firma steht in `affiliation`, nicht als zweiter Urheber:
+  # Zenodos eigener Hinweis im Formular sagt „Use the Authors/Creators field for
+  # names that should appear in the citation. Use the Contributors field below
+  # for other names." Ein zweiter Eintrag OHNE ORCID bleibt in DataCite/OpenAIRE
+  # ein loser Namensstring — Rohstoff fuer eine zweite Personen-Entitaet; die
+  # Zitation zeigte ausserdem zwei Autoren fuer eine Person.
+  #
+  # Diese Datei ist die GitHub-Zitierkarte. Den Zenodo-Record baut `.zenodo.json`
+  # — beide muessen dieselben Urheber nennen, sonst driften Repo und DOI.
   - family-names: "Berger"
     given-names: "Florian"
     affiliation: "Berger+Team"
