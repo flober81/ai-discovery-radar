@@ -74,7 +74,7 @@ The previous run was computed under ruleset 0.3.1, this one under 0.3.2 — see 
 
 
 
-## Under observation (23)
+## Under observation (24)
 
 **Confirmed** — registered (IANA) or RFC, barely seen in the field yet:
 
@@ -104,6 +104,7 @@ The previous run was computed under ruleset 0.3.1, this one under 0.3.2 — see 
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). robots.txt lines controlling when archived copies of a site may be published
 - `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. How a site describes itself to AI agents
 - `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Which commerce capabilities a merchant offers agents
+- `/.well-known/agent-skills/index.json` — Cloudflare (Agent Skills Discovery RFC, Status Draft). Which agent skills a domain offers, with version and digest
 
 _Observed means observed — these are fetched alongside the measured routes but never counted or published above. Each entry names its promotion criterion in the lab._
 <!-- RADAR:END -->

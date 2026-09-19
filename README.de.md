@@ -78,7 +78,7 @@ Der Vorlauf wurde unter Regelsatz 0.3.1 gerechnet, dieser Lauf unter 0.3.2 — w
 
 
 
-## Unter Beobachtung (23)
+## Unter Beobachtung (24)
 
 **Bestätigt** — registriert (IANA) oder RFC, im Feld noch kaum zu sehen:
 
@@ -108,6 +108,7 @@ Der Vorlauf wurde unter Regelsatz 0.3.1 gerechnet, dieser Lauf unter 0.3.2 — w
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). robots.txt-Zeilen, die steuern, ab wann archivierte Kopien einer Site veroeffentlicht werden duerfen
 - `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. Wie eine Seite sich gegenüber KI-Agenten beschreibt
 - `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Welche Handelsfunktionen ein Händler Agenten anbietet
+- `/.well-known/agent-skills/index.json` — Cloudflare (Agent Skills Discovery RFC, Status Draft). Welche Agent Skills eine Domain anbietet, mit Version und Prüfsumme
 
 _Beobachtet heißt beobachtet — diese Routen werden neben den gemessenen abgerufen, aber oben nie gezählt oder veröffentlicht. Jeder Eintrag trägt im Lab sein Beförderungs-Kriterium._
 <!-- RADAR:END -->

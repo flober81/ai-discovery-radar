@@ -75,7 +75,7 @@ La misurazione precedente è stata calcolata con le regole 0.3.1, questa con 0.3
 
 
 
-## Sotto osservazione (23)
+## Sotto osservazione (24)
 
 **Confermate** — registrate (IANA) o RFC, quasi assenti sul campo:
 
@@ -105,6 +105,7 @@ La misurazione precedente è stata calcolata con le regole 0.3.1, questa con 0.3
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). Righe di robots.txt che regolano da quando le copie archiviate di un sito possono essere pubblicate
 - `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. Come un sito si descrive agli agenti IA
 - `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Quali funzioni di commercio un venditore offre agli agenti
+- `/.well-known/agent-skills/index.json` — Cloudflare (Agent Skills Discovery RFC, Status Draft). Quali agent skill offre un dominio, con versione e checksum
 
 _Osservato significa osservato: queste rotte vengono richieste insieme a quelle misurate, ma sopra non sono mai conteggiate né pubblicate. Ogni voce ha il suo criterio di promozione nel lab._
 <!-- RADAR:END -->
