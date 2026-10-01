@@ -2,7 +2,7 @@
 
 This document is the normative description of how the numbers in this
 repository are produced. Every published figure carries the ruleset version it
-was computed under (e.g. `ruleset 0.3.1` in the README header and in each
+was computed under (e.g. `ruleset 0.4.0` in the README header and in each
 `data/*.json`). When a rule changes, the version changes, affected numbers are
 recomputed and republished under the new version, and the change is recorded
 here — numbers from different ruleset versions are not silently comparable.
@@ -60,7 +60,12 @@ Every (domain, route) pair receives exactly one state:
   twice.
 - **TDMRep** may be declared via the `tdm-reservation`/`tdm-policy` response
   header on any resource of the host; a valid header yields `present`
-  (`via: header`) when no file-based judgement succeeded.
+  (`via: header`) when no file-based judgement succeeded. Since v0.4.0 a
+  parseable JSON body at `/.well-known/tdmrep.json` without any spec field
+  counts as `present` (`via: file-unset`, not spec-conforming) unless it is
+  the host's catch-all or a JSON error page. The rule is literal: any such
+  body counts, including a policy file of another vocabulary, which is why
+  both figures are reported.
 
 ### Bot walls
 
@@ -160,6 +165,7 @@ generation.
 | 0.2.0 | 2026-08-10 | First coherent ruleset after the pilot audit: seven states, robots-respect, catch-all and alias detection, wall detection at fetch time. |
 | 0.3.0 | 2026-08-17 | **Denominator = observed states only.** Previously `blocked`/`disallowed`/`unreachable` sat in the base where they could never reach the numerator — arithmetically "not adopted", contradicting the classifier's own contract. Affected roughly one fifth of every denominator; the August line was republished. |
 | 0.3.1 | 2026-08-21 | JSON schema check unwraps the **canonical array form** (TDMRep: `[{"tdm-reservation":1}]`). 29 valid files had been misclassified as `soft404` and resurfaced as header-only declarations. |
+| 0.4.0 | 2026-10-01 | A parseable JSON body at `/.well-known/tdmrep.json` that carries no spec field but is **not the host's catch-all** now counts as `present` with the flag `via: file-unset` — an implementation with an unset rule, rather than a forged page. Both figures are reported (`present` and `present − viaFileUnset`); the old figure remains derivable for every run. Committed in https://github.com/w3c-cg/tdm-reservation-protocol/issues/62. Measured effect on the September archive: 28 → 29. The clause "not the host's catch-all" does most of the work — the empty-array files this rule was written for are served on 13 paths each and stay excluded. |
 | 0.3.2 | 2026-08-22 | Archive truncation now marks itself, and readers of older archives infer the mark. The 2 KB archive trim silently cut large JSON bodies; the classifier parsed the fragment, failed, and judged `soft404` — valid files (systematically the *large* ones) were counted as forgeries. Additionally: bot-wall signatures are matched after decoding numeric HTML entities — one major vendor's wall had never been recognised in 14 months, so **no vendor breakdown of walls is published for runs before this version**. |
 
 Errors we find in our own measurement are documented in the version history
