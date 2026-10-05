@@ -8,26 +8,27 @@ first run, with the reason.
 number at all.** Published figures are never back-filled for routes that did
 not exist in the run; the run’s own data file lists the routes it measured.
 
-The list below is *computed* from the version history of the route catalog,
-not maintained by hand: each recorded state of the catalog is read and the
+The list below is *computed* from the version history of the route catalog
+and of the candidate routes measured alongside it, not maintained by hand:
+each recorded state is read and the
 difference to the previous one is the event. The reasons are maintained, and
 a change without a reason fails the build.
 
-Routes measured today: **33**.
+Routes measured today: **37**.
 
-## 2026-08-10 — 30 routes
+## 2026-08-10 — 33 routes
 
 First catalog, assembled from IANA registries, RFCs, IETF drafts and published vendor conventions.
 
-**Added (30):** `/robots.txt` · `/sitemap.xml` · `/.well-known/security.txt` · `/security.txt` · `/.well-known/api-catalog` · `/.well-known/tdmrep.json` · `/.well-known/gpc.json` · `/.well-known/dnt-policy.txt` · `/.well-known/nodeinfo` · `/.well-known/host-meta` · `/.well-known/ai-catalog.json` · `/.well-known/agent-card.json` · `/.well-known/agent.json` · `/.well-known/mcp.json` · `/openapi.json` · `/.well-known/openapi.json` · `/llms.txt` · `/llms-full.txt` · `/ai.txt` · `/humans.txt` · `/.well-known/ai-plugin.json` · `/ai-plugin.json` · `/agents.txt` · `/agents.json` · `/.well-known/ai-agent.json` · `/ai.json` · `/developer-ai.txt` · `/robots-ai.txt` · `/llm.txt` · `/.well-known/llms.txt`
+**Added (33):** `/robots.txt` · `/sitemap.xml` · `/.well-known/security.txt` · `/security.txt` · `/.well-known/api-catalog` · `/.well-known/tdmrep.json` · `/.well-known/gpc.json` · `/.well-known/dnt-policy.txt` · `/.well-known/nodeinfo` · `/.well-known/host-meta` · `/.well-known/ai-catalog.json` · `/.well-known/agent-card.json` · `/.well-known/agent.json` · `/.well-known/mcp.json` · `/openapi.json` · `/.well-known/openapi.json` · `/llms.txt` · `/llms-full.txt` · `/ai.txt` · `/humans.txt` · `/.well-known/ai-plugin.json` · `/ai-plugin.json` · `/agents.txt` · `/agents.json` · `/.well-known/ai-agent.json` · `/ai.json` · `/developer-ai.txt` · `/robots-ai.txt` · `/llm.txt` · `/.well-known/llms.txt` · `/rsl.xml` · `/ads.txt` · `/app-ads.txt`
 
-## 2026-08-11 — 33 routes
+## 2026-08-10 — 34 routes
 
-Three long-established standards moved from "watched" into the catalog as comparison yardsticks — they were being measured anyway, so the request count did not change.
+One candidate route measured alongside the catalog after the first discovery run found it referenced in the pilot archive; it was dropped again on 12 August with the "comparison yardstick" category.
 
-**Added (3):** `/.well-known/assetlinks.json` · `/ads.txt` · `/app-ads.txt`
+**Added (1):** `/.well-known/assetlinks.json`
 
-## 2026-08-11 — 28 routes
+## 2026-08-11 — 29 routes
 
 Evidence review. Seven routes had neither a standing issuer nor a documented consumer and were removed with a written reason; two evidenced routes came in. This revised the earlier position that "a measured zero is a measurement": it holds for formats that have standing, but measuring a route at all lends it a standing it has not earned. For two of the seven the reason names a testable trigger for re-admission (an IANA registration being granted).
 
@@ -37,9 +38,9 @@ Evidence review. Seven routes had neither a standing issuer nor a documented con
 
 ## 2026-08-12 — 33 routes
 
-Four evidenced additions from the registry sweep; /rsl.xml promoted from watched to measured.
+Four evidenced additions from the registry sweep; /rsl.xml, already measured as a candidate, moved into the catalog.
 
-**Added (5):** `/.well-known/oauth-protected-resource` · `/.well-known/oauth-authorization-server` · `/.well-known/did.json` · `/swagger.json` · `/rsl.xml`
+**Added (4):** `/.well-known/oauth-protected-resource` · `/.well-known/oauth-authorization-server` · `/.well-known/did.json` · `/swagger.json`
 
 ## 2026-08-12 — 37 routes
 
@@ -70,6 +71,18 @@ The "comparison yardstick" category was dissolved. Routes that belong to the sub
 Removed /humans.txt. The file is written for people and says nothing to a machine reader about what may be done with the content — and by convention it names the people involved, which made it the only catalogued route carrying personal data. A route that is not requested cannot raise that question.
 
 **Removed (1):** `/humans.txt`
+
+## 2026-08-25 — 34 routes
+
+The MCP discovery file at the root (/mcp.json) measured alongside the catalog as a candidate — a variant seen in the field next to /.well-known/mcp.json, measured from the September run so the two can be compared.
+
+**Added (1):** `/mcp.json`
+
+## 2026-10-05 — 37 routes
+
+Three candidate routes passed the field threshold (at least three organisations, with a nameable publisher or documented consumer) and are measured from the November 2026 run: the Agent Skills Discovery index (Cloudflare draft), the Universal Commerce Protocol profile, and the MCP server card. Named in the README before the first request.
+
+**Added (3):** `/.well-known/ucp` · `/.well-known/agent-skills/index.json` · `/.well-known/mcp/server-card.json`
 
 ---
 
