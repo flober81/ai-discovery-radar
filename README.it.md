@@ -73,6 +73,7 @@ e le righe non sono direttamente confrontabili tra loro.**
 In questa edizione non compare la freccia di tendenza. Le misurazioni precedenti coprono una parte diversa del campione, quindi una freccia tra di esse misurerebbe in parte il cambio di popolazione anziché il cambiamento sul web. Da dicembre il consolidamento trimestrale confronta ciò che è confrontabile — l'intero campione contro l'intero campione — e lì la freccia torna.
 Dei 1535 file `/llms.txt` trovati nell'intera misurazione mensile `monat-2026-10-block-b` (panel e blocco), 517 (33,7 %) portano i segni di uno strumento: un generatore che si dichiara o formulazioni condivise con altri siti; i generatori che si dichiarano sono estensioni per sistemi di gestione dei contenuti (i maggiori: yoast seo 112, all in one seo 29, rank math seo 19). Il dato di diffusione qui sopra conta i file, e resta corretto così: un file distribuito da uno strumento esiste e viene letto. Questa nota risponde all'altra domanda — quanta parte del numero è una decisione. È un indizio per questa misurazione, non un tasso pubblicato.
 Dei 469 file `/llms-full.txt` trovati nell'intera misurazione mensile `monat-2026-10-block-b` (panel e blocco), 343 (73,1 %) portano i segni di uno strumento: un generatore che si dichiara o formulazioni condivise con altri siti. Il dato di diffusione qui sopra conta i file, e resta corretto così: un file distribuito da uno strumento esiste e viene letto. Questa nota risponde all'altra domanda — quanta parte del numero è una decisione. È un indizio per questa misurazione, non un tasso pubblicato.
+Dalla prossima misurazione misurate anche (ancora senza dati): `/.well-known/ucp`, `/.well-known/agent-skills/index.json`, `/.well-known/mcp/server-card.json`.
 
 ### Note su questa rilevazione
 
@@ -92,7 +93,7 @@ Dei 469 file `/llms-full.txt` trovati nell'intera misurazione mensile `monat-202
 
 
 
-## Sotto osservazione (24)
+## Sotto osservazione (23)
 
 **Confermate** — registrate (IANA) o RFC, quasi assenti sul campo:
 
@@ -120,13 +121,12 @@ Dei 469 file `/llms-full.txt` trovati nell'intera misurazione mensile `monat-202
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). Un'intestazione che indica ai client gli intervalli IP dichiarati
 - `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. Una riga di robots.txt che indica alle macchine il catalogo di risorse IA di un sito
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). Righe di robots.txt che regolano da quando le copie archiviate di un sito possono essere pubblicate
-- `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. Come un sito si descrive agli agenti IA
-- `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Quali funzioni di commercio un venditore offre agli agenti
-- `/.well-known/agent-skills/index.json` — Cloudflare (Agent Skills Discovery RFC, Status Draft). Quali agent skill offre un dominio, con versione e checksum
+- `/agents.md` — Shopify (platform default) and the AGENTS.md convention from code repositories. Come un sito si descrive agli agenti IA
+- `/.well-known/ard.json` — ARD specification v0.91 (ards-project) — successor path of /.well-known/ai-catalog.json. Contenuti e servizi di un dominio per agenti IA (ARD)
 
 _Le route osservate non vengono richieste nella misurazione mensile. Le nostre rilevazioni esplorative (vedi sotto) e una sonda mensile su 1.000 fonti del panel le richiedono, senza contarne nulla per questa pagina. Ogni voce ha il suo criterio di promozione nel lab._
 
-### Richieste solo dalle rilevazioni esplorative (20)
+### Richieste solo dalle rilevazioni esplorative (19)
 
 - `/.well-known/api-catalog.json`
 - `/.well-known/http-message-signatures-directory`
@@ -141,7 +141,6 @@ _Le route osservate non vengono richieste nella misurazione mensile. Le nostre r
 - `/.well-known/acp.json`
 - `/.well-known/terms.txt`
 - `/.well-known/ai.json`
-- `/.well-known/ard.json`
 - `/llms-small.txt`
 - `/llms-ctx.txt`
 - `/llms-ctx-full.txt`

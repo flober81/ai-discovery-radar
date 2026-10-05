@@ -76,6 +76,7 @@ vergleichbar.**
 In dieser Ausgabe steht kein Trendpfeil. Die vorangegangenen Läufe decken einen anderen Teil des Rahmens ab; ein Pfeil dazwischen würde zum Teil den Wechsel der Grundgesamtheit messen statt der Veränderung im Web. Ab Dezember vergleicht der Quartals-Zusammenzug Gleiches mit Gleichem — den ganzen Rahmen gegen den ganzen Rahmen —, und dort kommt der Pfeil zurück.
 Von den 1535 im ganzen Monatslauf `monat-2026-10-block-b` (Panel und Block) gefundenen `/llms.txt`-Dateien tragen 517 (33,7 %) die Spuren eines Werkzeugs — einen selbstgenannten Erzeuger oder Formulierungen, die sie mit anderen Seiten teilen; die Erzeuger, die sich selbst nennen, sind Erweiterungen für Redaktionssysteme (größte: yoast seo 112, all in one seo 29, rank math seo 19). Die Verbreitungszahl oben zählt Dateien, und das bleibt richtig: eine per Werkzeug ausgerollte Datei ist vorhanden und wird gelesen. Diese Fußnote beantwortet die andere Frage — wie viel an der Zahl Entscheidung ist. Sie ist ein Indiz für diesen Lauf, keine veröffentlichte Quote.
 Von den 469 im ganzen Monatslauf `monat-2026-10-block-b` (Panel und Block) gefundenen `/llms-full.txt`-Dateien tragen 343 (73,1 %) die Spuren eines Werkzeugs — einen selbstgenannten Erzeuger oder Formulierungen, die sie mit anderen Seiten teilen. Die Verbreitungszahl oben zählt Dateien, und das bleibt richtig: eine per Werkzeug ausgerollte Datei ist vorhanden und wird gelesen. Diese Fußnote beantwortet die andere Frage — wie viel an der Zahl Entscheidung ist. Sie ist ein Indiz für diesen Lauf, keine veröffentlichte Quote.
+Ab dem nächsten Lauf zusätzlich gemessen (noch ohne Zahlen): `/.well-known/ucp`, `/.well-known/agent-skills/index.json`, `/.well-known/mcp/server-card.json`.
 
 ### Hinweise zu diesem Lauf
 
@@ -95,7 +96,7 @@ Von den 469 im ganzen Monatslauf `monat-2026-10-block-b` (Panel und Block) gefun
 
 
 
-## Unter Beobachtung (24)
+## Unter Beobachtung (23)
 
 **Bestätigt** — registriert (IANA) oder RFC, im Feld noch kaum zu sehen:
 
@@ -123,13 +124,12 @@ Von den 469 im ganzen Monatslauf `monat-2026-10-block-b` (Panel und Block) gefun
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). Kopfzeile, die Clients auf deklarierte IP-Bereiche verweist
 - `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. Eine robots.txt-Zeile, die Maschinen zum KI-Ressourcenkatalog einer Site fuehrt
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). robots.txt-Zeilen, die steuern, ab wann archivierte Kopien einer Site veroeffentlicht werden duerfen
-- `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. Wie eine Seite sich gegenüber KI-Agenten beschreibt
-- `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Welche Handelsfunktionen ein Händler Agenten anbietet
-- `/.well-known/agent-skills/index.json` — Cloudflare (Agent Skills Discovery RFC, Status Draft). Welche Agent Skills eine Domain anbietet, mit Version und Prüfsumme
+- `/agents.md` — Shopify (platform default) and the AGENTS.md convention from code repositories. Wie eine Seite sich gegenüber KI-Agenten beschreibt
+- `/.well-known/ard.json` — ARD specification v0.91 (ards-project) — successor path of /.well-known/ai-catalog.json. Inhalte und Dienste einer Domain für KI-Agenten (ARD)
 
 _Beobachtete Routen werden im Monatslauf nicht abgefragt. Unsere Entdeckungsläufe (siehe unten) und eine monatliche Feldprobe auf 1.000 Quellen des Panels fragen sie ab und zählen daraus nichts für diese Seite. Jeder Eintrag trägt im Lab sein Beförderungs-Kriterium._
 
-### Nur von den Entdeckungsläufen abgefragt (20)
+### Nur von den Entdeckungsläufen abgefragt (19)
 
 - `/.well-known/api-catalog.json`
 - `/.well-known/http-message-signatures-directory`
@@ -144,7 +144,6 @@ _Beobachtete Routen werden im Monatslauf nicht abgefragt. Unsere Entdeckungsläu
 - `/.well-known/acp.json`
 - `/.well-known/terms.txt`
 - `/.well-known/ai.json`
-- `/.well-known/ard.json`
 - `/llms-small.txt`
 - `/llms-ctx.txt`
 - `/llms-ctx-full.txt`

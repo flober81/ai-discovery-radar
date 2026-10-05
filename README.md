@@ -72,6 +72,7 @@ are not directly comparable with one another.**
 No trend arrow in this edition. The previous runs cover a different part of the frame, so an arrow between them would partly measure the change of population rather than the change on the web. From December the quarterly roll-up compares like with like — the whole frame against the whole frame — and the arrow returns there.
 Of the 1535 `/llms.txt` files found in the whole monthly run `monat-2026-10-block-b` (panel and block), 517 (33.7%) carry the marks of a generator — a self-declared producer or wording shared with other sites; the producers that name themselves are content-management plugins (largest: yoast seo 112, all in one seo 29, rank math seo 19). The adoption figure above counts files, and that stays right: a file rolled out by a plugin exists and is read. This footnote answers the other question — how much of the number is a decision. It is an indication for this run, not a published rate.
 Of the 469 `/llms-full.txt` files found in the whole monthly run `monat-2026-10-block-b` (panel and block), 343 (73.1%) carry the marks of a generator — a self-declared producer or wording shared with other sites. The adoption figure above counts files, and that stays right: a file rolled out by a plugin exists and is read. This footnote answers the other question — how much of the number is a decision. It is an indication for this run, not a published rate.
+From the next run also measured (no figures yet): `/.well-known/ucp`, `/.well-known/agent-skills/index.json`, `/.well-known/mcp/server-card.json`.
 
 ### Notes on this run
 
@@ -91,7 +92,7 @@ Of the 469 `/llms-full.txt` files found in the whole monthly run `monat-2026-10-
 
 
 
-## Under observation (24)
+## Under observation (23)
 
 **Confirmed** — registered (IANA) or RFC, barely seen in the field yet:
 
@@ -119,13 +120,12 @@ Of the 469 `/llms-full.txt` files found in the whole monthly run `monat-2026-10-
 - `Link rel=client-ranges (HTTP Link header)` — Individual draft (Google/Ericsson authors). A header pointing clients to declared IP ranges
 - `Agentmap (robots.txt directive; target URL free)` — AI Catalog Working Group (Linux Foundation) — Agentic Resource Discovery spec. A robots.txt line pointing machines to a site's AI resource catalog
 - `Archive-Embargo / Embargo-Allow (robots.txt directives, no path)` — Individual draft (M. Nottingham, M. Thomson — HTTP WG environment). robots.txt lines controlling when archived copies of a site may be published
-- `/agents.md` — Shopify (Plattform-Vorgabe) sowie die AGENTS.md-Konvention aus Code-Ablagen. How a site describes itself to AI agents
-- `/.well-known/ucp` — Universal Commerce Protocol (UCP Tech Council). Which commerce capabilities a merchant offers agents
-- `/.well-known/agent-skills/index.json` — Cloudflare (Agent Skills Discovery RFC, Status Draft). Which agent skills a domain offers, with version and digest
+- `/agents.md` — Shopify (platform default) and the AGENTS.md convention from code repositories. How a site describes itself to AI agents
+- `/.well-known/ard.json` — ARD specification v0.91 (ards-project) — successor path of /.well-known/ai-catalog.json. Content and services a domain offers AI agents (ARD)
 
 _Observed routes are not requested in the monthly run. Our discovery runs (see below) and a monthly field probe on 1,000 of the panel sources request them, and count nothing from them for this page. Each entry names its promotion criterion in the lab._
 
-### Requested only by discovery runs (20)
+### Requested only by discovery runs (19)
 
 - `/.well-known/api-catalog.json`
 - `/.well-known/http-message-signatures-directory`
@@ -140,7 +140,6 @@ _Observed routes are not requested in the monthly run. Our discovery runs (see b
 - `/.well-known/acp.json`
 - `/.well-known/terms.txt`
 - `/.well-known/ai.json`
-- `/.well-known/ard.json`
 - `/llms-small.txt`
 - `/llms-ctx.txt`
 - `/llms-ctx-full.txt`
