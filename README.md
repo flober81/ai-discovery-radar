@@ -10,7 +10,7 @@
 > [Opt out](#opt-out) below. No account, no contact, no reason required.
 >
 > <!-- LAST:START -->
-> **How often we visit:** about **16,600 sources (domains) per month**: the 10,000-source panel every month, plus a rotating block of the ~30,000-source frame, each block source at most once per quarter. Once a month, 1,000 of the panel sources are also asked for the routes under observation.
+> **How often we visit:** about **16,800 sources (domains) per month**: the 10,000-source panel every month, plus a rotating block of the ~30,000-source frame, each block source at most once per quarter. Once a month, 1,000 of the panel sources are also asked for the routes under observation.
 >
 > In addition, small discovery runs visit popular domains outside the frame — at most about 2,000 a day — with the routes in the tables below plus the short list under “Requested only by discovery runs”. Their results are never published; the same opt-out applies.
 > <!-- LAST:END -->
@@ -22,44 +22,47 @@ whether they can be fetched at all. Every blip is a measurement, not an opinion.
 ## The radar
 
 <!-- RADAR:START -->
-_Run **panel-2026-10** · 8636 reachable hosts (8636 registrable domains) · ruleset 0.4.0_
+_Run **panel-2026-11** · 8603 reachable hosts (8603 registrable domains) · ruleset 0.4.0_
 
 | Route | Purpose | Publisher | n | Adoption | 95% CI | Trend |
 |:--|:--|:--|--:|--:|:--|:-:|
-| `/robots.txt` | Which parts of a site automated clients may enter | IETF | 7590 | 83.72% | 82.9–84.5 | — |
-| `/sitemap.xml` | An index of every address a website offers | sitemaps.org | 6890 | 54.40% | 53.2–55.6 | — |
-| `/llms.txt` | A table of contents for language models | Answer.AI | 6635 | 14.11% | 13.3–15.0 | — |
-| `/.well-known/security.txt` | Where to report a security vulnerability | IETF | 6862 | 8.16% | 7.5–8.8 | — |
-| `/.well-known/oauth-authorization-server` | How the service that grants access rights works | IETF | 6782 | 6.56% | 6.0–7.2 | — |
-| `/.well-known/oauth-protected-resource` | Where a client obtains authorization for access | IETF | 6779 | 6.08% | 5.5–6.7 | — |
-| `/llms-full.txt` | A whole website's content in a single file | Answer.AI | 6639 | 4.34% | 3.9–4.9 | — |
-| `/.well-known/gpc.json` | Whether the site honors the data-sharing opt-out | W3C Global Privacy Control | 6800 | 2.84% | 2.5–3.3 | — |
-| `/security.txt` | Where to report a vulnerability, at the site root | IETF | 7050 | 1.21% | 1.0–1.5 | — |
-| `/.well-known/traffic-advice` | Whether a caching proxy may prefetch pages | Google (Private Prefetch Proxy) | 6760 | 0.99% | 0.8–1.3 | — |
-| `/rsl.xml` | The license terms under which content may be used | RSL Collective | 6353 | 0.66% | 0.5–0.9 | — |
-| `/.well-known/openid-configuration` | Where and how to sign in at this domain | OpenID Foundation | 6771 | 0.37% | 0.3–0.5 | — |
-| `/.well-known/tdmrep.json` | Whether text and data may be mined automatically | W3C TDM Reservation Protocol CG | 6796 | 0.37% | 0.2–0.5 | — |
-| `/ai.txt` | Which content is withheld from AI training | Spawning | 6606 | 0.27% | 0.2–0.4 | — |
-| `/.well-known/api-catalog` | An index of the interfaces a domain offers | IETF | 6792 | 0.25% | 0.2–0.4 | — |
-| `/openapi.json` | A description of an interface for other programs | OpenAPI Initiative | 6368 | 0.19% | 0.1–0.3 | — |
-| `/.well-known/ai-catalog.json` | What content and services a domain offers AI agents | AI Catalog WG (Linux Foundation), Google, Microsoft | 6733 | 0.09% | 0.0–0.2 | — |
-| `/.well-known/ai-plugin.json` | Instructions for a chatbot to operate a service | OpenAI | 6589 | 0.09% | 0.0–0.2 | — |
-| `/.well-known/mcp.json` | Which tool servers a domain provides for AI | Model Context Protocol | 6726 | 0.07% | 0.0–0.2 | — |
-| `/.well-known/host-meta` | Pointers to a domain's other points of information | IETF | 6783 | 0.06% | 0.0–0.2 | — |
-| `/.well-known/agent-card.json` | What a software agent can do and how to address it | A2A Project (Linux Foundation) | 6733 | 0.03% | 0.0–0.1 | — |
-| `/.well-known/ai.txt` | The same AI usage rules in the well-known folder | Spawning | 6620 | 0.03% | 0.0–0.1 | — |
-| `/.well-known/did.json` | A domain's provable identity without a central party | W3C | 6704 | 0.03% | 0.0–0.1 | — |
-| `/swagger.json` | An interface description under the older file name | SmartBear (Swagger) | 6302 | 0.03% | 0.0–0.1 | — |
-| `/.well-known/llms.txt` | A table of contents for language models, in well-known | Answer.AI | 6589 | 0.02% | 0.0–0.1 | — |
-| `/.well-known/webfinger` | Who is behind an address at this domain | IETF | 6632 | 0.02% | 0.0–0.1 | — |
-| `/mcp.json` | A machine-readable list of a site's MCP endpoints, at the root | Anthropic et al. (MCP) — root-path variant not specified | 6301 | 0.02% | 0.0–0.1 | — |
-| `/.well-known/agent.json` | An agent's capabilities, under the older file name | A2A Project (Linux Foundation) | 6729 | 0.01% | 0.0–0.1 | — |
-| `/.well-known/dnt-policy.txt` | A pledge not to track visitors across sites | EFF | 6798 | 0.01% | 0.0–0.1 | — |
-| `/.well-known/mcp-server` | Where to reach a domain's tool server | IETF (individual draft) | 6743 | 0.01% | 0.0–0.1 | — |
-| `/.well-known/openapi.json` | An interface description in the well-known folder | OpenAPI Initiative | 6709 | 0.00% | 0.0–0.1 | — |
-| `/.well-known/openid-federation` | Which federation a party provably belongs to | OpenID Foundation | 6777 | 0.00% | 0.0–0.1 | — |
-| `/.well-known/x402.json` | The price and payment route for machine requests | Coinbase, Cloudflare | 6709 | 0.00% | 0.0–0.1 | — |
-| `/ai-plugin.json` | The same chatbot instructions, at the site root | OpenAI | 6305 | 0.00% | 0.0–0.1 | — |
+| `/robots.txt` | Which parts of a site automated clients may enter | IETF | 7602 | 84.94% | 84.1–85.7 | → |
+| `/sitemap.xml` | An index of every address a website offers | sitemaps.org | 6828 | 54.51% | 53.3–55.7 | → |
+| `/llms.txt` | A table of contents for language models | Answer.AI | 6567 | 14.76% | 13.9–15.6 | → |
+| `/.well-known/security.txt` | Where to report a security vulnerability | IETF | 6805 | 8.38% | 7.7–9.1 | → |
+| `/.well-known/oauth-authorization-server` | How the service that grants access rights works | IETF | 6716 | 6.64% | 6.1–7.3 | → |
+| `/.well-known/oauth-protected-resource` | Where a client obtains authorization for access | IETF | 6713 | 6.26% | 5.7–6.9 | → |
+| `/llms-full.txt` | A whole website's content in a single file | Answer.AI | 6556 | 4.51% | 4.0–5.0 | → |
+| `/.well-known/ucp` | Which commerce capabilities a merchant offers agents | Universal Commerce Protocol (UCP Tech Council) | 6370 | 3.97% | 3.5–4.5 | new |
+| `/.well-known/gpc.json` | Whether the site honors the data-sharing opt-out | W3C Global Privacy Control | 6742 | 2.85% | 2.5–3.3 | → |
+| `/security.txt` | Where to report a vulnerability, at the site root | IETF | 6981 | 1.25% | 1.0–1.5 | → |
+| `/.well-known/traffic-advice` | Whether a caching proxy may prefetch pages | Google (Private Prefetch Proxy) | 6705 | 1.00% | 0.8–1.3 | → |
+| `/rsl.xml` | The license terms under which content may be used | RSL Collective | 6294 | 0.67% | 0.5–0.9 | → |
+| `/.well-known/tdmrep.json` | Whether text and data may be mined automatically | W3C TDM Reservation Protocol CG | 6746 | 0.44% | 0.3–0.6 | → |
+| `/.well-known/openid-configuration` | Where and how to sign in at this domain | OpenID Foundation | 6715 | 0.40% | 0.3–0.6 | → |
+| `/.well-known/api-catalog` | An index of the interfaces a domain offers | IETF | 6722 | 0.27% | 0.2–0.4 | → |
+| `/ai.txt` | Which content is withheld from AI training | Spawning | 6567 | 0.24% | 0.2–0.4 | → |
+| `/.well-known/agent-skills/index.json` | Which agent skills a domain offers, with version and digest | Cloudflare (Agent Skills Discovery RFC) | 6364 | 0.19% | 0.1–0.3 | new |
+| `/.well-known/mcp/server-card.json` | Self-description of a site's MCP server for clients | no registered publisher — singular variant of MCP SEP-2127, checked by Cloudflare's Agent Readiness Score | 6365 | 0.19% | 0.1–0.3 | new |
+| `/openapi.json` | A description of an interface for other programs | OpenAPI Initiative | 6299 | 0.17% | 0.1–0.3 | → |
+| `/.well-known/ai-catalog.json` | What content and services a domain offers AI agents | AI Catalog WG (Linux Foundation), Google, Microsoft | 6672 | 0.13% | 0.1–0.3 | → |
+| `/.well-known/ai-plugin.json` | Instructions for a chatbot to operate a service | OpenAI | 6506 | 0.09% | 0.0–0.2 | → |
+| `/.well-known/mcp.json` | Which tool servers a domain provides for AI | Model Context Protocol | 6663 | 0.08% | 0.0–0.2 | → |
+| `/.well-known/agent-card.json` | What a software agent can do and how to address it | A2A Project (Linux Foundation) | 6673 | 0.06% | 0.0–0.2 | → |
+| `/.well-known/ai.txt` | The same AI usage rules in the well-known folder | Spawning | 6543 | 0.05% | 0.0–0.1 | → |
+| `/.well-known/host-meta` | Pointers to a domain's other points of information | IETF | 6711 | 0.04% | 0.0–0.1 | → |
+| `/.well-known/did.json` | A domain's provable identity without a central party | W3C | 6647 | 0.03% | 0.0–0.1 | → |
+| `/.well-known/dnt-policy.txt` | A pledge not to track visitors across sites | EFF | 6739 | 0.03% | 0.0–0.1 | → |
+| `/swagger.json` | An interface description under the older file name | SmartBear (Swagger) | 6226 | 0.03% | 0.0–0.1 | → |
+| `/.well-known/agent.json` | An agent's capabilities, under the older file name | A2A Project (Linux Foundation) | 6665 | 0.02% | 0.0–0.1 | → |
+| `/.well-known/llms.txt` | A table of contents for language models, in well-known | Answer.AI | 6510 | 0.02% | 0.0–0.1 | → |
+| `/.well-known/webfinger` | Who is behind an address at this domain | IETF | 6561 | 0.02% | 0.0–0.1 | → |
+| `/.well-known/mcp-server` | Where to reach a domain's tool server | IETF (individual draft) | 6669 | 0.01% | 0.0–0.1 | → |
+| `/.well-known/openapi.json` | An interface description in the well-known folder | OpenAPI Initiative | 6625 | 0.00% | 0.0–0.1 | → |
+| `/.well-known/openid-federation` | Which federation a party provably belongs to | OpenID Foundation | 6712 | 0.00% | 0.0–0.1 | → |
+| `/.well-known/x402.json` | The price and payment route for machine requests | Coinbase, Cloudflare | 6648 | 0.00% | 0.0–0.1 | → |
+| `/ai-plugin.json` | The same chatbot instructions, at the site root | OpenAI | 6255 | 0.00% | 0.0–0.1 | → |
+| `/mcp.json` | A machine-readable list of a site's MCP endpoints, at the root | Anthropic et al. (MCP) — root-path variant not specified | 6246 | 0.00% | 0.0–0.1 | → |
 
 Adoption is the share of sources we were actually allowed to inspect that
 served the route, with a 95% Wilson interval. Sources that turned us away
@@ -69,26 +72,32 @@ are not part of the denominator.
 **`n` is the number of hosts on which this route was actually probed. It
 differs between routes, so each row has its own denominator and the rows
 are not directly comparable with one another.**
-No trend arrow in this edition. The previous runs cover a different part of the frame, so an arrow between them would partly measure the change of population rather than the change on the web. From December the quarterly roll-up compares like with like — the whole frame against the whole frame — and the arrow returns there.
-Of the 1535 `/llms.txt` files found in the whole monthly run `monat-2026-10-block-b` (panel and block), 517 (33.7%) carry the marks of a generator — a self-declared producer or wording shared with other sites; the producers that name themselves are content-management plugins (largest: yoast seo 112, all in one seo 29, rank math seo 19). The adoption figure above counts files, and that stays right: a file rolled out by a plugin exists and is read. This footnote answers the other question — how much of the number is a decision. It is an indication for this run, not a published rate.
-Of the 469 `/llms-full.txt` files found in the whole monthly run `monat-2026-10-block-b` (panel and block), 343 (73.1%) carry the marks of a generator — a self-declared producer or wording shared with other sites. The adoption figure above counts files, and that stays right: a file rolled out by a plugin exists and is read. This footnote answers the other question — how much of the number is a decision. It is an indication for this run, not a published rate.
-From the next run also measured (no figures yet): `/.well-known/ucp`, `/.well-known/agent-skills/index.json`, `/.well-known/mcp/server-card.json`.
+An arrow appears only where the intervals no longer overlap with **panel-2026-10**; `→` means the change stays within measurement uncertainty.
+Trend arrows compare the 10,000-source panel with the previous month (same list, same ruleset). The quarterly roll-up is shown as a level; its first comparison is the February 2027 roll-up.
+`new` means the route is measured since this run — it says nothing about when it first appeared on the web.
+Of the 1623 `/llms.txt` files found in the whole monthly run `monat-2026-11-block-c` (panel and block), 524 (32.3%) carry the marks of a generator — a self-declared producer or wording shared with other sites; the producers that name themselves are content-management plugins (largest: yoast seo 113, rank math seo 24, all in one seo 17). The adoption figure above counts files, and that stays right: a file rolled out by a plugin exists and is read. This footnote answers the other question — how much of the number is a decision. It is an indication for this run, not a published rate.
+Of the 493 `/llms-full.txt` files found in the whole monthly run `monat-2026-11-block-c` (panel and block), 351 (71.2%) carry the marks of a generator — a self-declared producer or wording shared with other sites. The adoption figure above counts files, and that stays right: a file rolled out by a plugin exists and is read. This footnote answers the other question — how much of the number is a decision. It is an indication for this run, not a published rate.
 
 ### Notes on this run
 
+- **Cloudflare's robots.txt entry is back.** On the same 1,000 panel sources (readable robots.txt), the entry Cloudflare inserts into robots.txt stood at **7.8%** in September (55/704, 95% CI 6.1–10.0), **2.0%** in October (14/700, 95% CI 1.2–3.3) and **7.2%** in November (50/695, 95% CI 5.5–9.4). The old form disappeared in mid-September (Cloudflare's change of 15 September); a new form ("# Training crawlers"), seen in single files since mid-September, spread from about late October and in November is again close to the September level (41 of 50 in the new form). Read October → November alone, it would look like a new high; it is a return.
+- What the new entry asks: in November, 439 of the 10,000 panel sources carry it. 420 of them name AI training crawlers only (for example GPTBot, ClaudeBot, CCBot, Google-Extended), which leaves AI search and requests made on a user's behalf untouched. 19 also ask AI agents acting for users to stay away (ChatGPT-User, Claude-User, Perplexity-User), 6 also AI search crawlers (OAI-SearchBot, PerplexityBot, Claude-SearchBot). robots.txt is a request, not a technical block; we measure only the robots.txt view, not what a firewall does, and not who chose the setting.
+- **Full frame September–November 2026** (all 30,000 sources, each measured once; 25,851 reachable organisations): `/robots.txt` 84.6% (95% CI 84.2–85.1, n 22,968) · `/sitemap.xml` 54.0% (95% CI 53.4–54.7, n 20,515) · `/llms.txt` 14.1% (95% CI 13.6–14.6, n 19,764) · `/.well-known/security.txt` 8.5% (95% CI 8.1–8.9, n 20,503). This is a level, not a trend; its first comparison is the February 2027 roll-up.
 - From October 2026 the panel has 10,000 sources (a third of the frame). The earlier 1,000-source panel continues inside it as a subset until December 2026 and is published as its own series (`data/panel1000-YYYY-MM.*`); the two series are never chained.
-- Of the 238 panel sources that carried Cloudflare's managed robots.txt block in September, those using the marker form still carry a block in 11 of 149 readable files (7.38%, 95% CI 4.2–12.7); those using the preamble-only form in 38 of 38 (100%, 95% CI 90.8–100.0).
-- 47 files could not be read in October (20.09% of the pair, against 20.15% across the panel) and 4 hosts were unreachable.
+- Of the 132 panel sources that carried Cloudflare's managed robots.txt block in October, those using the marker form still carry a block in 20 of 21 readable files (95.24%, 95% CI 77.3–99.2); those using the preamble-only form in 106 of 108 (98.15%, 95% CI 93.5–99.5).
+- 1 file could not be read in November (0.77% of the pair, against 19.2% across the panel) and 2 hosts were unreachable.
 - We give no combined rate: it would hide that one notation changed while the setting stayed.
-- Delivers Markdown when Markdown is preferred: 154 of 6,509 organisations (2.37%, 2.0–2.8).
-- Announcing a Markdown version beforehand is rarer: `rel="describedby"` 9, `rel="alternate" type="text/markdown"` 2 (a lower bound — only HTTP Link headers are countable).
+- Content-Signal lines in robots.txt: 530 of 6,483 panel hosts (8.18%, 7.5–8.9); 454 of them sit inside a provider-managed block, 76 (1.17%, 0.9–1.5) outside it.
+- Delivers Markdown when Markdown is preferred: 162 of 6,428 organisations (2.52%, 2.2–2.9).
+- Announcing a Markdown version beforehand is rarer: `rel="describedby"` 13, `rel="alternate" type="text/markdown"` 3 (a lower bound — only HTTP Link headers are countable).
 - A single request cannot tell whether a server negotiates or always serves Markdown.
-- Because our one home-page request prefers Markdown, 154 home pages answered without an HTML head; their link relations are not read.
-- TDMRep under ruleset 0.4.0: 25 on the panel under the new rule, 25 under the old one (see the version history in RULESET.md).
+- Because our one home-page request prefers Markdown, 162 home pages answered without an HTML head; their link relations are not read.
+- TDMRep under ruleset 0.4.0: 30 on the panel under the new rule, 30 under the old one (see the version history in RULESET.md).
 - 2 organisations declare a licence in robots.txt (`License:`); 1 of them points to `/rsl.xml`.
 - 3 organisations announce llms.txt in robots.txt under a path other than the root; the file belongs at the root, so they are not counted.
-- DNS: of 10,000 panel sources, 0 publish a specification-conformant `_agent` record and 0 an `_mcp` record that can be told apart from wildcard or verification answers.
-- `/.well-known/ai-catalog.json`: in the fixed 1,000-source panel 0 of 675 in September and 0 of 676 in October; in the 10,000-source panel 6 of 6,733 (0.09%). Lighthouse has checked the file since 2026.
+- DNS: of 10,000 panel sources, 0 publish a specification-conformant `_agent` record; at most 1 `_mcp` answer is neither a wildcard nor SPF.
+- `/.well-known/ai-catalog.json`: in the fixed 1,000-source panel 0 of 676 in October and 0 of 675 in November; in the 10,000-source panel 9 of 6,672 (0.13%). Lighthouse has checked the file since 2026.
+- Same panel, in October → in November, only hosts observed in both months (new / gone of paired hosts): `/robots.txt` +112 / −42 (n 7,406) · `/sitemap.xml` +54 / −58 (n 6,638) · `/llms.txt` +60 / −20 (n 6,387) · `/.well-known/oauth-protected-resource` +29 / −24 (n 6,549) · `/.well-known/oauth-authorization-server` +26 / −25 (n 6,554) · `/.well-known/security.txt` +18 / −7 (n 6,641).
 
 
 
@@ -125,11 +134,12 @@ From the next run also measured (no figures yet): `/.well-known/ucp`, `/.well-kn
 
 _Observed routes are not requested in the monthly run. Our discovery runs (see below) and a monthly field probe on 1,000 of the panel sources request them, and count nothing from them for this page. Each entry names its promotion criterion in the lab._
 
-### Requested only by discovery runs (19)
+### Requested only by discovery runs (27)
 
 - `/.well-known/api-catalog.json`
 - `/.well-known/http-message-signatures-directory`
 - `/.well-known/signature-agent-card`
+- `/.well-known/sail`
 - `/.well-known/agent-trust`
 - `/.well-known/agent-trust-keys`
 - `/.well-known/aicp`
@@ -146,6 +156,13 @@ _Observed routes are not requested in the monthly run. Our discovery runs (see b
 - `/trust.txt`
 - `/.well-known/trust.txt`
 - `/.well-known/agent`
+- `/.well-known/ucap`
+- `/.well-known/ucap-access`
+- `/.well-known/ucap-delegation`
+- `/.well-known/aauth-access.json`
+- `/.well-known/aauth-resource.json`
+- `/.well-known/idmandat.json`
+- `/.well-known/agents.json`
 <!-- RADAR:END -->
 **What we request.** The lists above are the complete list of routes we
 request: the measured routes in every monthly run; the routes under
@@ -154,7 +171,7 @@ discovery runs; the routes under “Requested only by discovery runs” only in
 those. Three additions: your home page, once, to read its `<link rel>`
 announcements (the page itself is discarded); when files on your own domain
 point to another file there — a link in your `robots.txt`, say — we may fetch
-that referenced file once, at most one such follow-up per domain and run, under
+that referenced file, one request per referenced file and run, under
 the same `robots.txt` rules; and three DNS records per domain (`_agent`, `_mcp`,
 `_index._agents`): plain name-service lookups that never touch your web server.
 Nothing we fetch is published as content — only counts and shares per route,
@@ -193,11 +210,11 @@ published alongside as its own series — the only one that reaches back to
 August 2026 — and the two series are never chained. Every month one **block**
 of the wider 30,000-source frame is measured in the same run — the frame is
 split into three blocks (a, b, c) that rotate through the quarter, so each
-block source is visited once per quarter. Block **b** ran in October 2026. The
+block source is visited once per quarter. Block **c** ran in November 2026, which completes the first full pass of the frame (September–November 2026). The
 block run's purpose is coverage, not trend.
 
 All series are published in [`data/`](data/): `panel-YYYY-MM.{json,csv}`,
-`panel1000-YYYY-MM.{json,csv}` and `monat-YYYY-MM-block-x.{json,csv}`. Each file states when it was
+`panel1000-YYYY-MM.{json,csv}` and `monat-YYYY-MM-block-x.{json,csv}`; after the last month of each pass also `quartal-YYYY-qN.{json,csv}`, the full frame with every source counted once (its `parts` name the three runs it is built from). Each file states when it was
 measured and whether it is complete (`measurement_window.status`); how
 the frame is split is defined in [RULESET.md](RULESET.md).
 

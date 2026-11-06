@@ -11,7 +11,7 @@
 > nessun contatto, nessuna motivazione richiesta.
 >
 > <!-- LAST:START -->
-> **Quanto spesso passiamo:** circa **16.600 fonti (domini) al mese**: il panel di 10.000 fonti ogni mese, più un blocco a rotazione del quadro di ~30.000 fonti, ogni fonte di blocco al massimo una volta a trimestre. Una volta al mese, a 1.000 fonti del panel vengono richieste anche le route sotto osservazione.
+> **Quanto spesso passiamo:** circa **16.800 fonti (domini) al mese**: il panel di 10.000 fonti ogni mese, più un blocco a rotazione del quadro di ~30.000 fonti, ogni fonte di blocco al massimo una volta a trimestre. Una volta al mese, a 1.000 fonti del panel vengono richieste anche le route sotto osservazione.
 >
 > In più, piccole rilevazioni esplorative visitano domini popolari al di fuori del quadro — al massimo circa 2.000 al giorno — con le route delle tabelle qui sotto più il breve elenco «Richieste solo dalle rilevazioni esplorative». I loro risultati non vengono mai pubblicati; vale la stessa esclusione.
 > <!-- LAST:END -->
@@ -23,44 +23,47 @@ davvero scaricabili. Ogni segnale è una misurazione, non un'opinione.
 ## Il radar
 
 <!-- RADAR:START -->
-_Misurazione **panel-2026-10** · 8636 host raggiungibili (8636 domini registrabili) · regole 0.4.0_
+_Misurazione **panel-2026-11** · 8603 host raggiungibili (8603 domini registrabili) · regole 0.4.0_
 
 | Route | Scopo | Editore | n | Diffusione | IC 95 % | Tendenza |
 |:--|:--|:--|--:|--:|:--|:-:|
-| `/robots.txt` | Quali aree di un sito i crawler possono visitare | IETF | 7590 | 83,72 % | 82,9–84,5 | — |
-| `/sitemap.xml` | L'elenco di tutti gli indirizzi che un sito offre | sitemaps.org | 6890 | 54,40 % | 53,2–55,6 | — |
-| `/llms.txt` | Un indice dei contenuti per i modelli linguistici | Answer.AI | 6635 | 14,11 % | 13,3–15,0 | — |
-| `/.well-known/security.txt` | Dove segnalare una vulnerabilità di sicurezza | IETF | 6862 | 8,16 % | 7,5–8,8 | — |
-| `/.well-known/oauth-authorization-server` | Come funziona il servizio che concede l'accesso | IETF | 6782 | 6,56 % | 6,0–7,2 | — |
-| `/.well-known/oauth-protected-resource` | Dove un client ottiene l'autorizzazione all'accesso | IETF | 6779 | 6,08 % | 5,5–6,7 | — |
-| `/llms-full.txt` | L'intero contenuto di un sito in un unico file | Answer.AI | 6639 | 4,34 % | 3,9–4,9 | — |
-| `/.well-known/gpc.json` | Se il sito rispetta l'opt-out sulla condivisione dei dati | W3C Global Privacy Control | 6800 | 2,84 % | 2,5–3,3 | — |
-| `/security.txt` | Dove segnalare una vulnerabilità, alla radice del sito | IETF | 7050 | 1,21 % | 1,0–1,5 | — |
-| `/.well-known/traffic-advice` | Se un proxy di cache può precaricare le pagine | Google (Private Prefetch Proxy) | 6760 | 0,99 % | 0,8–1,3 | — |
-| `/rsl.xml` | A quali condizioni di licenza si possono usare i contenuti | RSL Collective | 6353 | 0,66 % | 0,5–0,9 | — |
-| `/.well-known/openid-configuration` | Dove e come si accede a questo dominio | OpenID Foundation | 6771 | 0,37 % | 0,3–0,5 | — |
-| `/.well-known/tdmrep.json` | Se testi e dati possono essere estratti automaticamente | W3C TDM Reservation Protocol CG | 6796 | 0,37 % | 0,2–0,5 | — |
-| `/ai.txt` | Quali contenuti sono esclusi dall'addestramento di AI | Spawning | 6606 | 0,27 % | 0,2–0,4 | — |
-| `/.well-known/api-catalog` | L'elenco delle interfacce offerte da un dominio | IETF | 6792 | 0,25 % | 0,2–0,4 | — |
-| `/openapi.json` | La descrizione di un'interfaccia per altri programmi | OpenAPI Initiative | 6368 | 0,19 % | 0,1–0,3 | — |
-| `/.well-known/ai-catalog.json` | Quali contenuti e servizi un dominio offre agli agenti AI | AI Catalog WG (Linux Foundation), Google, Microsoft | 6733 | 0,09 % | 0,0–0,2 | — |
-| `/.well-known/ai-plugin.json` | Istruzioni perché un chatbot possa usare un servizio | OpenAI | 6589 | 0,09 % | 0,0–0,2 | — |
-| `/.well-known/mcp.json` | Quali tool server un dominio mette a disposizione per AI | Model Context Protocol | 6726 | 0,07 % | 0,0–0,2 | — |
-| `/.well-known/host-meta` | I rimandi agli altri punti informativi di un dominio | IETF | 6783 | 0,06 % | 0,0–0,2 | — |
-| `/.well-known/agent-card.json` | Cosa sa fare un agente software e come interpellarlo | A2A Project (Linux Foundation) | 6733 | 0,03 % | 0,0–0,1 | — |
-| `/.well-known/ai.txt` | Le stesse regole d'uso per AI nella cartella well-known | Spawning | 6620 | 0,03 % | 0,0–0,1 | — |
-| `/.well-known/did.json` | L'identità verificabile di un dominio senza enti centrali | W3C | 6704 | 0,03 % | 0,0–0,1 | — |
-| `/swagger.json` | La descrizione dell'interfaccia col vecchio nome di file | SmartBear (Swagger) | 6302 | 0,03 % | 0,0–0,1 | — |
-| `/.well-known/llms.txt` | Un indice per i modelli linguistici, in well-known | Answer.AI | 6589 | 0,02 % | 0,0–0,1 | — |
-| `/.well-known/webfinger` | Chi sta dietro un indirizzo di questo dominio | IETF | 6632 | 0,02 % | 0,0–0,1 | — |
-| `/mcp.json` | L'elenco leggibile dalle macchine degli endpoint MCP, alla radice | Anthropic et al. (MCP) — root-path variant not specified | 6301 | 0,02 % | 0,0–0,1 | — |
-| `/.well-known/agent.json` | Le capacità di un agente, col vecchio nome di file | A2A Project (Linux Foundation) | 6729 | 0,01 % | 0,0–0,1 | — |
-| `/.well-known/dnt-policy.txt` | La promessa di non tracciare i visitatori tra i siti | EFF | 6798 | 0,01 % | 0,0–0,1 | — |
-| `/.well-known/mcp-server` | Dove raggiungere il tool server di un dominio | IETF (individual draft) | 6743 | 0,01 % | 0,0–0,1 | — |
-| `/.well-known/openapi.json` | La descrizione dell'interfaccia nella cartella well-known | OpenAPI Initiative | 6709 | 0,00 % | 0,0–0,1 | — |
-| `/.well-known/openid-federation` | A quale federazione appartiene un soggetto, con prova | OpenID Foundation | 6777 | 0,00 % | 0,0–0,1 | — |
-| `/.well-known/x402.json` | Prezzo e modo di pagamento per le richieste automatiche | Coinbase, Cloudflare | 6709 | 0,00 % | 0,0–0,1 | — |
-| `/ai-plugin.json` | Le stesse istruzioni per chatbot, alla radice del sito | OpenAI | 6305 | 0,00 % | 0,0–0,1 | — |
+| `/robots.txt` | Quali aree di un sito i crawler possono visitare | IETF | 7602 | 84,94 % | 84,1–85,7 | → |
+| `/sitemap.xml` | L'elenco di tutti gli indirizzi che un sito offre | sitemaps.org | 6828 | 54,51 % | 53,3–55,7 | → |
+| `/llms.txt` | Un indice dei contenuti per i modelli linguistici | Answer.AI | 6567 | 14,76 % | 13,9–15,6 | → |
+| `/.well-known/security.txt` | Dove segnalare una vulnerabilità di sicurezza | IETF | 6805 | 8,38 % | 7,7–9,1 | → |
+| `/.well-known/oauth-authorization-server` | Come funziona il servizio che concede l'accesso | IETF | 6716 | 6,64 % | 6,1–7,3 | → |
+| `/.well-known/oauth-protected-resource` | Dove un client ottiene l'autorizzazione all'accesso | IETF | 6713 | 6,26 % | 5,7–6,9 | → |
+| `/llms-full.txt` | L'intero contenuto di un sito in un unico file | Answer.AI | 6556 | 4,51 % | 4,0–5,0 | → |
+| `/.well-known/ucp` | Quali funzioni di commercio un venditore offre agli agenti | Universal Commerce Protocol (UCP Tech Council) | 6370 | 3,97 % | 3,5–4,5 | new |
+| `/.well-known/gpc.json` | Se il sito rispetta l'opt-out sulla condivisione dei dati | W3C Global Privacy Control | 6742 | 2,85 % | 2,5–3,3 | → |
+| `/security.txt` | Dove segnalare una vulnerabilità, alla radice del sito | IETF | 6981 | 1,25 % | 1,0–1,5 | → |
+| `/.well-known/traffic-advice` | Se un proxy di cache può precaricare le pagine | Google (Private Prefetch Proxy) | 6705 | 1,00 % | 0,8–1,3 | → |
+| `/rsl.xml` | A quali condizioni di licenza si possono usare i contenuti | RSL Collective | 6294 | 0,67 % | 0,5–0,9 | → |
+| `/.well-known/tdmrep.json` | Se testi e dati possono essere estratti automaticamente | W3C TDM Reservation Protocol CG | 6746 | 0,44 % | 0,3–0,6 | → |
+| `/.well-known/openid-configuration` | Dove e come si accede a questo dominio | OpenID Foundation | 6715 | 0,40 % | 0,3–0,6 | → |
+| `/.well-known/api-catalog` | L'elenco delle interfacce offerte da un dominio | IETF | 6722 | 0,27 % | 0,2–0,4 | → |
+| `/ai.txt` | Quali contenuti sono esclusi dall'addestramento di AI | Spawning | 6567 | 0,24 % | 0,2–0,4 | → |
+| `/.well-known/agent-skills/index.json` | Quali agent skill offre un dominio, con versione e checksum | Cloudflare (Agent Skills Discovery RFC) | 6364 | 0,19 % | 0,1–0,3 | new |
+| `/.well-known/mcp/server-card.json` | Autodescrizione del server MCP di un sito per i client | no registered publisher — singular variant of MCP SEP-2127, checked by Cloudflare's Agent Readiness Score | 6365 | 0,19 % | 0,1–0,3 | new |
+| `/openapi.json` | La descrizione di un'interfaccia per altri programmi | OpenAPI Initiative | 6299 | 0,17 % | 0,1–0,3 | → |
+| `/.well-known/ai-catalog.json` | Quali contenuti e servizi un dominio offre agli agenti AI | AI Catalog WG (Linux Foundation), Google, Microsoft | 6672 | 0,13 % | 0,1–0,3 | → |
+| `/.well-known/ai-plugin.json` | Istruzioni perché un chatbot possa usare un servizio | OpenAI | 6506 | 0,09 % | 0,0–0,2 | → |
+| `/.well-known/mcp.json` | Quali tool server un dominio mette a disposizione per AI | Model Context Protocol | 6663 | 0,08 % | 0,0–0,2 | → |
+| `/.well-known/agent-card.json` | Cosa sa fare un agente software e come interpellarlo | A2A Project (Linux Foundation) | 6673 | 0,06 % | 0,0–0,2 | → |
+| `/.well-known/ai.txt` | Le stesse regole d'uso per AI nella cartella well-known | Spawning | 6543 | 0,05 % | 0,0–0,1 | → |
+| `/.well-known/host-meta` | I rimandi agli altri punti informativi di un dominio | IETF | 6711 | 0,04 % | 0,0–0,1 | → |
+| `/.well-known/did.json` | L'identità verificabile di un dominio senza enti centrali | W3C | 6647 | 0,03 % | 0,0–0,1 | → |
+| `/.well-known/dnt-policy.txt` | La promessa di non tracciare i visitatori tra i siti | EFF | 6739 | 0,03 % | 0,0–0,1 | → |
+| `/swagger.json` | La descrizione dell'interfaccia col vecchio nome di file | SmartBear (Swagger) | 6226 | 0,03 % | 0,0–0,1 | → |
+| `/.well-known/agent.json` | Le capacità di un agente, col vecchio nome di file | A2A Project (Linux Foundation) | 6665 | 0,02 % | 0,0–0,1 | → |
+| `/.well-known/llms.txt` | Un indice per i modelli linguistici, in well-known | Answer.AI | 6510 | 0,02 % | 0,0–0,1 | → |
+| `/.well-known/webfinger` | Chi sta dietro un indirizzo di questo dominio | IETF | 6561 | 0,02 % | 0,0–0,1 | → |
+| `/.well-known/mcp-server` | Dove raggiungere il tool server di un dominio | IETF (individual draft) | 6669 | 0,01 % | 0,0–0,1 | → |
+| `/.well-known/openapi.json` | La descrizione dell'interfaccia nella cartella well-known | OpenAPI Initiative | 6625 | 0,00 % | 0,0–0,1 | → |
+| `/.well-known/openid-federation` | A quale federazione appartiene un soggetto, con prova | OpenID Foundation | 6712 | 0,00 % | 0,0–0,1 | → |
+| `/.well-known/x402.json` | Prezzo e modo di pagamento per le richieste automatiche | Coinbase, Cloudflare | 6648 | 0,00 % | 0,0–0,1 | → |
+| `/ai-plugin.json` | Le stesse istruzioni per chatbot, alla radice del sito | OpenAI | 6255 | 0,00 % | 0,0–0,1 | → |
+| `/mcp.json` | L'elenco leggibile dalle macchine degli endpoint MCP, alla radice | Anthropic et al. (MCP) — root-path variant not specified | 6246 | 0,00 % | 0,0–0,1 | → |
 
 La diffusione è la quota delle fonti che abbiamo potuto davvero consultare
 e che hanno restituito la route, con intervallo di Wilson al 95 %. Le fonti
@@ -70,26 +73,32 @@ non-risposta non è un «no», quindi non entra nel denominatore.
 **`n` è il numero di host su cui la route è stata effettivamente testata.
 Cambia da una route all'altra, quindi ogni riga ha il proprio denominatore
 e le righe non sono direttamente confrontabili tra loro.**
-In questa edizione non compare la freccia di tendenza. Le misurazioni precedenti coprono una parte diversa del campione, quindi una freccia tra di esse misurerebbe in parte il cambio di popolazione anziché il cambiamento sul web. Da dicembre il consolidamento trimestrale confronta ciò che è confrontabile — l'intero campione contro l'intero campione — e lì la freccia torna.
-Dei 1535 file `/llms.txt` trovati nell'intera misurazione mensile `monat-2026-10-block-b` (panel e blocco), 517 (33,7 %) portano i segni di uno strumento: un generatore che si dichiara o formulazioni condivise con altri siti; i generatori che si dichiarano sono estensioni per sistemi di gestione dei contenuti (i maggiori: yoast seo 112, all in one seo 29, rank math seo 19). Il dato di diffusione qui sopra conta i file, e resta corretto così: un file distribuito da uno strumento esiste e viene letto. Questa nota risponde all'altra domanda — quanta parte del numero è una decisione. È un indizio per questa misurazione, non un tasso pubblicato.
-Dei 469 file `/llms-full.txt` trovati nell'intera misurazione mensile `monat-2026-10-block-b` (panel e blocco), 343 (73,1 %) portano i segni di uno strumento: un generatore che si dichiara o formulazioni condivise con altri siti. Il dato di diffusione qui sopra conta i file, e resta corretto così: un file distribuito da uno strumento esiste e viene letto. Questa nota risponde all'altra domanda — quanta parte del numero è una decisione. È un indizio per questa misurazione, non un tasso pubblicato.
-Dalla prossima misurazione misurate anche (ancora senza dati): `/.well-known/ucp`, `/.well-known/agent-skills/index.json`, `/.well-known/mcp/server-card.json`.
+Una freccia compare solo quando gli intervalli non si sovrappongono più rispetto a **panel-2026-10**; `→` significa che la variazione resta entro l'incertezza di misura.
+Le frecce di tendenza confrontano il panel di 10.000 fonti con il mese precedente (stessa lista, stesso insieme di regole). Il consolidamento trimestrale è riportato come livello; il suo primo confronto è il consolidamento di febbraio 2027.
+`new` significa che la rotta viene misurata da questa misurazione — non dice nulla su quando sia apparsa per la prima volta sul web.
+Dei 1623 file `/llms.txt` trovati nell'intera misurazione mensile `monat-2026-11-block-c` (panel e blocco), 524 (32,3 %) portano i segni di uno strumento: un generatore che si dichiara o formulazioni condivise con altri siti; i generatori che si dichiarano sono estensioni per sistemi di gestione dei contenuti (i maggiori: yoast seo 113, rank math seo 24, all in one seo 17). Il dato di diffusione qui sopra conta i file, e resta corretto così: un file distribuito da uno strumento esiste e viene letto. Questa nota risponde all'altra domanda — quanta parte del numero è una decisione. È un indizio per questa misurazione, non un tasso pubblicato.
+Dei 493 file `/llms-full.txt` trovati nell'intera misurazione mensile `monat-2026-11-block-c` (panel e blocco), 351 (71,2 %) portano i segni di uno strumento: un generatore che si dichiara o formulazioni condivise con altri siti. Il dato di diffusione qui sopra conta i file, e resta corretto così: un file distribuito da uno strumento esiste e viene letto. Questa nota risponde all'altra domanda — quanta parte del numero è una decisione. È un indizio per questa misurazione, non un tasso pubblicato.
 
 ### Note su questa rilevazione
 
+- **La voce di Cloudflare nel robots.txt è tornata.** Sulle stesse 1.000 fonti del panel (robots.txt leggibile), la voce che Cloudflare inserisce nel robots.txt era al **7,8 %** a settembre (55/704, IC 95 % 6,1–10,0), **2,0 %** a ottobre (14/700, IC 95 % 1,2–3,3) e **7,2 %** a novembre (50/695, IC 95 % 5,5–9,4). A metà settembre la vecchia forma è scomparsa (il cambiamento di Cloudflare del 15 settembre); una nuova forma („# Training crawlers"), vista in singoli file da metà settembre, si diffonde da circa fine ottobre e a novembre è di nuovo vicina al livello di settembre (41 su 50 nella nuova forma). Letto solo ottobre → novembre, sembrerebbe un nuovo massimo; è un ritorno.
+- Che cosa chiede la nuova voce: a novembre la riportano 439 delle 10.000 fonti del panel. 420 nominano solo i crawler di addestramento IA (per esempio GPTBot, ClaudeBot, CCBot, Google-Extended) e lasciano intatte la ricerca IA e le richieste fatte per conto degli utenti. 19 chiedono anche agli agenti IA che agiscono per gli utenti di restare fuori (ChatGPT-User, Claude-User, Perplexity-User), 6 anche ai crawler di ricerca IA (OAI-SearchBot, PerplexityBot, Claude-SearchBot). Il robots.txt è una richiesta, non un blocco tecnico; misuriamo solo la vista robots.txt, non ciò che fa un firewall, né chi ha scelto l'impostazione.
+- **Quadro completo settembre–novembre 2026** (tutte le 30.000 fonti, ciascuna misurata una volta; 25.851 organizzazioni raggiungibili): `/robots.txt` 84,6 % (IC 95 % 84,2–85,1, n 22.968) · `/sitemap.xml` 54,0 % (IC 95 % 53,4–54,7, n 20.515) · `/llms.txt` 14,1 % (IC 95 % 13,6–14,6, n 19.764) · `/.well-known/security.txt` 8,5 % (IC 95 % 8,1–8,9, n 20.503). È un livello, non una tendenza; il primo confronto sarà il consolidamento di febbraio 2027.
 - Da ottobre 2026 il panel comprende 10.000 fonti (un terzo del quadro). Il panel precedente di 1.000 fonti prosegue al suo interno come sottoinsieme fino a dicembre 2026 ed è pubblicato come serie a sé (`data/panel1000-AAAA-MM.*`); le due serie non vengono mai concatenate.
-- Delle 238 fonti del panel che a settembre riportavano il blocco robots.txt gestito da Cloudflare, quelle con la forma a marcatori riportano ancora un blocco in 11 file leggibili su 149 (7,38 %, IC 95 % 4,2–12,7); quelle con la sola forma a preambolo in 38 su 38 (100 %, IC 95 % 90,8–100,0).
-- 47 file non erano leggibili a ottobre (20,09 % delle fonti appaiate, contro 20,15 % nell'intero panel) e 4 host non erano raggiungibili.
+- Delle 132 fonti del panel che a ottobre riportavano il blocco robots.txt gestito da Cloudflare, quelle con la forma a marcatori riportano ancora un blocco in 20 file leggibili su 21 (95,24 %, IC 95 % 77,3–99,2); quelle con la sola forma a preambolo in 106 su 108 (98,15 %, IC 95 % 93,5–99,5).
+- 1 file non era leggibile a novembre (0,77 % delle fonti appaiate, contro 19,2 % nell'intero panel) e 2 host non erano raggiungibili.
 - Non indichiamo un tasso complessivo: nasconderebbe che è cambiata una notazione mentre l'impostazione è rimasta.
-- Restituisce Markdown quando si preferisce Markdown: 154 organizzazioni su 6.509 (2,37 %, 2,0–2,8).
-- Annunciare in anticipo una versione Markdown è più raro: `rel="describedby"` 9, `rel="alternate" type="text/markdown"` 2 (un limite inferiore — sono conteggiabili solo le intestazioni HTTP Link).
+- Righe Content-Signal nel robots.txt: 530 su 6.483 host del panel (8,18 %, 7,5–8,9); di queste 454 si trovano in un blocco gestito dal fornitore, 76 (1,17 %, 0,9–1,5) al di fuori.
+- Restituisce Markdown quando si preferisce Markdown: 162 organizzazioni su 6.428 (2,52 %, 2,2–2,9).
+- Annunciare in anticipo una versione Markdown è più raro: `rel="describedby"` 13, `rel="alternate" type="text/markdown"` 3 (un limite inferiore — sono conteggiabili solo le intestazioni HTTP Link).
 - Una singola richiesta non può distinguere se un server negozia o restituisce sempre Markdown.
-- Poiché la nostra unica richiesta alla home page preferisce Markdown, 154 home page hanno risposto senza intestazione HTML; le loro relazioni di link non vengono lette.
-- TDMRep con le regole 0.4.0: 25 nel panel secondo la nuova regola, 25 secondo la precedente (vedi la cronologia delle versioni in RULESET.md).
+- Poiché la nostra unica richiesta alla home page preferisce Markdown, 162 home page hanno risposto senza intestazione HTML; le loro relazioni di link non vengono lette.
+- TDMRep con le regole 0.4.0: 30 nel panel secondo la nuova regola, 30 secondo la precedente (vedi la cronologia delle versioni in RULESET.md).
 - 2 organizzazioni dichiarano una licenza nel robots.txt (`License:`); 1 di esse rimanda a `/rsl.xml`.
 - 3 organizzazioni annunciano llms.txt nel robots.txt con un percorso diverso dalla radice; il file va nella radice, quindi non vengono conteggiate.
-- DNS: su 10.000 fonti del panel, 0 pubblicano un record `_agent` conforme alla specifica e 0 un record `_mcp` distinguibile da risposte wildcard o di verifica.
-- `/.well-known/ai-catalog.json`: nel panel fisso di 1.000 fonti 0 su 675 a settembre e 0 su 676 a ottobre; nel panel di 10.000 fonti 6 su 6.733 (0,09 %). Lighthouse controlla il file dal 2026.
+- DNS: su 10.000 fonti del panel, 0 pubblicano un record `_agent` conforme alla specifica; al massimo 1 risposta `_mcp` non è né wildcard né SPF.
+- `/.well-known/ai-catalog.json`: nel panel fisso di 1.000 fonti 0 su 676 a ottobre e 0 su 675 a novembre; nel panel di 10.000 fonti 9 su 6.672 (0,13 %). Lighthouse controlla il file dal 2026.
+- Stesso panel, a ottobre → a novembre, solo host osservati in entrambi i mesi (nuovi / scomparsi sugli host appaiati): `/robots.txt` +112 / −42 (n 7.406) · `/sitemap.xml` +54 / −58 (n 6.638) · `/llms.txt` +60 / −20 (n 6.387) · `/.well-known/oauth-protected-resource` +29 / −24 (n 6.549) · `/.well-known/oauth-authorization-server` +26 / −25 (n 6.554) · `/.well-known/security.txt` +18 / −7 (n 6.641).
 
 
 
@@ -126,11 +135,12 @@ Dalla prossima misurazione misurate anche (ancora senza dati): `/.well-known/ucp
 
 _Le route osservate non vengono richieste nella misurazione mensile. Le nostre rilevazioni esplorative (vedi sotto) e una sonda mensile su 1.000 fonti del panel le richiedono, senza contarne nulla per questa pagina. Ogni voce ha il suo criterio di promozione nel lab._
 
-### Richieste solo dalle rilevazioni esplorative (19)
+### Richieste solo dalle rilevazioni esplorative (27)
 
 - `/.well-known/api-catalog.json`
 - `/.well-known/http-message-signatures-directory`
 - `/.well-known/signature-agent-card`
+- `/.well-known/sail`
 - `/.well-known/agent-trust`
 - `/.well-known/agent-trust-keys`
 - `/.well-known/aicp`
@@ -147,6 +157,13 @@ _Le route osservate non vengono richieste nella misurazione mensile. Le nostre r
 - `/trust.txt`
 - `/.well-known/trust.txt`
 - `/.well-known/agent`
+- `/.well-known/ucap`
+- `/.well-known/ucap-access`
+- `/.well-known/ucap-delegation`
+- `/.well-known/aauth-access.json`
+- `/.well-known/aauth-resource.json`
+- `/.well-known/idmandat.json`
+- `/.well-known/agents.json`
 <!-- RADAR:END -->
 **Che cosa richiediamo.** Gli elenchi qui sopra sono l'elenco completo delle
 route che richiediamo: le route misurate in ogni misurazione mensile; le route
@@ -155,8 +172,8 @@ rilevazioni esplorative; le route sotto «Richieste solo dalle rilevazioni
 esplorative» solo in quelle. Tre aggiunte: la vostra home page, una volta, per leggere i suoi annunci
 `<link rel>` (la pagina stessa viene scartata); se i file del vostro stesso dominio
 rimandano a un altro file lì — per esempio un link nel vostro `robots.txt` —
-possiamo recuperare quel file una volta, al massimo un richiamo del genere per
-dominio e per ciclo, con le stesse regole del `robots.txt`; e tre record DNS per
+possiamo recuperare quel file, una sola richiesta per ogni file indicato e per
+ciclo, con le stesse regole del `robots.txt`; e tre record DNS per
 dominio (`_agent`, `_mcp`, `_index._agents`): semplici interrogazioni del
 servizio dei nomi, che non toccano mai il vostro server web. Nulla di ciò che
 recuperiamo viene pubblicato come contenuto — solo conteggi e quote per route,
@@ -196,12 +213,12 @@ fonti viene pubblicato accanto come serie a sé — l'unica che risale ad agosto
 2026 — e le due serie non vengono mai concatenate. Ogni mese, nella stessa
 misurazione, viene misurato anche un **blocco** del campione più ampio di
 30.000 — suddiviso in tre blocchi (a, b, c) che ruotano nel trimestre, così
-ogni fonte di blocco viene visitata una volta per trimestre. Il blocco **b** è
-stato misurato a ottobre 2026. Lo scopo della misurazione di blocco è la
+ogni fonte di blocco viene visitata una volta per trimestre. Il blocco **c** è
+stato misurato a novembre 2026, completando il primo passaggio intero del quadro (settembre–novembre 2026). Lo scopo della misurazione di blocco è la
 copertura, non la tendenza.
 
 Tutte le serie sono in [`data/`](data/): `panel-AAAA-MM.{json,csv}`,
-`panel1000-AAAA-MM.{json,csv}` e `monat-AAAA-MM-block-x.{json,csv}`. Ogni file dichiara da sé quando è
+`panel1000-AAAA-MM.{json,csv}` e `monat-AAAA-MM-block-x.{json,csv}`; dopo l'ultimo mese di ogni passaggio anche `quartal-AAAA-qN.{json,csv}`, il quadro completo con ogni fonte contata una sola volta (`parts` indica le tre misurazioni da cui è composto). Ogni file dichiara da sé quando è
 stato misurato e se è completo (`measurement_window.status`); come viene
 suddiviso il campione è definito in [RULESET.md](RULESET.md).
 

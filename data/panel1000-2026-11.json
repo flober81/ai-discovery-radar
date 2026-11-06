@@ -1,0 +1,770 @@
+{
+ "run": "panel1000-2026-11",
+ "ruleset": "0.4.0",
+ "measurement_window": {
+  "started": "2026-11-01T00:42:24.771Z",
+  "completed": "2026-11-05T16:32:18.010Z",
+  "ticks": 112,
+  "hosts_measured": 16753,
+  "cadence": "hourly ticks, ~2 requests/s in total",
+  "status": "final"
+ },
+ "subset_of": "monat-2026-11-block-c",
+ "subset": {
+  "list": "seeds/rahmen-2026-q3/panel.txt",
+  "list_sha256": "fdba03ac1a12dcf55e3c136b41783bd31e4ae728f6cebccca34bce28a7f58211",
+  "kept": 1000,
+  "of": 16753
+ },
+ "reachable_hosts": 850,
+ "registrable_orgs": 850,
+ "sample_frame": {
+  "tranco_list_id": "645KX",
+  "tranco_date": "2026-08-11",
+  "crux_month": "202607"
+ },
+ "license": "CC-BY-4.0 (see LICENSE-DATA)",
+ "method": "see RULESET.md for the full measurement ruleset, including this ruleset version",
+ "routes": [
+  {
+   "route": "/robots.txt",
+   "tier": 1,
+   "purpose": "Which parts of a site automated clients may enter",
+   "publisher": "IETF",
+   "n": 750,
+   "count": 649,
+   "adoption_share": 0.8653,
+   "ci_low": 0.839,
+   "ci_high": 0.888,
+   "states": {
+    "present": 649,
+    "alias": 0,
+    "soft404": 39,
+    "absent": 62,
+    "blocked": 97,
+    "disallowed": 0,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/sitemap.xml",
+   "tier": 1,
+   "purpose": "An index of every address a website offers",
+   "publisher": "sitemaps.org",
+   "n": 679,
+   "count": 380,
+   "adoption_share": 0.5596,
+   "ci_low": 0.522,
+   "ci_high": 0.597,
+   "states": {
+    "present": 380,
+    "alias": 0,
+    "soft404": 67,
+    "absent": 232,
+    "blocked": 134,
+    "disallowed": 23,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/llms.txt",
+   "tier": 3,
+   "purpose": "A table of contents for language models",
+   "publisher": "Answer.AI",
+   "n": 661,
+   "count": 110,
+   "adoption_share": 0.1664,
+   "ci_low": 0.14,
+   "ci_high": 0.197,
+   "states": {
+    "present": 110,
+    "alias": 0,
+    "soft404": 91,
+    "absent": 460,
+    "blocked": 151,
+    "disallowed": 23,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/security.txt",
+   "tier": 1,
+   "purpose": "Where to report a security vulnerability",
+   "publisher": "IETF",
+   "n": 685,
+   "count": 51,
+   "adoption_share": 0.0745,
+   "ci_low": 0.057,
+   "ci_high": 0.097,
+   "states": {
+    "present": 51,
+    "alias": 0,
+    "soft404": 79,
+    "absent": 555,
+    "blocked": 121,
+    "disallowed": 30,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/.well-known/oauth-authorization-server",
+   "tier": 1,
+   "purpose": "How the service that grants access rights works",
+   "publisher": "IETF",
+   "n": 675,
+   "count": 50,
+   "adoption_share": 0.0741,
+   "ci_low": 0.057,
+   "ci_high": 0.096,
+   "states": {
+    "present": 50,
+    "alias": 0,
+    "soft404": 89,
+    "absent": 536,
+    "blocked": 130,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/oauth-protected-resource",
+   "tier": 1,
+   "purpose": "Where a client obtains authorization for access",
+   "publisher": "IETF",
+   "n": 675,
+   "count": 47,
+   "adoption_share": 0.0696,
+   "ci_low": 0.053,
+   "ci_high": 0.091,
+   "states": {
+    "present": 47,
+    "alias": 0,
+    "soft404": 90,
+    "absent": 538,
+    "blocked": 130,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/llms-full.txt",
+   "tier": 3,
+   "purpose": "A whole website's content in a single file",
+   "publisher": "Answer.AI",
+   "n": 661,
+   "count": 33,
+   "adoption_share": 0.0499,
+   "ci_low": 0.036,
+   "ci_high": 0.069,
+   "states": {
+    "present": 33,
+    "alias": 0,
+    "soft404": 94,
+    "absent": 534,
+    "blocked": 151,
+    "disallowed": 23,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/ucp",
+   "tier": 4,
+   "purpose": "Which commerce capabilities a merchant offers agents",
+   "publisher": "Universal Commerce Protocol (UCP Tech Council)",
+   "n": 648,
+   "count": 26,
+   "adoption_share": 0.0401,
+   "ci_low": 0.028,
+   "ci_high": 0.058,
+   "states": {
+    "present": 26,
+    "alias": 0,
+    "soft404": 88,
+    "absent": 534,
+    "blocked": 157,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/gpc.json",
+   "tier": 1,
+   "purpose": "Whether the site honors the data-sharing opt-out",
+   "publisher": "W3C Global Privacy Control",
+   "n": 680,
+   "count": 19,
+   "adoption_share": 0.0279,
+   "ci_low": 0.018,
+   "ci_high": 0.043,
+   "states": {
+    "present": 19,
+    "alias": 0,
+    "soft404": 85,
+    "absent": 576,
+    "blocked": 127,
+    "disallowed": 29,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/.well-known/traffic-advice",
+   "tier": 1,
+   "purpose": "Whether a caching proxy may prefetch pages",
+   "publisher": "Google (Private Prefetch Proxy)",
+   "n": 668,
+   "count": 9,
+   "adoption_share": 0.0135,
+   "ci_low": 0.007,
+   "ci_high": 0.025,
+   "states": {
+    "present": 9,
+    "alias": 0,
+    "soft404": 88,
+    "absent": 571,
+    "blocked": 137,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/security.txt",
+   "tier": 1,
+   "purpose": "Where to report a vulnerability, at the site root",
+   "publisher": "IETF",
+   "n": 693,
+   "count": 7,
+   "adoption_share": 0.0101,
+   "ci_low": 0.005,
+   "ci_high": 0.021,
+   "states": {
+    "present": 7,
+    "alias": 9,
+    "soft404": 100,
+    "absent": 577,
+    "blocked": 120,
+    "disallowed": 23,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/rsl.xml",
+   "tier": 3,
+   "purpose": "The license terms under which content may be used",
+   "publisher": "RSL Collective",
+   "n": 637,
+   "count": 5,
+   "adoption_share": 0.0078,
+   "ci_low": 0.003,
+   "ci_high": 0.018,
+   "states": {
+    "present": 5,
+    "alias": 0,
+    "soft404": 94,
+    "absent": 538,
+    "blocked": 175,
+    "disallowed": 23,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/ai.txt",
+   "tier": 3,
+   "purpose": "Which content is withheld from AI training",
+   "publisher": "Spawning",
+   "n": 664,
+   "count": 3,
+   "adoption_share": 0.0045,
+   "ci_low": 0.002,
+   "ci_high": 0.013,
+   "states": {
+    "present": 3,
+    "alias": 0,
+    "soft404": 94,
+    "absent": 567,
+    "blocked": 148,
+    "disallowed": 23,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/api-catalog",
+   "tier": 1,
+   "purpose": "An index of the interfaces a domain offers",
+   "publisher": "IETF",
+   "n": 675,
+   "count": 2,
+   "adoption_share": 0.003,
+   "ci_low": 0.001,
+   "ci_high": 0.011,
+   "states": {
+    "present": 2,
+    "alias": 0,
+    "soft404": 90,
+    "absent": 583,
+    "blocked": 131,
+    "disallowed": 30,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/.well-known/openid-configuration",
+   "tier": 1,
+   "purpose": "Where and how to sign in at this domain",
+   "publisher": "OpenID Foundation",
+   "n": 674,
+   "count": 2,
+   "adoption_share": 0.003,
+   "ci_low": 0.001,
+   "ci_high": 0.011,
+   "states": {
+    "present": 2,
+    "alias": 24,
+    "soft404": 88,
+    "absent": 560,
+    "blocked": 132,
+    "disallowed": 30,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/.well-known/tdmrep.json",
+   "tier": 1,
+   "purpose": "Whether text and data may be mined automatically",
+   "publisher": "W3C TDM Reservation Protocol CG",
+   "n": 681,
+   "count": 2,
+   "adoption_share": 0.0029,
+   "ci_low": 0.001,
+   "ci_high": 0.011,
+   "states": {
+    "present": 2,
+    "alias": 0,
+    "soft404": 84,
+    "absent": 595,
+    "blocked": 126,
+    "disallowed": 29,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/.well-known/agent-skills/index.json",
+   "tier": 4,
+   "purpose": "Which agent skills a domain offers, with version and digest",
+   "publisher": "Cloudflare (Agent Skills Discovery RFC)",
+   "n": 649,
+   "count": 1,
+   "adoption_share": 0.0015,
+   "ci_low": 0,
+   "ci_high": 0.009,
+   "states": {
+    "present": 1,
+    "alias": 0,
+    "soft404": 84,
+    "absent": 564,
+    "blocked": 158,
+    "disallowed": 29,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/.well-known/agent.json",
+   "tier": 2,
+   "purpose": "An agent's capabilities, under the older file name",
+   "publisher": "A2A Project (Linux Foundation)",
+   "n": 672,
+   "count": 1,
+   "adoption_share": 0.0015,
+   "ci_low": 0,
+   "ci_high": 0.008,
+   "states": {
+    "present": 1,
+    "alias": 0,
+    "soft404": 85,
+    "absent": 586,
+    "blocked": 134,
+    "disallowed": 29,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/mcp.json",
+   "tier": 2,
+   "purpose": "Which tool servers a domain provides for AI",
+   "publisher": "Model Context Protocol",
+   "n": 670,
+   "count": 1,
+   "adoption_share": 0.0015,
+   "ci_low": 0,
+   "ci_high": 0.008,
+   "states": {
+    "present": 1,
+    "alias": 0,
+    "soft404": 85,
+    "absent": 584,
+    "blocked": 136,
+    "disallowed": 29,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/mcp/server-card.json",
+   "tier": 4,
+   "purpose": "Self-description of a site's MCP server for clients",
+   "publisher": "no registered publisher — singular variant of MCP SEP-2127, checked by Cloudflare's Agent Readiness Score",
+   "n": 647,
+   "count": 1,
+   "adoption_share": 0.0015,
+   "ci_low": 0,
+   "ci_high": 0.009,
+   "states": {
+    "present": 1,
+    "alias": 0,
+    "soft404": 84,
+    "absent": 562,
+    "blocked": 160,
+    "disallowed": 29,
+    "unreachable": 3
+   }
+  },
+  {
+   "route": "/.well-known/agent-card.json",
+   "tier": 2,
+   "purpose": "What a software agent can do and how to address it",
+   "publisher": "A2A Project (Linux Foundation)",
+   "n": 674,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 85,
+    "absent": 589,
+    "blocked": 132,
+    "disallowed": 29,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/ai-catalog.json",
+   "tier": 2,
+   "purpose": "What content and services a domain offers AI agents",
+   "publisher": "AI Catalog WG (Linux Foundation), Google, Microsoft",
+   "n": 675,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 85,
+    "absent": 590,
+    "blocked": 131,
+    "disallowed": 29,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/ai-plugin.json",
+   "tier": 4,
+   "purpose": "Instructions for a chatbot to operate a service",
+   "publisher": "OpenAI",
+   "n": 660,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 86,
+    "absent": 574,
+    "blocked": 145,
+    "disallowed": 29,
+    "unreachable": 5
+   }
+  },
+  {
+   "route": "/.well-known/ai.txt",
+   "tier": 3,
+   "purpose": "The same AI usage rules in the well-known folder",
+   "publisher": "Spawning",
+   "n": 661,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 83,
+    "absent": 578,
+    "blocked": 144,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/did.json",
+   "tier": 2,
+   "purpose": "A domain's provable identity without a central party",
+   "publisher": "W3C",
+   "n": 671,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 85,
+    "absent": 586,
+    "blocked": 135,
+    "disallowed": 29,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/dnt-policy.txt",
+   "tier": 1,
+   "purpose": "A pledge not to track visitors across sites",
+   "publisher": "EFF",
+   "n": 678,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 84,
+    "absent": 594,
+    "blocked": 127,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/host-meta",
+   "tier": 1,
+   "purpose": "Pointers to a domain's other points of information",
+   "publisher": "IETF",
+   "n": 673,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 89,
+    "absent": 584,
+    "blocked": 132,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/llms.txt",
+   "tier": 4,
+   "purpose": "A table of contents for language models, in well-known",
+   "publisher": "Answer.AI",
+   "n": 659,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 1,
+    "soft404": 85,
+    "absent": 573,
+    "blocked": 146,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/mcp-server",
+   "tier": 2,
+   "purpose": "Where to reach a domain's tool server",
+   "publisher": "IETF (individual draft)",
+   "n": 673,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 87,
+    "absent": 586,
+    "blocked": 132,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/openapi.json",
+   "tier": 2,
+   "purpose": "An interface description in the well-known folder",
+   "publisher": "OpenAPI Initiative",
+   "n": 670,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 85,
+    "absent": 585,
+    "blocked": 136,
+    "disallowed": 29,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/openid-federation",
+   "tier": 1,
+   "purpose": "Which federation a party provably belongs to",
+   "publisher": "OpenID Foundation",
+   "n": 676,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 88,
+    "absent": 588,
+    "blocked": 129,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/webfinger",
+   "tier": 1,
+   "purpose": "Who is behind an address at this domain",
+   "publisher": "IETF",
+   "n": 660,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 89,
+    "absent": 571,
+    "blocked": 145,
+    "disallowed": 30,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/.well-known/x402.json",
+   "tier": 2,
+   "purpose": "The price and payment route for machine requests",
+   "publisher": "Coinbase, Cloudflare",
+   "n": 671,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 85,
+    "absent": 586,
+    "blocked": 135,
+    "disallowed": 29,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/ai-plugin.json",
+   "tier": 4,
+   "purpose": "The same chatbot instructions, at the site root",
+   "publisher": "OpenAI",
+   "n": 634,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 100,
+    "absent": 534,
+    "blocked": 179,
+    "disallowed": 22,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/mcp.json",
+   "tier": 4,
+   "purpose": "A machine-readable list of a site's MCP endpoints, at the root",
+   "publisher": "Anthropic et al. (MCP) — root-path variant not specified",
+   "n": 633,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 100,
+    "absent": 533,
+    "blocked": 180,
+    "disallowed": 22,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/openapi.json",
+   "tier": 2,
+   "purpose": "A description of an interface for other programs",
+   "publisher": "OpenAPI Initiative",
+   "n": 637,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 97,
+    "absent": 540,
+    "blocked": 176,
+    "disallowed": 22,
+    "unreachable": 4
+   }
+  },
+  {
+   "route": "/swagger.json",
+   "tier": 3,
+   "purpose": "An interface description under the older file name",
+   "publisher": "SmartBear (Swagger)",
+   "n": 633,
+   "count": 0,
+   "adoption_share": 0,
+   "ci_low": 0,
+   "ci_high": 0.006,
+   "states": {
+    "present": 0,
+    "alias": 0,
+    "soft404": 95,
+    "absent": 538,
+    "blocked": 179,
+    "disallowed": 23,
+    "unreachable": 4
+   }
+  }
+ ]
+}

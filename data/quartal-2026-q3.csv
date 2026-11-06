@@ -1,0 +1,38 @@
+route,tier,purpose,publisher,n,count,adoption_share,ci_low,ci_high,state_present,state_alias,state_soft404,state_absent,state_blocked,state_disallowed,state_unreachable
+/robots.txt,1,Which parts of a site automated clients may enter,IETF,22968,19440,0.8464,0.8416,0.8511,19440,0,1298,2230,2724,0,159
+/sitemap.xml,1,An index of every address a website offers,sitemaps.org,20515,11085,0.5403,0.5335,0.5472,11085,4,2132,7294,4138,822,208
+/llms.txt,3,A table of contents for language models,Answer.AI,19764,2786,0.141,0.1361,0.1459,2786,1,2705,14272,4863,834,221
+/.well-known/security.txt,1,Where to report a security vulnerability,IETF,20503,1740,0.0849,0.0811,0.0888,1740,0,2633,16130,4070,916,193
+/.well-known/oauth-authorization-server,1,How the service that grants access rights works,IETF,20228,1244,0.0615,0.0582,0.0649,1244,0,2930,16054,4346,897,211
+/.well-known/oauth-protected-resource,1,Where a client obtains authorization for access,IETF,20223,1148,0.0568,0.0536,0.0601,1148,0,2941,16134,4349,898,212
+/llms-full.txt,3,A whole website's content in a single file,Answer.AI,19740,868,0.044,0.0411,0.047,868,30,2885,15957,4891,833,218
+/.well-known/ucp,4,Which commerce capabilities a merchant offers agents,Universal Commerce Protocol (UCP Tech Council),6726,253,0.0376,0.0333,0.0425,253,0,1002,5471,1988,323,64
+/.well-known/gpc.json,1,Whether the site honors the data-sharing opt-out,W3C Global Privacy Control,20284,619,0.0305,0.0282,0.033,619,0,2746,16919,4234,960,205
+/security.txt,1,"Where to report a vulnerability, at the site root",IETF,21054,277,0.0132,0.0117,0.0148,277,280,3037,17460,3588,841,199
+/.well-known/traffic-advice,1,Whether a caching proxy may prefetch pages,Google (Private Prefetch Proxy),20194,182,0.009,0.0077,0.0105,182,0,2920,17092,4374,896,218
+/rsl.xml,3,The license terms under which content may be used,RSL Collective,18925,127,0.0067,0.0056,0.008,127,15,2863,15920,5698,842,218
+/.well-known/openid-configuration,1,Where and how to sign in at this domain,OpenID Foundation,20225,103,0.0051,0.0042,0.0062,103,710,2909,16503,4346,901,210
+/.well-known/tdmrep.json,1,Whether text and data may be mined automatically,W3C TDM Reservation Protocol CG,20290,73,0.0036,0.0028,0.0046,73,0,2761,17456,4229,957,207
+/.well-known/api-catalog,1,An index of the interfaces a domain offers,IETF,20257,68,0.0034,0.0026,0.0043,68,0,2956,17233,4316,904,205
+/.well-known/agent-skills/index.json,4,"Which agent skills a domain offers, with version and digest",Cloudflare (Agent Skills Discovery RFC),6716,17,0.0025,0.0015,0.0041,17,0,933,5766,1976,344,65
+/.well-known/mcp/server-card.json,4,Self-description of a site's MCP server for clients,"no registered publisher — singular variant of MCP SEP-2127, checked by Cloudflare's Agent Readiness Score",6720,13,0.0019,0.0011,0.0034,13,3,938,5766,1976,343,62
+/ai.txt,3,Which content is withheld from AI training,Spawning,19709,38,0.0019,0.0014,0.0027,38,3,2900,16768,4925,834,214
+/openapi.json,2,A description of an interface for other programs,OpenAPI Initiative,18956,29,0.0015,0.001,0.0022,29,0,2914,16013,5616,891,220
+/.well-known/ai-plugin.json,4,Instructions for a chatbot to operate a service,OpenAI,19646,20,0.001,0.0006,0.0016,20,0,2717,16909,4858,961,218
+/.well-known/ai-catalog.json,2,What content and services a domain offers AI agents,"AI Catalog WG (Linux Foundation), Google, Microsoft",20098,19,0.0009,0.0006,0.0015,19,0,2753,17326,4411,959,215
+/.well-known/mcp.json,2,Which tool servers a domain provides for AI,Model Context Protocol,20060,17,0.0008,0.0005,0.0014,17,0,2757,17286,4452,959,212
+/.well-known/host-meta,1,Pointers to a domain's other points of information,IETF,20247,12,0.0006,0.0003,0.0011,12,1,2930,17304,4328,895,212
+/.well-known/agent-card.json,2,What a software agent can do and how to address it,A2A Project (Linux Foundation),20094,10,0.0005,0.0002,0.001,10,0,2750,17334,4415,959,215
+/.well-known/ai.txt,3,The same AI usage rules in the well-known folder,Spawning,19775,9,0.0005,0.0002,0.0009,9,0,2667,17099,4774,914,219
+/.well-known/dnt-policy.txt,1,A pledge not to track visitors across sites,EFF,20296,7,0.0003,0.0001,0.0008,7,0,2741,17548,4260,915,211
+/.well-known/llms.txt,4,"A table of contents for language models, in well-known",Answer.AI,19660,5,0.0003,0.0001,0.0006,5,35,2660,16960,4891,914,217
+/.well-known/webfinger,1,Who is behind an address at this domain,IETF,19811,6,0.0003,0.0001,0.0007,6,0,2894,16911,4763,895,213
+/.well-known/did.json,2,A domain's provable identity without a central party,W3C,20015,5,0.0002,0.0001,0.0006,5,0,2751,17259,4487,959,222
+/mcp.json,4,"A machine-readable list of a site's MCP endpoints, at the root",Anthropic et al. (MCP) — root-path variant not specified,18792,4,0.0002,0,0.0006,4,1,3015,15772,5784,886,221
+/swagger.json,3,An interface description under the older file name,SmartBear (Swagger),18751,4,0.0002,0,0.0006,4,1,2876,15870,5813,886,233
+/.well-known/agent.json,2,"An agent's capabilities, under the older file name",A2A Project (Linux Foundation),20071,2,0.0001,0,0.0004,2,2,2749,17318,4443,959,210
+/.well-known/mcp-server,2,Where to reach a domain's tool server,IETF (individual draft),20105,2,0.0001,0,0.0004,2,0,2900,17203,4466,895,216
+/.well-known/openapi.json,2,An interface description in the well-known folder,OpenAPI Initiative,19994,1,0.0001,0,0.0003,1,0,2748,17245,4498,963,228
+/.well-known/openid-federation,1,Which federation a party provably belongs to,OpenID Foundation,20228,2,0.0001,0,0.0004,2,0,2923,17303,4348,895,211
+/.well-known/x402.json,2,The price and payment route for machine requests,"Coinbase, Cloudflare",20013,0,0,0,0.0002,0,0,2745,17268,4495,959,216
+/ai-plugin.json,4,"The same chatbot instructions, at the site root",OpenAI,18802,0,0,0,0.0003,0,0,3017,15785,5776,885,220

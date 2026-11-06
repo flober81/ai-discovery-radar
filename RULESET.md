@@ -223,12 +223,15 @@ change.
 
 ## The quarterly roll-up
 
-At the end of a quarter the three monthly runs are combined into one figure
-over the **whole** frame instead of a third of it. The combination is not a
-concatenation: each monthly run measured the panel *and* its block, so
-appending the three runs would count 32,001 domains for a frame of 30,000 and
-put triple weight on 1,000 unusually well-maintained hosts, biasing every
-share upward.
+At the end of each pass through the frame (three monthly runs; the first
+pass is September–November 2026, internally named 2026-Q3) the three runs are
+combined into one figure over the **whole** frame instead of a third of it.
+The combination is not a concatenation: each monthly run measured the panel
+*and* its block, so appending the three runs would count the panel's sources
+three times and put triple weight on them, biasing every share toward the
+panel. The roll-up is published as its own data file
+(`data/quartal-YYYY-qN.{json,csv}`), whose `parts` name the runs it is built
+from.
 
 **The panel is therefore counted exactly once.** Each block is taken from its
 own run, and the panel from a single nominated month (by default the last,
@@ -242,7 +245,9 @@ Each release carries the data files of its month: `panel-YYYY-MM` (the
 panel, the trend series — 10,000 sources since October 2026),
 `panel1000-YYYY-MM` (the original 1,000-source panel as its own series, from
 October to December 2026) and `monat-YYYY-MM-block-x` (the month's run, block
-plus panel, the coverage series). Every file states
+plus panel, the coverage series). After the last month of each pass,
+`quartal-YYYY-qN` adds the full-frame roll-up (see above); its
+`measurement_window` spans the runs listed in `parts`. Every file states
 its own completeness in `measurement_window`: `started` and
 `completed` are the first and last measuring tick, `status` is
 `final` when the run's queue was empty at evaluation time (otherwise
