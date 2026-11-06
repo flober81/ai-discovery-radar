@@ -189,12 +189,12 @@ The measurement obeys your `robots.txt`, identifies itself honestly with this
 repository as the sender, and works slowly and sparingly. Only public
 configuration files meant for machines are fetched — no page content.
 
-The figures above are the **October 2026 panel**: since October 2026 a
+The figures above come from the **10,000-source panel**: since October 2026 a
 stratified panel of 10,000 sources — a third of the 30,000-source frame — is
 measured every month; the earlier 1,000-source panel continues inside it as its
-own series (see the notes below the table). This edition shows no trend arrow;
-the note below the table says why. Every other source of the frame is measured
-once per quarter. The **14-month
+own series (see the notes below the table). Trend arrows compare the panel with
+the previous month; the rule is stated below the table. Every other source of
+the frame is measured once in each three-month pass through it. The **14-month
 review** of AI directive adoption announced for the first monthly report is
 published: [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — eight Common Crawl
 snapshots, June 2025 to July 2026: response headers of **3.6 million pages**

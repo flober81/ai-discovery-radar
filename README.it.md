@@ -192,12 +192,12 @@ indicando questo repository come mittente e procede lentamente e con parsimonia.
 Vengono richiesti soltanto file di configurazione pubblici destinati alle
 macchine — nessun contenuto delle pagine.
 
-I valori qui sopra sono il **panel di ottobre 2026**: da ottobre 2026 un panel
+I valori qui sopra provengono dal **panel di 10.000 fonti**: da ottobre 2026 un panel
 stratificato di 10.000 fonti — un terzo del quadro di 30.000 — viene misurato
 ogni mese; il panel precedente di 1.000 fonti prosegue al suo interno come
-serie a sé (vedi le note sotto la tabella). Questa edizione non mostra la
-freccia di tendenza; il perché è spiegato sotto la tabella. Ogni altra fonte
-del quadro viene misurata una volta a trimestre. La **retrospettiva di 14 mesi** sulla diffusione delle
+serie a sé (vedi le note sotto la tabella). Le frecce di tendenza confrontano
+il panel con il mese precedente; la regola è indicata sotto la tabella. Ogni
+altra fonte del quadro viene misurata una volta in ogni passaggio di tre mesi. La **retrospettiva di 14 mesi** sulla diffusione delle
 direttive AI annunciata per il primo rapporto mensile è pubblicata:
 [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — otto istantanee Common Crawl,
 giugno 2025 – luglio 2026: intestazioni di risposta di **3,6 milioni di pagine**

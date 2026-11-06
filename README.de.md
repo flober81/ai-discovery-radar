@@ -195,12 +195,12 @@ Repository als Absender und arbeitet langsam und sparsam. Gemessen werden
 ausschließlich öffentliche, für Maschinen bestimmte Konfigurationsdateien —
 keine Inhalte.
 
-Die Zahlen oben sind das **Oktober-2026-Panel**: Seit Oktober 2026 wird ein
+Die Zahlen oben stammen aus dem **Panel von 10.000 Quellen**: Seit Oktober 2026 wird ein
 geschichtetes Panel von 10.000 Quellen — ein Drittel des Rahmens von 30.000 —
 jeden Monat gemessen; das bisherige Panel von 1.000 Quellen läuft darin als
-eigene Reihe weiter (siehe Hinweise unter der Tabelle). Diese Ausgabe zeigt
-keinen Trendpfeil; warum, steht unter der Tabelle. Jede übrige Quelle des
-Rahmens wird einmal pro Quartal gemessen. Der mit dem ersten Monatsbericht angekündigte **14-Monats-Rückblick**
+eigene Reihe weiter (siehe Hinweise unter der Tabelle). Die Trendpfeile
+vergleichen das Panel mit dem Vormonat; die Regel steht unter der Tabelle. Jede
+übrige Quelle des Rahmens wird in jedem Durchgang von drei Monaten einmal gemessen. Der mit dem ersten Monatsbericht angekündigte **14-Monats-Rückblick**
 zur Verbreitung von KI-Direktiven liegt vor:
 [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — acht Common-Crawl-Stände, Juni 2025
 bis Juli 2026: Antwort-Kopfzeilen von **3,6 Millionen Seiten** (2,7 Millionen
