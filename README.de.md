@@ -200,7 +200,19 @@ geschichtetes Panel von 10.000 Quellen — ein Drittel des Rahmens von 30.000 �
 jeden Monat gemessen; das bisherige Panel von 1.000 Quellen läuft darin als
 eigene Reihe weiter (siehe Hinweise unter der Tabelle). Die Trendpfeile
 vergleichen das Panel mit dem Vormonat; die Regel steht unter der Tabelle. Jede
-übrige Quelle des Rahmens wird in jedem Durchgang von drei Monaten einmal gemessen. Der mit dem ersten Monatsbericht angekündigte **14-Monats-Rückblick**
+übrige Quelle des Rahmens wird in jedem Durchgang von drei Monaten einmal gemessen.
+
+**Wofür das Panel steht.** Der Rahmen ist keine Zufallsstichprobe des Webs. Er
+besteht aus fünf Schichten: 8.000 Quellen, die in Deutschland, Österreich und der
+Schweiz genutzt werden, 3.000 aus Italien, 5.000 aus der weltweiten Spitze,
+10.000 aus der weltweiten Breite und 4.000 aus dem Long Tail (wie sie gezogen
+werden: [RULESET.md](RULESET.md)). Das Panel übernimmt jede Schicht im selben
+Verhältnis, und die Schichten werden nicht gewichtet. Die Zahlen beschreiben
+deshalb dieses Panel — nicht „das Web" und nicht „die Top-Sites". Bei einigen
+Routen unterscheiden sich die Schichten um das Dreifache und mehr, vor allem weil
+sich Plattform-Voreinstellungen im Long Tail häufen.
+
+Der mit dem ersten Monatsbericht angekündigte **14-Monats-Rückblick**
 zur Verbreitung von KI-Direktiven liegt vor:
 [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — acht Common-Crawl-Stände, Juni 2025
 bis Juli 2026: Antwort-Kopfzeilen von **3,6 Millionen Seiten** (2,7 Millionen

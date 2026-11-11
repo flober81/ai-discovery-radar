@@ -16,10 +16,20 @@ is written so that the measurement can be re-implemented from it alone.
 For each domain in the sample, a fixed catalog of well-known routes (the
 `route` column of the data files, e.g. `/robots.txt`, `/llms.txt`,
 `/.well-known/tdmrep.json`) is fetched over HTTPS at the registrable domain's
-apex, at a polite rate, honouring `robots.txt`:
+apex, at a polite rate, honouring `robots.txt`. If the apex does not resolve
+or refuses the connection, the `www.` host is tried once and used for the
+whole host; a TLS failure or a timeout at the apex is **not** retried on
+`www.` (November 2026 panel: 173 hosts measured via `www.`, 664 without a
+second attempt).
 
 - If robots rules disallow a path for our user agent, the path is **not
   fetched** and recorded as `disallowed`.
+- If `robots.txt` itself answers with a server error (5xx), the host is treated
+  as fully disallowed and nothing else is fetched (RFC 9309, section 2.3.1.4).
+  In force since 11 November 2026. Before that date such a host was probed as
+  if it had no rules (56 panel hosts in November 2026) — a deviation from this
+  document's promise, corrected in the code. A `robots.txt` answering 4xx
+  still means "no rules" (RFC 9309, section 2.3.1.3).
 - If a host requests a crawl delay beyond our per-run budget, the path is
   recorded as `notmeasured` (nobody refused us; we simply did not measure).
 - The user agent identifies the project and links to this repository.
@@ -61,16 +71,23 @@ Every (domain, route) pair receives exactly one state:
 | `present` | A file exists and passes the form checks below. |
 | `alias` | The same body as another catalogued path of the same host (see *Order of judgement*) — the file exists, but it is not counted twice. |
 | `soft404` | The server said 200 but delivered something else (an HTML page where none belongs, a text error page, a catch-all response, or syntactically broken JSON). Counted as *not adopted*, reported separately. |
-| `absent` | An honest 404/410 or an empty body. |
-| `blocked` | A bot wall (recognised by response-body signatures), a rejecting status (401/403/429/5xx), or a timeout. **Never counted as "not adopted".** |
+| `absent` | Any other non-success status (404/410, but also 400/405 and the like) or an empty body. Under ruleset 0.4.0 and earlier this also contained the server errors 500/502/504 — see `blocked`. |
+| `blocked` | A bot wall (recognised by response-body signatures), a rejecting status (401/403/429/451/503), or a timeout. **From ruleset 0.5.0 every 5xx status counts here.** Under 0.4.0 and earlier only 503 did, although this table said "5xx": a documentation error, corrected on 11 November 2026 — in the November 2026 panel 54–72 hosts per route answered 500/502/504 and were counted as `absent`. **Never counted as "not adopted".** |
 | `disallowed` | robots.txt forbids us the path. **Never counted as "not adopted".** |
-| `unreachable` | DNS/TLS/connection failure at host level. |
+| `unreachable` | DNS/TLS/connection failure on this route at a host that answered otherwise. A host that fails entirely is **not** listed in any route's states: it is excluded before routes are counted. Its number is the sample size minus `reachable_hosts` (November 2026 panel: 1,397 of 10,000). |
 
 ### Form checks for `present`
 
 - **JSON routes** must parse and carry at least one required key of their
   specification (e.g. `protocolVersion`/`skills`/`capabilities` for
-  agent-card). The canonical **array form** counts (a spec-conforming
+  agent-card). A route is judged as JSON when its path ends in `.json`, plus
+  `/.well-known/api-catalog` and the two OAuth metadata routes. **From ruleset
+  0.5.0** `/.well-known/ucp`, `/.well-known/openid-configuration` and
+  `/.well-known/traffic-advice` are judged as JSON as well; under 0.4.0 and
+  earlier they ran through the text check, where any non-HTML body counts —
+  without effect in November 2026 (all 253 `ucp` finds were JSON carrying the
+  `ucp` key), but unprotected. The required-key check applies to routes of the
+  published catalog; candidate routes are checked for parseable JSON only. The canonical **array form** counts (a spec-conforming
   `[{...}]` wrapper is unwrapped — v0.3.1). If the stored body was truncated
   by the pipeline, a key-pattern fallback is used instead of `JSON.parse`
   (v0.3.2).
@@ -106,8 +123,8 @@ catalogued paths of one host is a catch-all and every one of those paths is
 `soft404` — it is never read as three aliases. Only when exactly two paths
 share a body does the alias rule apply, and then the path that comes **first
 in catalog order** is the primary and keeps its own verdict; the other
-becomes `alias`. Sameness is decided on the byte length plus the first 300
-bytes of the body, not on a full byte comparison — a cheap test that is
+becomes `alias`. Sameness is decided on the byte length plus the first 200
+characters of the body, not on a full byte comparison — a cheap test that is
 deliberately slightly generous, because the failure it guards against
 (counting one file two or three times as adoption) is worse than the one it
 risks.
@@ -263,8 +280,10 @@ seven classification states it was built from — `present`, `alias`,
 the JSON, as `state_*` columns in the CSV). With them, `n` stops being a bare
 number: the first four sum to `n` and `present` is the numerator, while the
 last three are the part of the sample that never answered the question. A
-reader can therefore see how much of a host set was inspected at all, and
-recompute any share under a different denominator.
+reader can therefore see how much of the **reachable** host set was inspected,
+and recompute any share under a different denominator. Hosts that did not
+answer at all are not in these columns (see `unreachable` above); together
+with `reachable_hosts` and the sample size they complete the picture.
 
 Files released before v2026.10 do **not** carry these fields and are not
 back-filled. Nothing about their numbers would change — only fields would be
@@ -290,6 +309,7 @@ generation.
 | 0.3.1 | 2026-08-21 | JSON schema check unwraps the **canonical array form** (TDMRep: `[{"tdm-reservation":1}]`). 29 valid files had been misclassified as `soft404` and resurfaced as header-only declarations. |
 | 0.3.2 | 2026-08-22 | Archive truncation now marks itself, and readers of older archives infer the mark. The 2 KB archive trim silently cut large JSON bodies; the classifier parsed the fragment, failed, and judged `soft404` — valid files (systematically the *large* ones) were counted as forgeries. Additionally: bot-wall signatures are matched after decoding numeric HTML entities — one major vendor's wall had never been recognised in 14 months, so **no vendor breakdown of walls is published for runs before this version**. |
 | 0.4.0 | 2026-10-01 | A parseable JSON body at `/.well-known/tdmrep.json` that carries no spec field but is **not the host's catch-all** now counts as `present` with the flag `via: file-unset` — an implementation with an unset rule, rather than a forged page. Both figures are reported (`present` and `present − viaFileUnset`); the old figure remains derivable for every run. Committed in https://github.com/w3c-cg/tdm-reservation-protocol/issues/62. Measured effect on the September archive: 28 → 29; on the October run: 43 under both rules. The clause "not the host's catch-all" does most of the work — the empty-array files this rule was written for are served on 13 paths each and stay excluded. |
+| 0.5.0 | from the December 2026 run | Two alignments of the code with this document, found in an internal review on 2026-11-11. **(1) Every 5xx status is `blocked`**, not only 503; 500/502/504 had been counted as `absent` and sat in the denominator (November 2026 panel: 54–72 hosts per route). **(2) Three extensionless routes are judged as JSON** (`/.well-known/ucp`, `/.well-known/openid-configuration`, `/.well-known/traffic-advice`). Runs published under 0.4.0 keep their numbers and remain reproducible from the archive under 0.4.0. Independent of the ruleset version and already in force since 2026-11-11: a `robots.txt` answering 5xx means "fully disallowed". |
 
 Errors we find in our own measurement are documented in the version history
 above rather than silently corrected; the private repository keeps the full

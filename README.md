@@ -194,7 +194,19 @@ stratified panel of 10,000 sources — a third of the 30,000-source frame — is
 measured every month; the earlier 1,000-source panel continues inside it as its
 own series (see the notes below the table). Trend arrows compare the panel with
 the previous month; the rule is stated below the table. Every other source of
-the frame is measured once in each three-month pass through it. The **14-month
+the frame is measured once in each three-month pass through it.
+
+**What the panel stands for.** The frame is not a random sample of the web. It
+is built from five strata: 8,000 sources used in Germany, Austria and
+Switzerland, 3,000 used in Italy, 5,000 from the global top, 10,000 from the
+global breadth and 4,000 from the long tail (how they are drawn:
+[RULESET.md](RULESET.md)). The panel takes every stratum in the same proportion,
+and the strata are not weighted. The figures therefore describe this panel —
+not "the web" and not "the top sites". For some routes the strata differ by a
+factor of three and more, mostly because platform defaults concentrate in the
+long tail.
+
+The **14-month
 review** of AI directive adoption announced for the first monthly report is
 published: [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — eight Common Crawl
 snapshots, June 2025 to July 2026: response headers of **3.6 million pages**

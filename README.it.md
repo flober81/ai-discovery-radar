@@ -197,7 +197,19 @@ stratificato di 10.000 fonti — un terzo del quadro di 30.000 — viene misurat
 ogni mese; il panel precedente di 1.000 fonti prosegue al suo interno come
 serie a sé (vedi le note sotto la tabella). Le frecce di tendenza confrontano
 il panel con il mese precedente; la regola è indicata sotto la tabella. Ogni
-altra fonte del quadro viene misurata una volta in ogni passaggio di tre mesi. La **retrospettiva di 14 mesi** sulla diffusione delle
+altra fonte del quadro viene misurata una volta in ogni passaggio di tre mesi.
+
+**Che cosa rappresenta il panel.** Il quadro non è un campione casuale del web.
+È composto da cinque strati: 8.000 fonti usate in Germania, Austria e Svizzera,
+3.000 usate in Italia, 5.000 dalla fascia alta mondiale, 10.000 dalla fascia
+ampia mondiale e 4.000 dalla coda lunga (come vengono estratte:
+[RULESET.md](RULESET.md)). Il panel riprende ogni strato nella stessa
+proporzione e gli strati non sono ponderati. I valori descrivono quindi questo
+panel — non «il web» e non «i siti principali». Per alcune route gli strati
+differiscono di un fattore tre e oltre, soprattutto perché le impostazioni
+predefinite delle piattaforme si concentrano nella coda lunga.
+
+La **retrospettiva di 14 mesi** sulla diffusione delle
 direttive AI annunciata per il primo rapporto mensile è pubblicata:
 [REVIEW-2025-2026.md](REVIEW-2025-2026.md) — otto istantanee Common Crawl,
 giugno 2025 – luglio 2026: intestazioni di risposta di **3,6 milioni di pagine**
